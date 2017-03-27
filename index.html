@@ -16,19 +16,84 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-3 sidebar">
-            <div class="container">
-                <h1>Jerry Ryle</h1>
-                <p>resume/portfolio</p>
+        <div class="col-sm-4 col-md-3 sidebar">
+            <div class="container-fluid">
+                <div class="container-fluid float-left">
+                    <img class="img rounded" src="media/jerry_headshot.jpg" alt="Photo of Jerry Ryle"
+                         style="width: 150px; height: 150px;"/>
+                </div>
+                <div class="container-fluid fixed-right">
+                    <p><a href="https://www.linkedin.com/in/jerryryle">
+                        <img class="img rounded" src="media/social_icon_linkedin.svg"
+                             style="width: 25px; height: 25px;"
+                             alt="LinkedIn social icon"/></a></p>
+                    <p><a href="https://www.github.com/jerryryle">
+                        <img class="img rounded" src="media/social_icon_github.svg"
+                             style="width: 25px; height: 25px;"
+                             alt="Github social icon"/></a></p>
+                    <p><a href="https://www.twitter.com/jerryryle">
+                        <img class="img rounded" src="media/social_icon_twitter.svg"
+                             style="width: 25px; height: 25px;"
+                             alt="Twitter social icon"/></a></p>
+                </div>
+                <div class="container-fluid float-left">
+                    <h1>Jerry Ryle</h1>
+                </div>
             </div>
         </div>
-        <div class="col offset-sm-3 pt-3"><p>Moo.</p></div>
+        <div class="col offset-sm-4 offset-md-3 pt-3">
+            <div class="card mb-3">
+                <div class="card-block">
+                    <h4 class="card-title">Mindtribe (2001-2017)</h4>
+                    <img class="img rounded" src="media/mindtribe_logo_original.svg" style="width: 138px; height: 50px;"
+                         alt="Original Mindtribe Logo"/>
+                    <img class="img rounded" src="media/mindtribe_logo_old.svg" style="width: 160px; height: 50px;"
+                         alt="Old Mindtribe Logo"/>
+                    <img class="img rounded" src="media/mindtribe_logo.svg" style="width: 78px; height: 100px;"
+                         alt="Current Mindtribe Logo"/>
+                    <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-block">
+                    <h4 class="card-title">Cal Poly Industrial Manufacturing Engineering Lab (1998)</h4>
+                    <img class="img-fluid rounded pb-2" src="media/ime_157.svg"
+                         alt="Illustration of misbehaving NC drill"/>
+                    <p class="card-text">Cal Poly has an amazing class, IME 157, that teaches students about electronic
+                        product manufacturing processes by having them build an electronic product themselves. In this
+                        class, students use CAD to capture a schematic and lay out a PCB. They then drill and etch the
+                        PCB, solder on the components, and build a simple sheet metal enclosure. At the end of the
+                        course, each student has created a working product such as a car alarm, strobe light, etc.
+                    </p>
+                    <p class="card-text">The IME 157 lab features a high-speed, numerically-controlled drill for
+                        drilling PCBs. When I took the course, the software for this drill was an ancient command-line
+                        program that performed no error checking. If a student produced a drill file with errors, such
+                        as holes placed outside of the drillable area (very easy to do accidentally in the CAD package),
+                        the software would happily rev the drill table up to full speed and slam it into its end-stops.
+                        Repeatedly throughout the quarter&mdash;despite numerous warnings from the instructor&mdash;students
+                        would forget to check their drill files. The drill table would slam, the entire class would
+                        jump,
+                        and the instructor would run to fix the drill so that work could proceed.
+                    </p>
+                    <p class="card-text">Certain that I could overcome the drill software's limitations, I volunteered
+                        to rewrite it and the instructor gave me access to the drill outside of class hours. Finding
+                        little documentation on the ancient <a href="http://www.deltatau.com"
+                                                               title="Delta Tau has more online documentation these days.">Delta
+                            Tau</a> brand motion controllers, I reverse-engineered their protocol and wrote a completely
+                        new version of the control software in Pascal (my most proficient language at the time). This
+                        new software alerted users about invalid drill files, displayed a graphical preview of the drill
+                        pattern before drilling so that students could visually inspect for alignment/scale problems,
+                        and improved overall drill time by optimizing the drill's motion path and S-curve profiles.
+                    </p>
+                    <p class="card-text">After completing the class myself, I went on to T.A. IME 157 for several
+                        quarters, becoming an expert in the OrCAD CAD package for PCBA design and continuing to find
+                        ways to improve the curriculum and materials.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<!--
-<div class="entry" data-keywords="cat, foo, chicken"><h1>Hello, world! Cat!</h1></div>
-<div class="entry" data-keywords="dog, foo, chicken"><h1>Hello, world! Dog!</h1></div>
--->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
