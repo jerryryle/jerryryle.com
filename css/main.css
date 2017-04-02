@@ -1,49 +1,59 @@
 body {
+    padding-top: 60px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    position: relative;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0.1em;
+    text-shadow: 5px 5px 3px #000000;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 12em;
+    text-shadow: 5px 5px 3px #000000;
+}
+
+.jumbotron {
+    border-radius: 0;
     background-image: url("../media/background.png");
     background-size: cover;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
-[class*="col"] {
-    /*background-color: rgba(86,61,124,.15);*/
-    /*border: 1px solid rgba(86,61,124,.2);*/
-}
-
-.sidebar {
+/* This class fixes anchor positions to account for the navbar at the top of the screen. */
+a.anchor {
+    display: block;
     position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    /*background-image: url("../media/background.jpg");*/
-    /*background-size: contain;*/
-    /*background-repeat: no-repeat !important;*/
-    /*background-attachment: fixed;*/
-    /*background-color: rgba(0,255,0,1);*/
+    /* This offsets past the nav bar plus some extra padding so the content doesn't
+       abut the nav bar after a jump. */
+    top: -80px;
+    visibility: hidden;
 }
 
-.card {
-    background-color: rgba(255,255,255,0.98);
+.divider {
+    margin: 2rem 0; /* Space out the Bootstrap <hr> more */
 }
 
-/* Sidebar navigation */
-.sidebar {
-    padding-left: 0;
-    padding-right: 0;
+.container-section {
+    border-bottom: thin solid rgba(0, 0, 0, .1);
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 0;
+}
+
+.container-portfolio {
+    border-bottom: thin solid rgba(0, 0, 0, .1);
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 /* Min Small */
 @media (min-width: 576px) {
-    .sidebar {
-        position: fixed;
-        /*background-color: rgba(255,0,0,1);*/
-    }
 }
 
 /* Min Medium */
@@ -52,30 +62,24 @@ body {
 
 /* Min Large */
 @media (min-width: 992px) {
-
 }
 
 /* Min Extra large */
 @media (min-width: 1200px) {
-
 }
 
 /* Max Extra Small */
 @media (max-width: 575px) {
-
 }
 
 /* Max Small */
 @media (max-width: 767px) {
-
 }
 
 /* Max Medium */
 @media (max-width: 991px) {
-
 }
 
 /* Max Large */
 @media (max-width: 1199px) {
-
 }
