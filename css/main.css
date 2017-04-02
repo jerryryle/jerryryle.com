@@ -52,6 +52,10 @@ a.anchor {
     margin: 1rem 1rem 1rem 1rem;
 }
 
+.carousel-caption {
+    text-shadow: 1px 1px 1px #000000;
+}
+
 /* Min Small */
 @media (min-width: 576px) {
 }
