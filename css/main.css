@@ -56,6 +56,12 @@ a.anchor {
     text-shadow: 1px 1px 1px #000000;
 }
 
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block;
+}
+
 /* Min Small */
 @media (min-width: 576px) {
 }
