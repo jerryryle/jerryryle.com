@@ -66,6 +66,13 @@ a.anchor {
     border: 1px solid rgba(0, 0, 0, .2)
 }
 
+.tags:before {
+    content: 'Tags: '
+}
+.tags {
+    font-size: xx-small;
+}
+
 /* Min Small */
 @media (min-width: 576px) {
 }
