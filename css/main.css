@@ -73,6 +73,22 @@ a.anchor {
     font-size: xx-small;
 }
 
+.tag {
+    display:inline-block;
+    font-size:75%;
+    color:#000;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    padding: .25em .6em;
+    margin: 0.1em;
+    border-radius:10rem;
+    background-color:#f9f9f9;
+}
+
+.badge-pill {
+}
+
 /* Min Small */
 @media (min-width: 576px) {
 }
