@@ -1,0 +1,106 @@
+body {
+    padding-top: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    position: relative;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0.1em;
+    text-shadow: 5px 5px 3px #000000;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 12em;
+    text-shadow: 5px 5px 3px #000000;
+}
+
+.jumbotron {
+    border-radius: 0;
+    background-image: url("../media/background.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* This class fixes anchor positions to account for the navbar at the top of the screen. */
+a.anchor {
+    display: block;
+    position: relative;
+    /* This offsets past the nav bar plus some extra padding so the content doesn't
+       abut the nav bar after a jump. */
+    top: -80px;
+    visibility: hidden;
+}
+
+.divider {
+    margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+.container-section {
+    border-bottom: thin solid rgba(0, 0, 0, .1);
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 0;
+}
+
+.container-portfolio {
+    border-bottom: thin solid rgba(0, 0, 0, .1);
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.carousel-caption {
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block;
+}
+
+.carousel-indicators li,.carousel-indicators .active {
+    border: 1px solid rgba(0, 0, 0, .2)
+}
+
+.tags:before {
+    content: 'Tags: '
+}
+.tags {
+    font-size: xx-small;
+}
+
+/* Min Small */
+@media (min-width: 576px) {
+}
+
+/* Min Medium */
+@media (min-width: 768px) {
+}
+
+/* Min Large */
+@media (min-width: 992px) {
+}
+
+/* Min Extra large */
+@media (min-width: 1200px) {
+}
+
+/* Max Extra Small */
+@media (max-width: 575px) {
+}
+
+/* Max Small */
+@media (max-width: 767px) {
+}
+
+/* Max Medium */
+@media (max-width: 991px) {
+}
+
+/* Max Large */
+@media (max-width: 1199px) {
+}
