@@ -66,11 +66,43 @@ a.anchor {
     border: 1px solid rgba(0, 0, 0, .2)
 }
 
+.tag_filter {
+    display: none;
+}
+
+.tag_filter_tags {
+    margin: 1em;
+}
+
 .tags:before {
     content: 'Tags: '
 }
 .tags {
     font-size: xx-small;
+}
+
+.tag {
+    display:inline-block;
+    font-size:75%;
+    color:#000;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    padding: .25em .6em;
+    margin: 0.1em;
+    border-radius:10rem;
+    background-color:#f9f9f9;
+}
+
+.tag_selected {
+    color: #000;
+    background-color:#92d4ff;
+}
+
+.tag_unavailable {
+    color: #aaaaaa;
+    background-color:#f9f9f9;
+    text-decoration: none !important;
 }
 
 /* Min Small */
