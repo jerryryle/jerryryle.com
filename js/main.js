@@ -13,9 +13,15 @@ function setup_smooth_anchor_scrolling() {
     // Use the jQuery Easing plugin to smoothly scroll the page on anchor link clicks
     $('a.anchor-scroll').bind('click', function (event) {
         var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 500, 'easeInOutSine');
+        // First, attempt to unhide the target portfolio entry in case it's currently filtered out. Get the
+        // href of the anchor as a jquery object and find its parent, which will be the portfolio entry's div.
+        var $target = $($anchor.attr('href')).parent();
+        // Display the target (faster than usual to make the original click feel responsive) and then scroll to it.
+        $target.slideDown(100, function () {
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 500, 'easeInOutSine');
+        });
         event.preventDefault();
     });
 }
@@ -116,9 +122,9 @@ function update_filter(tag_filter) {
 
     // Update result count
     if (tag_filter.includedItems().length === 1) {
-        $('#num_items').text('1 entry');
+        $('#num_items').text('1 entry matches');
     } else {
-        $('#num_items').text(tag_filter.includedItems().length + ' entries');
+        $('#num_items').text(tag_filter.includedItems().length + ' entries match');
     }
 
 }
