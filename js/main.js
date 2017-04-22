@@ -116,9 +116,9 @@ function update_filter(tag_filter) {
 
     // Update result count
     if (tag_filter.includedItems().length === 1) {
-        $('#num_items').text('1 entry');
+        $('#num_items').text('1 entry matches');
     } else {
-        $('#num_items').text(tag_filter.includedItems().length + ' entries');
+        $('#num_items').text(tag_filter.includedItems().length + ' entries match');
     }
 
 }
