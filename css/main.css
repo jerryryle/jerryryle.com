@@ -36,6 +36,14 @@ a.anchor {
     visibility: hidden;
 }
 
+a.permalink {
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin: 0.5em 0 0.5em 0.5em;
+    background-image: url("../media/link.svg");
+}
+
 .divider {
     margin: 2rem 0; /* Space out the Bootstrap <hr> more */
 }
