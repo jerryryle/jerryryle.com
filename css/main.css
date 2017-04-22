@@ -30,7 +30,7 @@ h2 {
 a.anchor {
     display: block;
     position: relative;
-    /* This offsets past the nav bar plus some extra padding so the content doesn't
+    /* This offsets past the nav bar plus some extra padding so the content isn't hidden by and doesn't
        abut the nav bar after a jump. */
     top: -80px;
     visibility: hidden;
@@ -62,7 +62,7 @@ a.anchor {
     display: block;
 }
 
-.carousel-indicators li,.carousel-indicators .active {
+.carousel-indicators li, .carousel-indicators .active {
     border: 1px solid rgba(0, 0, 0, .2)
 }
 
@@ -77,31 +77,32 @@ a.anchor {
 .tags:before {
     content: 'Tags: '
 }
+
 .tags {
     font-size: xx-small;
 }
 
 .tag {
-    display:inline-block;
-    font-size:75%;
-    color:#000;
-    text-align:center;
-    white-space:nowrap;
-    vertical-align:baseline;
+    display: inline-block;
+    font-size: 75%;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
     padding: .25em .6em;
     margin: 0.1em;
-    border-radius:10rem;
-    background-color:#f9f9f9;
+    border-radius: 10rem;
+    background-color: #f9f9f9;
 }
 
 .tag_selected {
     color: #000;
-    background-color:#92d4ff;
+    background-color: #92d4ff;
 }
 
 .tag_unavailable {
     color: #aaaaaa;
-    background-color:#f9f9f9;
+    background-color: #f9f9f9;
     text-decoration: none !important;
 }
 
