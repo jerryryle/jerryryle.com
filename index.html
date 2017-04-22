@@ -62,17 +62,21 @@
                 <h4>About Me</h4>
                 <p>This site is a work in progress. There's content you can enjoy now, but check back soon for
                     updates.</p>
-                <p>April 20, 2017: I'm actively working on my portfolio. I'm planning to finish this "About" section
+                <p>April 21, 2017: I'm actively working on my portfolio. I'm planning to finish this "About" section
                     last, so if you're not reading this message, the site's probably complete. :)</p>
             </div>
 
             <a class="anchor" id="portfolio"></a>
             <div class="container-fluid container-section">
                 <h4>Portfolio</h4>
-                <p>There is a lot here. Most of it is from my time at Mindtribe. I'm developing a tag filter to help
-                    narrow down entries by interest. In the meantime, you can CTRL-F or start scrolling...</p>
+                <div class="tag_filter">
+                    You can click the following tags to filter the entries based upon your interests.
+                    <div class="tag_filter_tags">
+                    </div>
+                    <p><span id="num_items">0 entries</span> match your filter. <a href="#" id="clear_filter">[clear filter]</a></p>
+                </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_mindtribe">
                 <a class="anchor" id="mindtribe"></a>
                 <h4>Mindtribe (2001-2017)</h4>
                 <div id="carouselMindtribe" class="carousel slide mb-2" data-ride="carousel">
@@ -125,7 +129,7 @@
                     diversity of experience that has left me with a broader perspective than I could have found along
                     any other path.</p>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_surgical-robot-hid">
                 <a class="anchor" id="surgical-robot-hid"></a>
                 <h4>Human Interface Device for Surgical Robot (2016)</h4>
                 <img class="img-fluid rounded mb-2" src="media/surgical_robot.svg"
@@ -147,7 +151,7 @@
                     them and they extended Mindtribe's involvement to help them through production.</p>
                 <div class="tags">C, communications protocols, firmware, medical, program management</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_wine-preservation-device">
                 <a class="anchor" id="wine-preservation-device"></a>
                 <h4>Wine Preservation Device (2016)</h4>
                 <img class="img-fluid rounded mb-2" src="media/wine_preservation.svg"
@@ -163,7 +167,7 @@
                     power. This system was built around an NXP Kinetis KL03 ARM Cortex-M0+ microcontroller.</p>
                 <div class="tags">C, consumer, firmware, low power design, program management, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_mobile-ekg">
                 <a class="anchor" id="mobile-ekg"></a>
                 <h4>Mobile EKG (2016)</h4>
                 <img class="img-fluid rounded mb-2" src="media/mobile_ekg.svg"
@@ -179,7 +183,7 @@
                     program management, test, ultrasonic welding
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_encrypted-communications-device">
                 <a class="anchor" id="encrypted-communications-device"></a>
                 <h4>Encrypted Communications Device (2015-2016)</h4>
                 <img class="img-fluid rounded mb-2" src="media/encrypted_communications.svg"
@@ -213,7 +217,7 @@
                     security, test, ultrasonic welding, USB
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_factory-provisioning-for-encrypted-communications-device">
                 <a class="anchor" id="factory-provisioning-for-encrypted-communications-device"></a>
                 <h4>Factory Provisioning Station for Encrypted Communications Device (2016)</h4>
                 <img class="img-fluid rounded mb-2" src="media/test_stations.svg"
@@ -244,7 +248,7 @@
                 </p>
                 <div class="tags">cryptography, manufacturing, Python, security, test</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_ambient-mobile-charging">
                 <a class="anchor" id="ambient-mobile-charging"></a>
                 <h4>Ambient Mobile Charging (2015)</h4>
                 <img class="img-fluid rounded mb-2" src="media/ambient_charging.svg"
@@ -259,7 +263,7 @@
                     while I lent USB expertise to the program.</p>
                 <div class="tags">Android, application, program management, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_medical-device-ble-bootloader">
                 <a class="anchor" id="medical-device-ble-bootloader"></a>
                 <h4>Medical Device BLE Bootloader (2015)</h4>
                 <img class="img-fluid rounded mb-2" src="media/ble_bootloader.svg"
@@ -271,7 +275,7 @@
                     implementation, I assisted in the architecture and quality assurance of our deliverables.</p>
                 <div class="tags">Bluetooth, firmware, macOS, OTA update, program management</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_illuminated-dashboard-moustache">
                 <a class="anchor" id="illuminated-dashboard-moustache"></a>
                 <h4>Illuminated Dashboard Moustache (2014)</h4>
                 <div id="carouselLyft" class="carousel slide mb-2" data-ride="carousel">
@@ -333,7 +337,7 @@
                     management
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_microcorruption-ctf">
                 <a class="anchor" id="microcorruption-ctf"></a>
                 <h4>Microcorruption Capture The Flag (2014)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Microcorruption.png"
@@ -348,7 +352,7 @@
                     list in the Microcorruption hall of fame.</p>
                 <div class="tags">assembly, firmware, reverse engineering, security</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_microcontroller-platforms">
                 <a class="anchor" id="microcontroller-platforms"></a>
                 <h4>Microcontroller Platforms (2013-2017)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Microcontroller_Platform.jpg"
@@ -383,7 +387,7 @@
                 </ul>
                 <div class="tags">C, electrical, firmware, Linux, program management, sensors, test</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_automotive-gestural-input-device">
                 <a class="anchor" id="automotive-gestural-input-device"></a>
                 <h4>Automotive Gestural Input Device (2013)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -395,7 +399,7 @@
                     performs gestural processing in Python, using Kivy to provide a GUI that visualizes the results.</p>
                 <div class="tags">application, firmware, program management, Python, sensors, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_tv-hid">
                 <a class="anchor" id="tv-hid"></a>
                 <h4>Human Interface Device for Next-Gen TV Concept (2013)</h4>
                 <img class="img-fluid rounded mb-2" src="media/tv_hid.svg"
@@ -411,7 +415,7 @@
                     hardware and re-tune the system.</p>
                 <div class="tags">Android, application, firmware, program management, sensors, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_smart-building-management">
                 <a class="anchor" id="smart-building-management"></a>
                 <h4>Smart Building Management System (2013)</h4>
                 <div id="carouselVerdigris" class="carousel slide mb-2" data-ride="carousel">
@@ -442,7 +446,7 @@
                     development workflow.</p>
                 <div class="tags">application, firmware, test</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_automotive-apps">
                 <a class="anchor" id="automotive-apps"></a>
                 <h4>Automotive Apps (2012)</h4>
                 <img class="img-fluid rounded mb-2"
@@ -459,7 +463,7 @@
                     associated with this technology.</p>
                 <div class="tags">automotive, application, iOS</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_mobile-drawing-application-and-hardware">
                 <a class="anchor" id="mobile-drawing-application-and-hardware"></a>
                 <h4>Mobile Drawing Application and Hardware Tools (2012)</h4>
                 <div id="carouselAdobe" class="carousel slide mb-2" data-ride="carousel">
@@ -516,7 +520,7 @@
                     our experience and methodology.</p>
                 <div class="tags">applications, iOS, program management, graphics</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_secure-mobile-pos">
                 <a class="anchor" id="secure-mobile-pos"></a>
                 <h4>Secure, Mobile Point of Sale System (2012)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Square_Stand_Copyright_Mindtribe.jpg"
@@ -552,7 +556,7 @@
                 <div class="tags">C, communications protocols, encryption, firmware, iOS, program management, security
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_secure-mobile-card-reader">
                 <a class="anchor" id="secure-mobile-card-reader"></a>
                 <h4>Secure, Mobile Credit Card Reader (2011)</h4>
                 <div id="carouselSquareReader" class="carousel slide mb-2" data-ride="carousel">
@@ -587,7 +591,7 @@
                     secure key injection using a hardware security module.</p>
                 <div class="tags">C, communications protocols, encryption, firmware, program management, security</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_desk-scheduling-device">
                 <a class="anchor" id="desk-scheduling-device"></a>
                 <h4>Desk Scheduling Device (2011)</h4>
                 <img class="img-fluid rounded mb-2" src="media/shared_desk_contention.svg"
@@ -605,7 +609,7 @@
                     USB
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_automotive-controls-for-ios">
                 <a class="anchor" id="automotive-controls-for-ios"></a>
                 <h4>Automotive Controls for iOS (2011)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -618,7 +622,7 @@
                     Toyota's head unit and sent button information via USB.</p>
                 <div class="tags">automotive, C, communications protocols, firmware, program management, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_mobile-video-communications">
                 <a class="anchor" id="mobile-video-communications"></a>
                 <h4>Mobile Video Communications (2010)</h4>
                 <img class="img-fluid rounded mb-2" src="media/mobile_video_communications.svg"
@@ -633,7 +637,7 @@
                 <div class="tags">C, C++, communications protocols, firmware, graphics, program management, USB, video
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_solar-battery-charger">
                 <a class="anchor" id="solar-battery-charger"></a>
                 <h4>Solar Battery Charger (2010)</h4>
                 <img class="img-fluid rounded mb-2" src="media/solar_battery_charger.svg"
@@ -644,7 +648,7 @@
                 <p>I provided firmware oversight and mentoring for the client's firmware development efforts.</p>
                 <div class="tags">C, firmware</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_ipod-out-automotive-integration">
                 <a class="anchor" id="ipod-out-automotive-integration"></a>
                 <h4>iPod Out Automotive Integration (2010)</h4>
                 <img class="img-fluid rounded mb-2" src="media/iPod_Out.jpg"
@@ -658,7 +662,7 @@
                     port the library to their head unit and working with them to bring up the system.</p>
                 <div class="tags">automotive, C, communications protocols, firmware, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_iphone-communication-library">
                 <a class="anchor" id="iphone-communication-library"></a>
                 <h4>iPod/iPhone Communication Library (2010)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -670,7 +674,7 @@
                     Apple's massive Made for iPhone (MFi) specification.</p>
                 <div class="tags">C, C++, communications protocols, firmware, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_gestural-input-device-concept">
                 <a class="anchor" id="gestural-input-device-concept"></a>
                 <h4>Gestural Input Device Concept (2010)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -682,7 +686,7 @@
                     a multitouch input device.</p>
                 <div class="tags">algorithms, C, firmware, program management, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_phone-controlled-tetromino-game">
                 <a class="anchor" id="phone-controlled-tetromino-game"></a>
                 <h4>Phone-controlled Tetromino Game (2010)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Window_Game.png"
@@ -698,7 +702,7 @@
                     moderation queue before being publicly displayed on our website.</p>
                 <div class="tags">Adobe Flash, applications, C++, communications protocols, Windows</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_sleep-apnea-solution">
                 <a class="anchor" id="sleep-apnea-solution"></a>
                 <h4>Sleep Apnea Solution (2009)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Apnicure_Winx_Copyright_Mindtribe.jpg"
@@ -717,7 +721,7 @@
                     USB
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_mobile-notification-device-concept">
                 <a class="anchor" id="mobile-notification-device-concept"></a>
                 <h4>Mobile Notification Device Concept (2009)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -730,7 +734,7 @@
                     demonstrates these routines, running on TI LM3S9B96 and LM3S1811 microcontrollers.</p>
                 <div class="tags">algorithms, C, firmware, graphics</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_bluetooth-mobile-notification-device">
                 <a class="anchor" id="bluetooth-mobile-notification-device"></a>
                 <h4>Bluetooth Mobile Notification Device (2009)</h4>
                 <div id="carouselBluetoothNotificationDevice" class="carousel slide mb-2" data-ride="carousel">
@@ -759,7 +763,7 @@
                     designed for Bluetooth communications.</p>
                 <div class="tags">Bluetooth, C, communications protocols, firmware, graphics, program management</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_architectural-workshop-for-smart-toy">
                 <a class="anchor" id="architectural-workshop-for-smart-toy"></a>
                 <h4>Architectural Workshop for Smart Toy (2009)</h4>
                 <img class="img-fluid rounded mb-2" src="media/smart_toy_workshop.svg"
@@ -769,8 +773,9 @@
                     understand requirements, and begin to flesh out a system architecture.</p>
                 <p>I led the firmware portion of this workshop and followed up with specific architectural help as
                     questions arose.</p>
+                <div class="tags">C, firmware</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_medical-temperature-monitor">
                 <a class="anchor" id="medical-temperature-monitor"></a>
                 <h4>Medical Temperature Monitor (2009)</h4>
                 <img class="img-fluid rounded mb-2" src="media/3M_SpotOn_Copyright_Mindtribe.jpg"
@@ -783,7 +788,7 @@
                     Microcontroller.</p>
                 <div class="tags">C, firmware, graphics, medical, program management</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_media-tablet-platform-research">
                 <a class="anchor" id="media-tablet-platform-research"></a>
                 <h4>Media Tablet Software Platform Research (2009)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Media_Tablet_Platform_Research.png"
@@ -796,7 +801,7 @@
                     research and a presentation to educate them about the options.</p>
                 <div class="tags">Android, application</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_automotive-iphone-integration">
                 <a class="anchor" id="automotive-iphone-integration"></a>
                 <h4>Automotive iPhone Integration (2009)</h4>
                 <img class="img-fluid rounded mb-2" src="media/BMW_Mini_Connected_Copyright_Mindtribe.jpg"
@@ -830,7 +835,7 @@
                     capture requirements so that these new technologies could be put into production.</p>
                 <div class="tags">Android, application, automotive, C, C++, iOS, communications protocols</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_room-scheduling-system-redesign">
                 <a class="anchor" id="room-scheduling-system-redesign"></a>
                 <h4>Room Scheduling System Redesign (2008)</h4>
                 <img class="img-fluid rounded mb-2" src="media/RoomWizard_Copyright_Steelcase.jpg"
@@ -845,7 +850,7 @@
                     architect the addition of Zigbee for control of 3rd party devices from the RoomWizard.</p>
                 <div class="tags">application, firmware, communications protocols, Java</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_industrial-positioning-system-for-mining">
                 <a class="anchor" id="industrial-positioning-system-for-mining"></a>
                 <h4>Industrial Positioning System for Mining Applications (2008)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -861,7 +866,7 @@
                     video.</p>
                 <div class="tags">C, communications protocols, firmware, USB, video</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_can-stepper-motor-controller">
                 <a class="anchor" id="can-stepper-motor-controller"></a>
                 <h4>CAN Stepper Motor Controller (2008)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -874,7 +879,7 @@
                     out with the development.</p>
                 <div class="tags">C, communications protocols, electrical, firmware, motors, program management</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_chemical-sensing-system">
                 <a class="anchor" id="chemical-sensing-system"></a>
                 <h4>Chemical Sensing System (2008)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -888,7 +893,7 @@
                 <div class="tags">communications protocols, electrical, firmware, Linux, program management, sensors
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_wearable">
                 <a class="anchor" id="wearable"></a>
                 <h4>Wearable (2008)</h4>
                 <img class="img-fluid rounded mb-2" src="media/wearable.svg"
@@ -901,7 +906,7 @@
                     graphics
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_sports-watch">
                 <a class="anchor" id="sports-watch"></a>
                 <h4>Sports Watch (2008)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -918,7 +923,7 @@
                     the very low power consumption required for the battery-powered application.</p>
                 <div class="tags">C, firmware, communications protocols, low power design, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_implantable-medical-device">
                 <a class="anchor" id="implantable-medical-device"></a>
                 <h4>Configuration and Diagnostics Application for Implantable Medical Device (2007)</h4>
                 <div id="carouselNovashunt" class="carousel slide mb-2" data-ride="carousel">
@@ -944,7 +949,7 @@
                     parameters.</p>
                 <div class="tags">application, C#, medical, program management</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_point-and-shoot-video-camera">
                 <a class="anchor" id="point-and-shoot-video-camera"></a>
                 <h4>Point and Shoot Video Camera (2007)</h4>
                 <div id="carouselPureDigital" class="carousel slide mb-2" data-ride="carousel">
@@ -993,7 +998,7 @@
                     USB, Verilog, video
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_3d-hid-concept">
                 <a class="anchor" id="3d-hid-concept"></a>
                 <h4>3D Human Interface Device Concept (2007)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -1007,7 +1012,7 @@
                     and translates the touchpad input into 3D control.</p>
                 <div class="tags">C, firmware, sensors, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_automotive-head-unit-proof-of-concept">
                 <a class="anchor" id="automotive-head-unit-proof-of-concept"></a>
                 <h4>Automotive Head Unit Proof of Concept (2007)</h4>
                 <img class="img-fluid rounded mb-2" src="media/placeholder.svg"
@@ -1020,7 +1025,7 @@
                     architecture. The firmware was written in C for a TI MSP430 microcontroller.</p>
                 <div class="tags">automotive, C, communications protocols, firmware, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_robot-hand-control">
                 <a class="anchor" id="robot-hand-control"></a>
                 <h4>Robotic Hand Control (2006)</h4>
                 <img class="img-fluid rounded mb-2" src="media/robot_hand.svg"
@@ -1032,7 +1037,7 @@
                     high-level motion control scripts to drive the hand prototype.</p>
                 <div class="tags">C, communications protocols, firmware, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_wireless-gestural-transfer-concept">
                 <a class="anchor" id="wireless-gestural-transfer-concept"></a>
                 <h4>Wireless Gestural Transfer Concept (2006)</h4>
                 <img class="img-fluid rounded mb-2" src="media/gestural_data_transfer.svg"
@@ -1044,7 +1049,7 @@
                     for gesture recognition and transfers data between devices using a Freescale MC13192 radio.</p>
                 <div class="tags">C, communications protocols, firmware, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_3d-hid-chipset">
                 <a class="anchor" id="3d-hid-chipset"></a>
                 <h4>Chipset and Reference Design for 3D Human Interface Device (2006)</h4>
                 <img class="img-fluid rounded mb-2" src="media/3D_HID_Chipset.png"
@@ -1058,7 +1063,7 @@
                     the technology into their own designs.</p>
                 <div class="tags">C, firmware, sensors, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_cashless-arcade-payment-system">
                 <a class="anchor" id="cashless-arcade-payment-system"></a>
                 <h4>Cashless Arcade Game Payment System (2005)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Cashless_Arcade_Payment_System.jpg"
@@ -1090,7 +1095,7 @@
                     well when hundreds are deployed onto the same network.</p>
                 <div class="tags">algorithms, C, communications protocols, firmware, graphics, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_printer-paper-profiling-station">
                 <a class="anchor" id="printer-paper-profiling-station"></a>
                 <h4>Printer Paper Profiling Test Station (2005)</h4>
                 <img class="img-fluid rounded mb-2" src="media/paper_test_station.svg"
@@ -1103,7 +1108,7 @@
                     RS232, and provides a graphical user interface via an LCD and keypad.</p>
                 <div class="tags">algorithms, C, communications protocols, firmware, graphics, motors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_oled-keyboard">
                 <a class="anchor" id="oled-keyboard"></a>
                 <h4>OLED Keyboard (2005)</h4>
                 <div id="carouselUnitedKeys" class="carousel slide mb-2" data-ride="carousel">
@@ -1135,7 +1140,7 @@
                     website that the user was currently visiting.</p>
                 <div class="tags">C, C++, firmware, graphics, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_portable-network-analyzer">
                 <a class="anchor" id="portable-network-analyzer"></a>
                 <h4>Portable Network Analyzer (2005)</h4>
                 <img class="img-fluid rounded mb-2" src="media/portable_network_analyzer.svg"
@@ -1148,7 +1153,7 @@
                     firmware development effort on the new platform.</p>
                 <div class="tags">electrical, communications protocols, program management</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_warefare-training-system">
                 <a class="anchor" id="warefare-training-system"></a>
                 <h4>Warfare Training System (2005)</h4>
                 <img class="img-fluid rounded mb-2" src="media/warfare_training_system.svg"
@@ -1165,7 +1170,7 @@
                     including PIC microcontrollers and x86 single board computers.</p>
                 <div class="tags">algorithms, C, C++, communications protocols, firmware, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_biometric-flash-drive">
                 <a class="anchor" id="biometric-flash-drive"></a>
                 <h4>Biometric USB Flash Drive Concept (2005)</h4>
                 <img class="img-fluid rounded mb-2" src="media/biometric_flash_drive.svg"
@@ -1181,7 +1186,7 @@
                     when the correct fingerprint is scanned.</p>
                 <div class="tags">algorithms, C, C++, encryption, firmware, security, sensors, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_usb-video-camera-driver">
                 <a class="anchor" id="usb-video-camera-driver"></a>
                 <h4>USB Video Camera Driver (2004)</h4>
                 <img class="img-fluid rounded mb-2" src="media/usb_camera_driver.svg"
@@ -1200,7 +1205,7 @@
                     overlay feature that happened to put a black square in that corner.</p>
                 <div class="tags">applications, C++, sensors, USB, video</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_contour-follower-for-waterjet-cutter">
                 <a class="anchor" id="contour-follower-for-waterjet-cutter"></a>
                 <h4>Contour Follower for Water Jet Cutter (2004)</h4>
                 <div id="carouselContourFollower" class="carousel slide mb-2" data-ride="carousel">
@@ -1236,7 +1241,7 @@
                     applies calibration constants, and sends the sensor data to the waterjet cutter via RS485.</p>
                 <div class="tags">C, communications protocols, firmware, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_programmable-delay-line">
                 <a class="anchor" id="programmable-delay-line"></a>
                 <h4>Programmable Delay Line (2004)</h4>
                 <div id="carouselColbyDelayLine" class="carousel mb-2" data-ride="carousel">
@@ -1274,7 +1279,7 @@
                         protocol</a> for instrument communication with LabVIEW.</p>
                 <div class="tags">C, communications protocols, firmware, motors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_biometric-lock-module">
                 <a class="anchor" id="biometric-lock-module"></a>
                 <h4>Biometric Lock Module (2004)</h4>
                 <img class="img-fluid rounded mb-2" src="media/biometric_lock_module.svg"
@@ -1298,7 +1303,7 @@
                     Flash Drive</a> proof of concept for Biogy.</p>
                 <div class="tags">algorithms, C, C++, encryption, firmware, security, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_noise-canceling-headset">
                 <a class="anchor" id="noise-canceling-headset"></a>
                 <h4>Noise Canceling Headset (2004)</h4>
                 <div id="carouselJawbone" class="carousel slide mb-2" data-ride="carousel">
@@ -1328,7 +1333,7 @@
                     device drivers for factory testing.</p>
                 <div class="tags">C, communications protocols, firmware, reverse engineering</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_3d-mouse">
                 <a class="anchor" id="3d-mouse"></a>
                 <h4>3D Mouse (2004)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Sandio_3D_Mouse.jpg"
@@ -1349,7 +1354,7 @@
                     this, but I did manage to get the product shipped on time.</p>
                 <div class="tags">C, firmware, sensors, USB</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_automated-bird-identification-system">
                 <a class="anchor" id="automated-bird-identification-system"></a>
                 <h4>Automated Bird Identification System (2004)</h4>
                 <img class="img-fluid rounded mb-2" src="media/bird_recognition.svg"
@@ -1369,7 +1374,7 @@
                     delivered a comprehensive body of research along with the crushed dreams.</p>
                 <div class="tags">algorithms, audio, firmware</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_video-telestration-system">
                 <a class="anchor" id="video-telestration-system"></a>
                 <h4>Video Control and Telestration System (2004)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Video_Telestration_System.png"
@@ -1393,7 +1398,7 @@
                     effective tool for getting everyone on the same page.</p>
                 <div class="tags">application, program management</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_scent-delivery-system">
                 <a class="anchor" id="scent-delivery-system"></a>
                 <h4>Scent Delivery System (2004)</h4>
                 <img class="img-fluid rounded mb-2" src="media/scent_dispenser.svg"
@@ -1411,7 +1416,7 @@
                     a source control system to prevent future incidents of this nature.</p>
                 <div class="tags">application, electrical, reverse engineering, Windows</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_picoliter-dispenser">
                 <a class="anchor" id="picoliter-dispenser"></a>
                 <h4>Picoliter Dispenser for Medical Device Testing (2003)</h4>
                 <img class="img-fluid rounded mb-2" src="media/Picoliter_Dispenser.jpg"
@@ -1424,7 +1429,7 @@
                     control over the quantity and location of the dispensed fluid.</p>
                 <div class="tags">application, C++, communications protocols, Windows</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_augmented-driving-concept">
                 <a class="anchor" id="augmented-driving-concept"></a>
                 <h4>Augmented Driving Experience Concept (2003)</h4>
                 <img class="img-fluid rounded mb-2" src="media/augmented_driving_concept.svg"
@@ -1437,7 +1442,7 @@
                     for the curvature of the physical projection surface.</p>
                 <div class="tags">application, automotive, C++, video, Windows</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_automotive-ecu-tuning">
                 <a class="anchor" id="automotive-ecu-tuning"></a>
                 <h4>Automotive ECU Tuning (2002-2006)</h4>
                 <div id="carouselECUTuning" class="carousel slide mb-2" data-ride="carousel">
@@ -1477,7 +1482,7 @@
                     requiring public-key based cryptographic signatures.</p>
                 <div class="tags">assembly, automotive, firmware, reverse engineering</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_infrared-remote-control-for-ipod">
                 <a class="anchor" id="infrared-remote-control-for-ipod"></a>
                 <h4>Infrared Remote Control for iPod (2002)</h4>
                 <div id="carouselNavipod" class="carousel slide mb-2" data-ride="carousel">
@@ -1520,7 +1525,7 @@
                 </p>
                 <div class="tags">assembly, C, firmware, manufacturing, sensors, test</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_thermal-testing-apparatus">
                 <a class="anchor" id="thermal-testing-apparatus"></a>
                 <h4>Thermal Testing/Profiling Apparatus for Microprocessors (2002)</h4>
                 <img class="img-fluid rounded mb-2" src="media/AMD_Thermal_Tester.jpg"
@@ -1535,7 +1540,7 @@
                     exporting it for offline analysis.</p>
                 <div class="tags">application, C, C++, control systems, firmware, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_visual-messaging-system">
                 <a class="anchor" id="visual-messaging-system"></a>
                 <h4>Visual Messaging System (2002)</h4>
                 <img class="img-fluid rounded mb-2" src="media/BMW_Visual_Messaging_System.jpg"
@@ -1553,7 +1558,7 @@
                     created a Windows CE application to display the graphics. </p>
                 <div class="tags">application, automotive, C, C++, firmware, graphics, Windows CE</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_auto-darkening-visor">
                 <a class="anchor" id="auto-darkening-visor"></a>
                 <h4>Auto-darkening Visor (2002)</h4>
                 <div id="carouselAutovisor" class="carousel slide mb-2" data-ride="carousel">
@@ -1586,7 +1591,7 @@
                     parameters during their testing.</p>
                 <div class="tags">automotive, C, firmware, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_chroma-key-toy">
                 <a class="anchor" id="chroma-key-toy"></a>
                 <h4>Chroma-key Toy Proof of Concept (2001)</h4>
                 <img class="img-fluid rounded mb-2" src="media/chroma_key.svg"
@@ -1600,7 +1605,7 @@
                     algorithms that I wrote in C with a C++ application wrapper.</p>
                 <div class="tags">algorithms, applications, C, C++, video</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_automotive-sensor-visualization">
                 <a class="anchor" id="automotive-sensor-visualization"></a>
                 <h4>Automotive Sensor Data Visualization (2001)</h4>
                 <img class="img-fluid rounded mb-2" src="media/automotive_sensor_visualization.svg"
@@ -1615,7 +1620,7 @@
                     microcontroller.</p>
                 <div class="tags">automotive, C, communications protocols, firmware, sensors</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_automotive-ip-camera">
                 <a class="anchor" id="automotive-ip-camera"></a>
                 <h4>Automotive IP Camera (2001)</h4>
                 <img class="img-fluid rounded mb-2" src="media/BMW_IP_Camera.jpg"
@@ -1642,7 +1647,7 @@
                     sensors, USB, video
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_handheld-gestural-input-device">
                 <a class="anchor" id="handheld-gestural-input-device"></a>
                 <h4>Handheld Gestural Input Device Concept (2001)</h4>
                 <img class="img-fluid rounded mb-2" src="media/gestural_input_device.svg"
@@ -1663,7 +1668,7 @@
                     concluded similarly.</p>
                 <div class="tags">application, C++, firmware, graphics, sensors, Windows CE</div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_smart-power-supply">
                 <a class="anchor" id="smart-power-supply"></a>
                 <h4>Smart Power Supply (2001)</h4>
                 <div id="carouselCyberSwitching" class="carousel slide mb-2" data-ride="carousel">
@@ -1732,7 +1737,7 @@
                     networks, security, test
                 </div>
             </div>
-            <div class="container-portfolio">
+            <div class="container-portfolio" id="item_cnc-pcba-drill">
                 <a class="anchor" id="cnc-pcba-drill"></a>
                 <h4>CNC PCBA Drill Software (1998)</h4>
                 <img class="img-fluid rounded mb-2" src="media/ime_157.svg"
@@ -1807,6 +1812,7 @@
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="js/underscore-min.js"></script>
 <script src="js/tag_filter.js"></script>
 <script src="js/main.js"></script>
 <script>
