@@ -67,7 +67,7 @@ TagFilter.prototype.updateFilter = function () {
         }, this.all_items);
         this.excluded_items = _.difference(this.all_items, obj_this.included_items);
         this.unavailable_tags = _.reduce(_.keys(this.items_by_tag), function (tags, tag) {
-            if (_.intersection(obj_this.items_by_tag[tag], obj_this.included_items).length <=0) {
+            if (_.intersection(obj_this.items_by_tag[tag], obj_this.included_items).length <= 0) {
                 tags.push(tag);
             }
             return tags;
@@ -96,13 +96,21 @@ TagFilter.prototype.excludedItems = function () {
     return this.excluded_items;
 };
 
-TagFilter.prototype.mostItemsForTag = function () {
+TagFilter.prototype.mostItems = function () {
     return this.most_items_for_tag;
 };
 
-TagFilter.prototype.leastItemsForTag = function () {
+TagFilter.prototype.leastItems = function () {
     return this.least_items_for_tag;
 };
+
+TagFilter.prototype.itemsForTag = function (tag) {
+    if (!this.items_by_tag.hasOwnProperty(tag)) {
+        return [];
+    }
+    return this.items_by_tag[tag];
+};
+
 
 TagFilter.prototype.allTags = function () {
     return _.keys(this.items_by_tag).sort(function (a, b) {
