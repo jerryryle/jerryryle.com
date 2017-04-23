@@ -47,7 +47,7 @@ TagFilter.prototype.removeTagFromSelection = function (tag) {
     }
 };
 
-TagFilter.prototype.clearSelection = function (tag) {
+TagFilter.prototype.clearSelection = function () {
     this.selected_tags = [];
 };
 
