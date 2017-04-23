@@ -44,10 +44,6 @@ a.permalink {
     background-image: url("../media/link.svg");
 }
 
-.divider {
-    margin: 2rem 0; /* Space out the Bootstrap <hr> more */
-}
-
 .container-section {
     border-bottom: thin solid rgba(0, 0, 0, .1);
     padding: 1rem 1rem 1rem 1rem;
