@@ -2,28 +2,25 @@
  * Copyright 2017 by Jerry Ryle
  */
 
-function setup_hamburger_auto_close() {
-    // Close the hamburger menu when someone clicks a menu item.
-    $('.navbar-collapse').on("click", "a:not([dropdown-toggle])", null, function () {
-        $('.navbar-collapse').collapse('hide');
-    });
+// Try to prevent the window from scrolling to any provided anchors. We need to wait for the document to be ready first.
+if (window.location.hash) {
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+    }, 1);
 }
 
-function setup_smooth_anchor_scrolling() {
-    // Use the jQuery Easing plugin to smoothly scroll the page on anchor link clicks
-    $('a.anchor-scroll').bind('click', function (event) {
-        var $anchor = $(this);
-        // First, attempt to unhide the target portfolio entry in case it's currently filtered out. Get the
-        // href of the anchor as a jquery object and find its parent, which will be the portfolio entry's div.
-        var $target = $($anchor.attr('href')).parent();
-        // Display the target (faster than usual to make the original click feel responsive) and then scroll to it.
-        $target.slideDown(100, function () {
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 500, 'easeInOutSine');
-        });
-        event.preventDefault();
-    });
+// When the document is ready, set up the tag filter, which will then try to scroll to any provided anchors after the
+// tag filter is ready and expanded.
+$(document).ready(function () {
+    setup_tag_filter();
+});
+
+function fix_hash_scroll() {
+    if(window.location.hash) {
+        $('html, body').stop().animate({
+            scrollTop: $(window.location.hash).offset().top
+        }, 500, 'easeInOutSine');
+    }
 }
 
 function split_and_normalize_tag_text(tag_text) {
@@ -85,7 +82,9 @@ function setup_tag_filter() {
         });
 
     update_filter(tag_filter);
-    $('.tag_filter').slideDown();
+    $('.tag_filter').slideDown(function () {
+        fix_hash_scroll();
+    });
 }
 
 function handle_tag_click(event, tag_filter) {
@@ -129,8 +128,31 @@ function update_filter(tag_filter) {
 
 }
 
+function setup_hamburger_auto_close() {
+    // Close the hamburger menu when someone clicks a menu item.
+    $('.navbar-collapse').on("click", "a:not([dropdown-toggle])", null, function () {
+        $('.navbar-collapse').collapse('hide');
+    });
+}
+
+function setup_smooth_anchor_scrolling() {
+    // Use the jQuery Easing plugin to smoothly scroll the page on anchor link clicks
+    $('a.anchor-scroll').bind('click', function (event) {
+        var $anchor = $(this);
+        // First, attempt to unhide the target portfolio entry in case it's currently filtered out. Get the
+        // href of the anchor as a jquery object and find its parent, which will be the portfolio entry's div.
+        var $target = $($anchor.attr('href')).parent();
+        // Display the target (faster than usual to make the original click feel responsive) and then scroll to it.
+        $target.slideDown(100, function () {
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 500, 'easeInOutSine');
+        });
+        event.preventDefault();
+    });
+}
+
 $(function () {
     setup_hamburger_auto_close();
     setup_smooth_anchor_scrolling();
-    setup_tag_filter();
 });
