@@ -4,7 +4,7 @@
 
 // Try to prevent the window from scrolling to any provided anchors. We need to wait for the document to be ready first.
 if (window.location.hash) {
-    setTimeout(function() {
+    setTimeout(function () {
         window.scrollTo(0, 0);
     }, 1);
 }
@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 
 function fix_hash_scroll() {
-    if(window.location.hash) {
+    if (window.location.hash) {
         $('html, body').stop().animate({
             scrollTop: $(window.location.hash).offset().top
         }, 500, 'easeInOutSine');
@@ -29,6 +29,11 @@ function split_and_normalize_tag_text(tag_text) {
     }).sort(function (a, b) {
         return a.toLowerCase().localeCompare(b.toLowerCase());
     })
+}
+
+function scale_value(n_d0, min_d0, max_d0, min_d1, max_d1)
+{
+    return (((n_d0 - min_d0) * (max_d1 - min_d1)) / (max_d0 - min_d0)) + min_d1;
 }
 
 function setup_tag_filter() {
@@ -60,14 +65,21 @@ function setup_tag_filter() {
     });
     update_filter(tag_filter);
 
+    var min_tag_size = 75;
+    var max_tag_size = 175;
+    var min_items = tag_filter.leastItems();
+    var max_items = tag_filter.mostItems();
+
     var tag_filter_tags_element = $('.tag_filter_tags');
     tag_filter_tags_element.empty();
     tag_filter.allTags().forEach(function (tag) {
+        var tag_size = scale_value(tag_filter.itemsForTag(tag).length, min_items, max_items, min_tag_size, max_tag_size);
         tag_filter_tags_element.append(
             $('<a>', {
                 'class': 'tag',
                 'text': tag,
                 'href': '#',
+                'style': 'font-size:'+tag_size+'%;',
                 'click': function (event) {
                     handle_tag_click(event, tag_filter);
                 }
