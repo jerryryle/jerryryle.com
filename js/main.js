@@ -102,8 +102,14 @@ function setup_tag_filter() {
 function handle_tag_click(event, tag_filter) {
     if (!$(event.target).hasClass('tag_unavailable')) {
         var tag = event.target.text;
-        tag_filter.toggleTagSelection(tag);
+        var tag_enabled = tag_filter.toggleTagSelection(tag);
         update_filter(tag_filter);
+
+        if (tag_enabled) {
+            ga('send', 'event', 'tag_'+tag, 'enabled');
+        } else {
+            ga('send', 'event', 'tag_'+tag, 'disabled');
+        }
     }
     event.preventDefault();
 }
@@ -153,13 +159,15 @@ function setup_smooth_anchor_scrolling() {
         var $anchor = $(this);
         // First, attempt to unhide the target portfolio entry in case it's currently filtered out. Get the
         // href of the anchor as a jquery object and find its parent, which will be the portfolio entry's div.
-        var $target = $($anchor.attr('href')).parent();
+        var href = $anchor.attr('href');
+        var $target = $(href).parent();
         // Display the target (faster than usual to make the original click feel responsive) and then scroll to it.
         $target.slideDown(100, function () {
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top
             }, 500, 'easeInOutSine');
         });
+        ga('send', 'pageview', location.pathname + href);
         event.preventDefault();
     });
 }
