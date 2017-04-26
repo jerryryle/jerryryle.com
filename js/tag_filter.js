@@ -28,8 +28,10 @@ TagFilter.prototype.addItemIDWithTags = function (item_id, tags) {
 TagFilter.prototype.toggleTagSelection = function (tag) {
     if (this.tagIsSelected(tag)) {
         this.removeTagFromSelection(tag);
+        return false;
     } else {
         this.addTagToSelection(tag);
+        return true;
     }
 };
 
