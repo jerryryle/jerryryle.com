@@ -106,9 +106,15 @@ function handle_tag_click(event, tag_filter) {
         update_filter(tag_filter);
 
         if (tag_enabled) {
-            ga('send', 'event', 'tag_'+tag, 'enabled');
+            gtag('event', 'tag_'+tag+'_enabled', {
+                'event_category' : 'filter',
+                'event_label' : 'tag_'+tag
+            });
         } else {
-            ga('send', 'event', 'tag_'+tag, 'disabled');
+            gtag('event', 'tag_'+tag+'_disabled', {
+                'event_category' : 'filter',
+                'event_label' : 'tag_'+tag
+            });
         }
     }
     event.preventDefault();
@@ -167,7 +173,10 @@ function setup_smooth_anchor_scrolling() {
                 scrollTop: $($anchor.attr('href')).offset().top
             }, 500, 'easeInOutSine');
         });
-        ga('send', 'pageview', location.pathname + href);
+        gtag('config', 'UA-94019451-1', {
+            'page_title' : href,
+            'page_location': location.pathname + href
+        });
         event.preventDefault();
     });
 }

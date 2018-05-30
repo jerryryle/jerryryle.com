@@ -34,13 +34,16 @@
     </button>
     <div class="navbar-brand justify-content-start">
         <a class="navbar-brand anchor-scroll" href="#contact"> Jerry Ryle</a> <a
+            id="navbar_jerry_linkedin"
             href="https://www.linkedin.com/in/jerryryle"> <img class="d-inline-block mr-1"
                                                                src="media/social_icon_linkedin.svg"
                                                                style="width: 25px; height: 25px;"
                                                                alt="LinkedIn social icon"/></a> <a
+            id="navbar_jerry_github"
             href="https://www.github.com/jerryryle"> <img class="d-inline-block mx-1" src="media/social_icon_github.svg"
                                                           style="width: 25px; height: 25px;"
                                                           alt="Github social icon"/></a> <a
+            id="navbar_jerry_twitter"
             href="https://www.twitter.com/jerryryle"> <img class="d-inline-block ml-1"
                                                            src="media/social_icon_twitter.svg"
                                                            style="width: 25px; height: 25px;"
@@ -49,20 +52,21 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbar-main">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link anchor-scroll" href="#about">About</a>
+                <a id="navbar_about" class="nav-link anchor-scroll" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link anchor-scroll" href="#portfolio">Portfolio</a>
+                <a id="navbar_portfolio" class="nav-link anchor-scroll" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link anchor-scroll" href="#contact">Contact</a>
+                <a id="navbar_contact" class="nav-link anchor-scroll" href="#contact">Contact</a>
             </li>
         </ul>
     </div>
 </nav>
 <div class="jumbotron">
     <h1 class="text-white text-center">I build products, teams, and companies.</h1>
-    <h2 class="text-white text-center"><a class="anchor-scroll" href="#about" style="color: white">&#9662;</a></h2>
+    <h2 class="text-white text-center"><a id="jumbotron_about" class="anchor-scroll" href="#about" style="color: white">&#9662;</a>
+    </h2>
 </div>
 <div class="container-fluid">
     <div class="row">
@@ -102,7 +106,7 @@
                      width="960" height="400"/>
                 <p>I've recently joined stealth startup, Alpine Oral Tech, Inc. We are developing a consumer healthcare
                     device that has the potential to help billions live healthier, longer lives. Watch for developments
-                    at <a href="https://alpine.health">https://alpine.health</a></p>
+                    at <a id="alpine_alpine" href="https://alpine.health">https://alpine.health</a></p>
                 <div class="tags">startup</div>
             </div>
             <div class="container-portfolio" id="item_mindtribe">
@@ -300,9 +304,9 @@
                     <li>Was secure&mdash;as defined by our client's security officer</li>
                     <li>Could send encrypted provisioning results and statistics to our client</li>
                 </ul>
-                <p>I wrote the software in Python and used <a href="https://kivy.org/">Kivy</a> for the user interfaces.
-                    Data was stored in SQLite databases and encrypted for transport between the factory and our client
-                    using <a href="https://www.gnupg.org/">gpg2</a>.
+                <p>I wrote the software in Python and used <a id="factory_kivy" href="https://kivy.org/">Kivy</a> for
+                    the user interfaces. Data was stored in SQLite databases and encrypted for transport between the
+                    factory and our client using <a id="factory_gnupg" href="https://www.gnupg.org/">gpg2</a>.
                 </p>
                 <div class="tags">cryptography, manufacturing, program management, Python, security, test</div>
             </div>
@@ -378,10 +382,12 @@
                         </div>
                     </div>
                 </div>
-                <p><a href="https://www.lyft.com/">Lyft</a>, the popular ride sharing service that's headquartered in
-                    SF, engaged Mindtribe to work with <a href="https://ammunitiongroup.com">Ammunition</a> to overhaul
-                    Lyft's iconic, fuzzy "carstache". Our mission was to create a smaller, sleeker, more refined emblem
-                    that maintained the superb brand recognition Lyft had earned with their standout 'stache.</p>
+                <p><a id="lyft_lyft" href="https://www.lyft.com/">Lyft</a>, the popular ride sharing service that's
+                    headquartered in SF, engaged Mindtribe to work with <a id="lyft_ammunition"
+                                                                           href="https://ammunitiongroup.com">Ammunition</a>
+                    to overhaul Lyft's iconic, fuzzy "carstache". Our mission was to create a smaller, sleeker, more
+                    refined emblem that maintained the superb brand recognition Lyft had earned with their standout
+                    'stache.</p>
                 <p>We began by supporting Ammunition's concept creation/refinement phase through a series of studies and
                     prototypes to understand safety concerns, costs, and feasibility.</p>
                 <p>Once Lyft and Ammunition selected the final "glowstache" concept, Mindtribe created the detailed
@@ -418,11 +424,13 @@
                      data-src="media/Microcorruption.png"
                      alt="Screen shot of the Microcorruption game's leaderboard and level chooser" width="960"
                      height="400"/>
-                <p><a href="https://www.nccgroup.trust">Matasano Security</a> (now part of NCC group) and <a
-                        href="https://squareup.com/">Square</a> teamed up to create <a
-                        href="https://microcorruption.com">Microcorruption</a>: an awesome Capture the Flag game that
-                    involves reverse engineering MSP430 assembly to unlock a virtual lock. Each level gets progressively
-                    harder as the fictitious lock vendor patches security holes and introduces new ones.</p>
+                <p><a id="microcorruption_ncc" href="https://www.nccgroup.trust">Matasano Security</a> (now part of NCC
+                    group) and <a
+                            id="microcorruption_square" href="https://squareup.com/">Square</a> teamed up to create <a
+                            id="microcorruption_microcorruption" href="https://microcorruption.com">Microcorruption</a>:
+                    an awesome Capture the Flag game that involves reverse engineering MSP430 assembly to unlock a
+                    virtual lock. Each level gets progressively harder as the fictitious lock vendor patches security
+                    holes and introduces new ones.</p>
                 <p>While this was more fun than professional, I used my reverse engineering skills, microcontroller
                     knowledge, and understanding of security exploits to complete the game and made it into the top 100
                     list in the Microcorruption hall of fame.</p>
@@ -444,6 +452,7 @@
                 <p>I led programs to create the following platforms:</p>
                 <ul>
                     <li>Corgi - A general-purpose microcontroller platform based upon the <a
+                            id="microcontrollers_ti"
                             href="https://www.ti.com/microcontrollers/other-mcus/overview.html">TI TM4C12x</a> (formerly
                         Stellaris) Cortex-M4F processor line. We created a microcontroller motherboard that hosts
                         daughterboards called "pups". Inspired by Arduino shields, the pups extend the platform's
@@ -455,6 +464,7 @@
                         our development and production workflows.
                     </li>
                     <li>Flea - A Bluetooth LE microcontroller platform based upon the <a
+                            id="microcontrollers_nordic"
                             href="https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822">Nordic
                         Semiconductor nrf51822</a> BLE microcontroller. Schematics and code were built according to our
                         production workflow. This was a highly leveraged platform that kickstarted multiple client
@@ -494,11 +504,11 @@
                     on-screen user interfaces.</p>
                 <p>I structured and ran a development effort to prototype a new remote control that incorporates
                     capacitive sensing elements. We partnered with local user experience design and development firm, <a
-                            href="https://stimulant.com/">Stimulant</a>, who developed the on-screen TV experience that
-                    our hardware controls. To accelerate Stimulant's development and integration of our work, we built
-                    an Android-based remote control simulator that they used while our hardware was under development.
-                    Once our hardware was ready, it took just a few hours to replace the simulator with the actual
-                    hardware and re-tune the system.</p>
+                            id="tv_hid_stimulant" href="https://stimulant.com/">Stimulant</a>, who developed the
+                    on-screen TV experience that our hardware controls. To accelerate Stimulant's development and
+                    integration of our work, we built an Android-based remote control simulator that they used while our
+                    hardware was under development. Once our hardware was ready, it took just a few hours to replace the
+                    simulator with the actual hardware and re-tune the system.</p>
                 <div class="tags">Android, applications, C, firmware, program management, sensors, USB</div>
             </div>
             <div class="container-portfolio" id="item_smart-building-management">
@@ -526,9 +536,9 @@
                         </div>
                     </div>
                 </div>
-                <p><a href="https://verdigris.co">Verdigris</a> partnered with Mindtribe to develop a system that uses
-                    artificial intelligence to improve commercial facilities management. Mindtribe built Verdigris'
-                    hardware platform while they focused on the backend and application.</p>
+                <p><a id="verdigris_verdigris" href="https://verdigris.co">Verdigris</a> partnered with Mindtribe to
+                    develop a system that uses artificial intelligence to improve commercial facilities management.
+                    Mindtribe built Verdigris' hardware platform while they focused on the backend and application.</p>
                 <p>When the teams began to encounter quality issues, the program manager brought me in to help diagnose
                     and fix the problem. I discovered that the complexity of the system did not lend itself well to
                     structured, end-to-end testing, so the teams were taking longer than usual to pinpoint and fix bugs.
@@ -601,10 +611,10 @@
                     time, we were collectively coming to the conclusion that these prototypes were more than intriguing
                     concepts&mdash;they were potentially-shippable products.</p>
                 <p>Adobe decided to proceed with the productization of the pen and ruler, to be sold as <a
-                        href="https://helpx.adobe.com/ink-and-slide.html">Adobe Ink and Slide</a>. They felt that
-                    evolving our test app into a polished drawing app as a skunkworks project would be a faster path to
-                    a showcase app for the new drawing accessories than trying to get the hardware support integrated
-                    into Adobe's existing apps.</p>
+                        id="adobe_adobe_inkslide" href="https://helpx.adobe.com/ink-and-slide.html">Adobe Ink and
+                    Slide</a>. They felt that evolving our test app into a polished drawing app as a skunkworks project
+                    would be a faster path to a showcase app for the new drawing accessories than trying to get the
+                    hardware support integrated into Adobe's existing apps.</p>
                 <p>We dedicated Mindtribe developers to the application and I stepped in to manage it as its own program&mdash;codenamed
                     Project Parallel. I worked with Adobe's project manager to put together a production schedule that
                     aligned with the hardware release. Together, we ran the program using an agile methodology. The team
@@ -620,6 +630,7 @@
                     have an exceptionally capable team and many Adobe resources, so I was able to step back and focus on
                     removing all program-level obstacles from their path.</p>
                 <p>Together, Adobe and Mindtribe shipped a beautiful and capable product called <a
+                        id="adobe_adobe_line"
                         href="https://helpx.adobe.com/mobile-apps/how-to/line-perspective-draw.html">Adobe Line</a> that
                     became a model for app development within Adobe. We met with other iOS teams within Adobe and shared
                     our experience and methodology.</p>
@@ -1116,9 +1127,10 @@
                     performance of their existing product's design, so they engaged Mindtribe to help with the new
                     version.</p>
                 <p>I wrote firmware for a Silicon Laboratories <a
-                        href="https://www.silabs.com/products/mcu/8-bit/c8051f33x/device.c8051f331">C8051F331</a>
+                        id="sportswatch_si" href="https://www.silabs.com/products/mcu/8-bit/c8051f33x/device.c8051f331">C8051F331</a>
                     microcontroller that handles the sensors and watch display and transmits data wirelessly to the iPod
-                    using a Nordic <a href="https://www.nordicsemi.com/eng/Products/2.4GHz-RF/nRF2402">nRF2402</a>
+                    using a Nordic <a id="sportswatch_nordic"
+                                      href="https://www.nordicsemi.com/eng/Products/2.4GHz-RF/nRF2402">nRF2402</a>
                     radio. The firmware meets Apple's strict wireless communications timing specification and achieves
                     the very low power consumption required for the battery-powered application.</p>
                 <div class="tags">C, firmware, communications protocols, low power design, sensors, wireless</div>
@@ -1192,14 +1204,14 @@
                     while Pure Digital focused on the application and backend software.</p>
                 <p>I structured and ran the firmware development effort, while also writing firmware myself. We were
                     developing on a COACH 10 microprocessor from <a
-                            href="https://en.wikipedia.org/wiki/Zoran_Corporation">Zoran</a>. This was the first
-                    revision of this microcontroller capable of recording video at the framerate and resolution that
-                    Pure Digital required, so we were highly incentivized to use it even though it was newly-released
-                    and unproven. We completed our electrical design based upon the new chip before the vendor had
-                    finished their own development board, so our first firmware task was to bring up a new BSP on our
-                    own hardware and debug it with the vendor&mdash;effectively proving out their silicon and software
-                    along with them. I got the video pipeline working and wrote drivers for all of the peripherals,
-                    including the imaging sensor and LCD.</p>
+                            id="puredigital_zoran" href="https://en.wikipedia.org/wiki/Zoran_Corporation">Zoran</a>.
+                    This was the first revision of this microcontroller capable of recording video at the framerate and
+                    resolution that Pure Digital required, so we were highly incentivized to use it even though it was
+                    newly-released and unproven. We completed our electrical design based upon the new chip before the
+                    vendor had finished their own development board, so our first firmware task was to bring up a new
+                    BSP on our own hardware and debug it with the vendor&mdash;effectively proving out their silicon and
+                    software along with them. I got the video pipeline working and wrote drivers for all of the
+                    peripherals, including the imaging sensor and LCD.</p>
                 <p>We wanted to use a new, high quality LCD that wasn't directly compatible with the TFT interface on
                     the COACH 10, so I created a smart signal adapter using a Lattice CPLD programmed in Verilog HDL.
                     This converts the TFT signals to drive with the LCD and injects commands into the pixel stream to
@@ -1311,16 +1323,16 @@
                     having Skee-Balls chucked at it.</p>
                 <p>I helped architect the new system and led the firmware development effort. The system was built
                     around a <a
-                            href="https://www.digi.com/support/productdetail?pid=4667">Rabbit 2000</a> microcontroller
-                    and we wrote firmware in C. One of our cost reduction measures was to replace a very expensive RS232
-                    barcode scanner module with an inexpensive, largely mechanical module that did no onboard
-                    processing. This meant we needed to do the signal acquisition and barcode processing ourselves. Ease
-                    of barcode scanning and low cost were both key to the adoption of this system in arcades. Low cost
-                    meant that the cashless play cards were printed using extremely cheap technology, so the barcodes
-                    were of poor quality--often with gaps or blurred edges. I developed my own algorithms to maximize
-                    scan success by applying various error corrections to the scanned signal. With these, we were able
-                    to achieve scan success rates better than the original, expensive barcode module (as determined by
-                    user tests) at a fraction of the cost.</p>
+                            id="cashlessarcade_digi" href="https://www.digi.com/support/productdetail?pid=4667">Rabbit
+                        2000</a> microcontroller and we wrote firmware in C. One of our cost reduction measures was to
+                    replace a very expensive RS232 barcode scanner module with an inexpensive, largely mechanical module
+                    that did no onboard processing. This meant we needed to do the signal acquisition and barcode
+                    processing ourselves. Ease of barcode scanning and low cost were both key to the adoption of this
+                    system in arcades. Low cost meant that the cashless play cards were printed using extremely cheap
+                    technology, so the barcodes were of poor quality--often with gaps or blurred edges. I developed my
+                    own algorithms to maximize scan success by applying various error corrections to the scanned signal.
+                    With these, we were able to achieve scan success rates better than the original, expensive barcode
+                    module (as determined by user tests) at a fraction of the cost.</p>
                 <p>Along with barcode scanning, I wrote firmware to precisely measure and generate signals to fool the
                     arcade games into thinking they were receiving quarters or dispensing tickets at the appropriate
                     times and to display status on the device's graphical LCD.</p>
@@ -1341,9 +1353,9 @@
                 <p>Mindtribe developed a test tool for a large printer manufacturer. This tool profiled and
                     characterized specific aspects of a new printer paper they were developing.</p>
                 <p>I led a firmware development effort to write firmware for a <a
-                        href="https://www.digi.com/support/productdetail?pid=4667">Rabbit 2000</a> microcontroller that
-                    drives stepper motors, samples photosensors, processes and logs data, transfers data to a PC via
-                    RS232, and provides a graphical user interface via an LCD and keypad.</p>
+                        id="printerpaper_digi" href="https://www.digi.com/support/productdetail?pid=4667">Rabbit
+                    2000</a> microcontroller that drives stepper motors, samples photosensors, processes and logs data,
+                    transfers data to a PC via RS232, and provides a graphical user interface via an LCD and keypad.</p>
                 <div class="tags">algorithms, C, communications protocols, firmware, graphics, motors</div>
             </div>
             <div class="container-portfolio" id="item_oled-keyboard">
@@ -1536,15 +1548,16 @@
                 <p>Colby Instruments, the industry leader in high-precision programmable delay line instruments, needed
                     to upgrade their design from an Intel 8085 microcontroller board that had been obsoleted and was no
                     longer available. They asked Mindtribe to replace the controller with a <a
-                            href="https://www.digi.com/support/productdetail?pid=4667">Rabbit 2000</a>-based module.</p>
+                            id="colby_digi" href="https://www.digi.com/support/productdetail?pid=4667">Rabbit 2000</a>-based
+                    module.</p>
                 <p>I supported the electrical redesign and led the firmware development effort. The delay line uses a
                     stepper motor to adjust the length of an electromechanical "trombone" that physically alters the
                     length of a signal path to precisely delay a signal. We were able to use the old firmware as a
                     reference, but we built all new firmware in C for the new controller module. This included stepper
                     motor drivers, an RS232-based user interfaces, and a <a
-                            href="https://en.wikipedia.org/wiki/IEEE-488">GPIB</a> interface. We also added a LAN
-                    interface that supports the <a href="https://www.ni.com/visa/">National Instruments VISA
-                        protocol</a> for instrument communication with LabVIEW.</p>
+                            id="colby_wikipedia" href="https://en.wikipedia.org/wiki/IEEE-488">GPIB</a> interface. We
+                    also added a LAN interface that supports the <a id="colby_ni" href="https://www.ni.com/visa/">National
+                        Instruments VISA protocol</a> for instrument communication with LabVIEW.</p>
                 <div class="tags">C, communications protocols, firmware, motors, networks</div>
             </div>
             <div class="container-portfolio" id="item_biometric-lock-module">
@@ -1625,13 +1638,13 @@
                     translation for minimal additional cost. Mindtribe helped Sandio take their design from concept
                     through production with electrical, mechanical, and firmware support.</p>
                 <p>I led the firmware development effort and wrote production firmware for a <a
-                        href="http://www.cypress.com/part/cy7c63413c-pvxc">Cypress CY7C63413</a> microcontroller, which
-                    provides both the 3D and the basic USB mouse functionality using an Agilent imaging sensor. On this
-                    project, I experienced the frustration of not being able to trust the compiler. The only available
-                    compiler for this microcontroller merrily generated invalid code for certain valid (and pedestrian)
-                    C constructs. My development cycle involved coding, compiling, and checking the assembly output
-                    listing for errors before bothering to try downloading and running the firmware. I don't recommend
-                    this, but I did manage to get the product shipped on time.</p>
+                        id="sandio_cypress" href="http://www.cypress.com/part/cy7c63413c-pvxc">Cypress CY7C63413</a>
+                    microcontroller, which provides both the 3D and the basic USB mouse functionality using an Agilent
+                    imaging sensor. On this project, I experienced the frustration of not being able to trust the
+                    compiler. The only available compiler for this microcontroller merrily generated invalid code for
+                    certain valid (and pedestrian) C constructs. My development cycle involved coding, compiling, and
+                    checking the assembly output listing for errors before bothering to try downloading and running the
+                    firmware. I don't recommend this, but I did manage to get the product shipped on time.</p>
                 <div class="tags">C, firmware, sensors, USB</div>
             </div>
             <div class="container-portfolio" id="item_automated-bird-identification-system">
@@ -1644,6 +1657,7 @@
                      alt="Illustration of a person using a computer to identify a bird in a tree. The computer is reporting that the bird is an emu."
                      width="960" height="400"/>
                 <p>An enthusiastic and technologically-minded <a
+                        id="bird_newyorker"
                         href="https://www.newyorker.com/books/page-turner/the-difference-between-bird-watching-and-birding">birder</a>
                     was interested in creating a handheld device that could identify a bird's species by its song. This
                     was before the age of smartphones and apps, so they contacted Mindtribe to explore the feasibility
@@ -1775,13 +1789,13 @@
                     engines became more complex, looking at the data inside the code was no longer sufficient--they
                     needed to understand the code itself. Dinan asked Mindtribe to help them achieve this
                     understanding.</p>
-                <p>Using the disassembler, <a href="https://www.hex-rays.com/products/ida/index.shtml">IDA Pro</a>, I
-                    helped Dinan reverse engineer the ECU firmware for several BMW models, including ones that used
-                    multi-processor ECUs. I picked apart the assembly to gain an understanding of how Dinan would need
-                    to patch the firmware for a given hardware modification. In order to upload patched firmware to an
-                    ECU, I also had to reverse engineer the handshake that the ECU performed to authenticate an
-                    authorized uploader. Depending upon the car model, this varied from being based upon a simple CRC to
-                    requiring public-key based cryptographic signatures.</p>
+                <p>Using the disassembler, <a id="dinan_ida" href="https://www.hex-rays.com/products/ida/index.shtml">IDA
+                    Pro</a>, I helped Dinan reverse engineer the ECU firmware for several BMW models, including ones
+                    that used multi-processor ECUs. I picked apart the assembly to gain an understanding of how Dinan
+                    would need to patch the firmware for a given hardware modification. In order to upload patched
+                    firmware to an ECU, I also had to reverse engineer the handshake that the ECU performed to
+                    authenticate an authorized uploader. Depending upon the car model, this varied from being based upon
+                    a simple CRC to requiring public-key based cryptographic signatures.</p>
                 <div class="tags">assembly, automotive, firmware, reverse engineering</div>
             </div>
             <div class="container-portfolio" id="item_infrared-remote-control-for-ipod">
@@ -1816,7 +1830,8 @@
                     an oscilloscope and my knowledge of communications protocols to reverse engineer Apple's wired
                     remote control. I then helped write the assembly code that receives IR remote commands and
                     translates them into iPod control commands, running on a tiny <a
-                            href="https://www.microchip.com/wwwproducts/en/PIC12C508A">Microchip PIC12C508A</a>.</p>
+                            id="ten_microchip" href="https://www.microchip.com/wwwproducts/en/PIC12C508A">Microchip
+                        PIC12C508A</a>.</p>
                 <p>Ten Technology demonstrated their remote control prototype to Apple in the hopes of having it sold in
                     Apple Stores. Apple was impressed with the polish and utility of the product. They gave us a tiny
                     text file with the official protocol specification and told Ten that if they could revise the
@@ -1825,8 +1840,8 @@
                     was born. We worked around the clock to revise the product and hit the launch.</p>
                 <p>In addition to working on the remote control itself, Mindtribe helped Ten through manufacturing and
                     created manufacturing test tools for factory operator use. We built the test tools around the <a
-                            href="https://www.digi.com/support/productdetail?pid=4667">Rabbit 2000</a> microcontroller
-                    and wrote the test firmware in a mixture of C and assembly.
+                            id="ten_digi" href="https://www.digi.com/support/productdetail?pid=4667">Rabbit 2000</a>
+                    microcontroller and wrote the test firmware in a mixture of C and assembly.
                 </p>
                 <div class="tags">assembly, C, firmware, manufacturing, sensors, test, wireless</div>
             </div>
@@ -1841,8 +1856,8 @@
                 <p>AMD worked with Mindtribe to build a precise thermal test platform for processor performance
                     profiling under specific conditions. Mindtribe built a modular electrical system capable of
                     controlling heating elements and sampling multiple thermocouples simultaneously. The system was
-                    built around the <a href="https://www.digi.com/support/productdetail?pid=4667">Rabbit 2000</a>
-                    microcontroller.</p>
+                    built around the <a id="amd_digi" href="https://www.digi.com/support/productdetail?pid=4667">Rabbit
+                        2000</a> microcontroller.</p>
                 <p>I led the development team that created the firmware for this platform. This firmware handles data
                     acquisition, logging, and control. I created a Windows application for downloading logged data and
                     exporting it for offline analysis.</p>
@@ -1863,11 +1878,11 @@
                     display graphics pertaining to the messages through the special optics. Drivers would be able to see
                     both these graphics and the road simultaneously without refocusing their eyes.</p>
                 <p>To drive the VGA microdisplay attached to the optics, we specified a Pentium based <a
-                        href="https://pfu-systems.eol.parts/products-c/c2i-pr5-266.htm">C2i-PR5-266</a> Single Board
-                    Computer (SBC) from PFUSystems. To connect to the CAN bus, we built a custom CAN-to-RS232 bridge
-                    using a Microchip PIC16F876 microprocessor and Philips (now NXP) PCA82C250N CAN transceiver. I wrote
-                    the firmware for the CAN bridge. I also configured and built the Windows CE BSP for the SBC and
-                    created a Windows CE application to display the graphics. </p>
+                        id="vms_pfu" href="https://pfu-systems.eol.parts/products-c/c2i-pr5-266.htm">C2i-PR5-266</a>
+                    Single Board Computer (SBC) from PFUSystems. To connect to the CAN bus, we built a custom
+                    CAN-to-RS232 bridge using a Microchip PIC16F876 microprocessor and Philips (now NXP) PCA82C250N CAN
+                    transceiver. I wrote the firmware for the CAN bridge. I also configured and built the Windows CE BSP
+                    for the SBC and created a Windows CE application to display the graphics. </p>
                 <div class="tags">applications, automotive, C, C++, CAN, firmware, graphics, Windows CE</div>
             </div>
             <div class="container-portfolio" id="item_auto-darkening-visor">
@@ -1901,6 +1916,7 @@
                     could respond to rapidly changing lighting conditions such as when a rider entered or exited a
                     tunnel.</p>
                 <p>I wrote firmware for an <a
+                        id="bmw_analog"
                         href="http://www.analog.com/en/products/processors-dsp/microcontrollers/8052-core-products/aduc812.html">Analog
                     Devices ADUC812</a> microcontroller that samples a photocell and very precisely generates a driving
                     waveform for the auto-dimming LCD element. I wrapped this up into a firmware application that
@@ -1961,8 +1977,8 @@
                 <p>At the time, IP-based video cameras were not commonplace. Though a few did exist, they were too large
                     to integrate into a car. Mindtribe built a tightly integrated IP camera using a new USB imaging
                     sensor from Agilent and a small embedded Linux computer based upon the <a
-                            href="http://developer.axis.com/old/products/etrax100lx/">AXIS Communications ETRAX
-                        100LX</a> processor.</p>
+                            id="bmw_axis" href="http://developer.axis.com/old/products/etrax100lx/">AXIS Communications
+                        ETRAX 100LX</a> processor.</p>
                 <p>I specified and configured the embedded Linux computer, wrote a Linux device driver for the imaging
                     sensor, created a Linux streaming video service, and wrote a Java web applet to connect to the video
                     service and decode/display the streaming video. I learned that I should not make presumptuous
@@ -1987,15 +2003,16 @@
                     They wanted to see how it would feel if the device's screen acted more like a "window" to content
                     underneath. That is, instead of scrolling the content with your finger, you moved the device itself
                     in space over content that appeared to remain stationary underneath. To prototype this, we
-                    instrumented an <a href="https://en.wikipedia.org/wiki/IPAQ">HP iPAQ</a> handheld device with
-                    gyroscopes and distance sensors. I wrote firmware to process the sensors and send the data to a
-                    Windows CE application that allows a user to navigate a section of a map by moving the iPAQ around.
-                    The first application version panned and zoomed a bitmap image of the map, which did not allow for
-                    enough zoom without looking "fuzzy". I then tried embedding an Adobe Flash player in the app to use
-                    vector-based content; however, this heavyweight component did not yield acceptable performance and
-                    felt too sluggish. I then tinkered with bitmap tiling to achieve better resolution within the iPAQ's
-                    limited resources, but ultimately wrote an SVG parser/renderer (none existed for Windows CE at the
-                    time) and dramatically improved the experience with lightweight vector graphics support.</p>
+                    instrumented an <a id="gid_wikipedia" href="https://en.wikipedia.org/wiki/IPAQ">HP iPAQ</a> handheld
+                    device with gyroscopes and distance sensors. I wrote firmware to process the sensors and send the
+                    data to a Windows CE application that allows a user to navigate a section of a map by moving the
+                    iPAQ around. The first application version panned and zoomed a bitmap image of the map, which did
+                    not allow for enough zoom without looking "fuzzy". I then tried embedding an Adobe Flash player in
+                    the app to use vector-based content; however, this heavyweight component did not yield acceptable
+                    performance and felt too sluggish. I then tinkered with bitmap tiling to achieve better resolution
+                    within the iPAQ's limited resources, but ultimately wrote an SVG parser/renderer (none existed for
+                    Windows CE at the time) and dramatically improved the experience with lightweight vector graphics
+                    support.</p>
                 <p>This concept proved to be a very fun toy, but we thought it impractical for serious use. Our client
                     concluded similarly.</p>
                 <div class="tags">Adobe Flash, applications, C++, firmware, graphics, sensors, Windows CE</div>
@@ -2032,9 +2049,9 @@
                         </div>
                     </div>
                 </div>
-                <p><a href="https://www.cyberswitching.com/">Cyber Switching</a> engaged Mindtribe to develop their
-                    first product: a smart power strip that would allow users to remotely monitor and control
-                    appliances.</p>
+                <p><a id="cyberswitching_cyberswitching" href="https://www.cyberswitching.com/">Cyber Switching</a>
+                    engaged Mindtribe to develop their first product: a smart power strip that would allow users to
+                    remotely monitor and control appliances.</p>
                 <p>Cyber Switching originally envisioned their product simply as a way to allow network administrators
                     to reboot frozen routers remotely. As the program progressed and they spoke to customers, it became
                     clear that the product needed to offer more. Luckily, Mindtribe's agile approach allowed us to keep
@@ -2056,13 +2073,15 @@
                     </li>
                 </ul>
                 <p>I helped with the electrical design of this product and wrote almost all of the firmware. This
-                    product was built around the <a href="https://www.digi.com/support/productdetail?pid=4667">Rabbit
+                    product was built around the <a id="cyberswitching_digi"
+                                                    href="https://www.digi.com/support/productdetail?pid=4667">Rabbit
                         2000</a> microcontroller&mdash;the most accessible TCP/IP-enabled microcontroller at the time.
                     While the microcontroller vendor provided some of the network protocol libraries, I extended most of
                     them and built the SNMP agent from scratch. I also built a dynamic, embedded web page for the
                     product that allowed for near realtime control/monitoring long before AJAX methods were established
                     for doing such things. The microcontroller wasn't capable of TLS at the time; however, I extended
-                    the HTTP server with an <a href="https://en.wikipedia.org/wiki/Digest_access_authentication">HTTP
+                    the HTTP server with an <a id="cyberswitching_wikipedia"
+                                               href="https://en.wikipedia.org/wiki/Digest_access_authentication">HTTP
                         digest authentication</a> mechanism. This type of HTTP authentication was never widely adopted
                     due to the rise of TLS, but it allowed Cyber Switching to provide a cost-effective authentication
                     method that was more secure than sending the credentials in plaintext. At the time, this was above
@@ -2097,7 +2116,7 @@
                 </p>
                 <p>Certain that I could overcome the CNC drill software's limitations, I volunteered to rewrite it and
                     the instructor gave me access to the drill outside of class hours. Finding little documentation on
-                    the ancient <a href="http://www.deltatau.com"
+                    the ancient <a id="cncdrill_deltatau" href="http://www.deltatau.com"
                                    title="Delta Tau has more online documentation these days.">Delta Tau</a> brand
                     motion controllers, I reverse-engineered their protocol and wrote a completely new version of the
                     control software in Pascal (my most proficient language at the time). This new software alerts users
@@ -2120,14 +2139,14 @@
                      width="100" height="100"/>
                 <p>You can reach me in the following ways:</p>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/jerryryle">LinkedIn</a> &mdash; If we've worked together,
-                        connect with me (no recruiters, please).
+                    <li><a id="about_jerry_linkedin" href="https://www.linkedin.com/in/jerryryle">LinkedIn</a> &mdash;
+                        If we've worked together, connect with me (no recruiters, please).
                     </li>
-                    <li><a href="https://www.twitter.com/jerryryle">Twitter</a> &mdash; If you want to say hi and let
-                        everyone know that you've said hi, tweet at me.
+                    <li><a id="about_jerry_twitter" href="https://www.twitter.com/jerryryle">Twitter</a> &mdash; If you
+                        want to say hi and let everyone know that you've said hi, tweet at me.
                     </li>
-                    <li><a href="https://github.com/jerryryle/jerryryle.com">Github</a> &mdash; See a typo on this page?
-                        Open an issue or send me a pull request!
+                    <li><a id="about_jerry_github" href="https://github.com/jerryryle/jerryryle.com">Github</a> &mdash;
+                        See a typo on this page? Open an issue or send me a pull request!
                     </li>
                 </ul>
                 <p>You can download my boring, non-graphical, completely static resume here: &lt;coming soon&gt;</p>
@@ -2158,21 +2177,20 @@
 <script src="js/underscore-min.js"></script>
 <script src="js/tag_filter.js"></script>
 <script src="js/main.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94019451-1"></script>
 <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    window.dataLayer = window.dataLayer || [];
 
-    ga('create', 'UA-94019451-1', 'auto');
-    ga('send', 'pageview');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-94019451-1', {
+        'link_attribution': true
+    });
 </script>
 </body>
 </html>
