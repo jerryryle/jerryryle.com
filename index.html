@@ -25,6 +25,21 @@
     <meta name="theme-color" content="#ffffff">
 
     <link href="css/main.css" rel="stylesheet"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94019451-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94019451-1', {
+            'link_attribution': true
+        });
+    </script>
 </head>
 <body data-spy="scroll" data-target="#navbar-main">
 <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
@@ -2192,20 +2207,5 @@
 <script src="js/underscore-min.js"></script>
 <script src="js/tag_filter.js"></script>
 <script src="js/main.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94019451-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'UA-94019451-1', {
-        'link_attribution': true
-    });
-</script>
 </body>
 </html>
