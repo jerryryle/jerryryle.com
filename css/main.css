@@ -56,6 +56,16 @@ a.permalink {
     margin: 1rem 1rem 1rem 1rem;
 }
 
+.carousel {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.carousel>.img {
+    width: 100%;
+    height: auto;
+}
+
 .carousel-caption {
     text-shadow: 1px 1px 1px #000000;
 }
