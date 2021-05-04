@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+function leave()
+{
+	echo "$1"
+	exit 1
+}
+
+hugo server --buildDrafts --buildFuture --verbose || leave "Hugo server failed"

@@ -1,0 +1,28 @@
+{{ $scratch := . }}
+{{ if $scratch.Get "lazyload" }}
+    <video class='d-block img-fluid lazyload' autoplay muted loop
+           poster='{{($scratch.Get "lazyload").RelPermalink}}'
+           data-poster='{{($scratch.Get "poster").RelPermalink}}'
+           width='960' height='400'
+           preload='none'>
+{{ else }}
+    <video class='d-block img-fluid' autoplay muted loop
+           poster='{{($scratch.Get "poster").RelPermalink}}'
+           width='960' height='400'
+           preload='none'>
+{{ end }}
+{{ with $scratch.Get "resource_mp4" }}
+        <source src='{{.RelPermalink}}' type='video/mp4'/>
+{{ end }}
+{{ with $scratch.Get "resource_webm" }}
+        <source src='{{.RelPermalink}}' type='video/webm'/>
+{{ end }}
+{{ with $scratch.Get "resource_ogv" }}
+        <source src='{{.RelPermalink}}' type='video/ogg'/>
+{{ end }}
+{{ with $scratch.Get "fallback" }}
+    {{ . }}
+{{ else }}
+    Your browser does not support the video tag.
+{{ end }}
+</video>

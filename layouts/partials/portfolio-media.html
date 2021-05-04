@@ -1,0 +1,54 @@
+{{ $page := . }}
+{{ $carousel := (gt .Params.entry_media 1) }}
+
+{{ if $carousel }}
+    {{ $carousel_id := printf "carousel_%s" .Params.short_name }}
+    <div id='{{ $carousel_id }}' class='carousel slide mb-2' data-ride='carousel'>
+        <ol class='carousel-indicators'>
+    {{ $carousel_count := 0 }}
+    {{ range .Params.entry_media }}
+            <li data-target='#{{ $carousel_id }}' data-slide-to='{{$carousel_count}}'
+            {{if eq $carousel_count 0 }}
+                class='active'
+            {{ end }}
+            >&#8203;</li>
+            {{ $carousel_count = add $carousel_count 1 }}
+    {{ end }}
+        </ol>
+        <div class='carousel-inner' role='listbox'>
+
+    {{ $carousel_count := 0 }}
+    {{ range .Params.entry_media }}
+        {{ range $media_type, $media := . }}
+            {{if eq $carousel_count 0 }}
+                <div class='carousel-item active'>
+            {{ else }}
+                <div class='carousel-item'>
+            {{ end }}
+
+            {{ $scratch := newScratch }}
+            {{ $scratch.Set "page" $page }}
+            {{ $scratch.Set "media_type" $media_type }}
+            {{ $scratch.Set "media" $media }}
+            {{ partial "portfolio-carousel-media-entry.html" $scratch }}
+                </div>
+            {{ $carousel_count = add $carousel_count 1 }}
+        {{ end }}
+    {{ end }}
+        </div>
+    </div>
+
+{{ else }}
+
+    {{ range .Params.entry_media }}
+        {{ range $media_type, $media := . }}
+            {{ $scratch := newScratch }}
+            {{ $scratch.Set "page" $page }}
+            {{ $scratch.Set "media_type" $media_type }}
+            {{ $scratch.Set "media" $media }}
+            {{ partial "portfolio-single-media-entry.html" $scratch }}
+        {{ end }}
+    {{ end }}
+
+{{ end }}
+

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+HUGO_BUILD_FOLDER=${HUGO_BUILD_FOLDER:-"out"}
+
+function leave()
+{
+	echo "$1"
+	exit 1
+}
+
+if [ ! -d "$HUGO_BUILD_FOLDER" ]; then
+	leave "Build first. Build folder does not exist: $HUGO_BUILD_FOLDER"
+fi
+
+echo "Running Tidy"
+find ${HUGO_BUILD_FOLDER} -name '*.html' -type f -print -exec tidy -config tidy.conf -mq '{}' \; || leave "Tidy failed"

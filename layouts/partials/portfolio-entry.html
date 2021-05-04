@@ -1,0 +1,11 @@
+<div class='container-portfolio' id='item_{{- .Params.short_name -}}'>
+    <a class='anchor' id='{{- .Params.short_name -}}'></a> <a href='#{{- .Params.short_name -}}'
+                                          class='permalink anchor-scroll'
+                                          title='Permalink for this entry'></a>
+    <h4>{{ .Title }}</h4>
+	{{ partial "portfolio-media.html" . }}
+    {{ .Content }}
+    {{ with .Params.tags }}
+    <div class='tags'>{{ . }}</div>
+    {{ end }}
+</div>

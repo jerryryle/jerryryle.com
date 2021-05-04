@@ -1,0 +1,42 @@
+{{ $page := .Get "page" }}
+{{ $media_type := .Get "media_type" }}
+{{ $media := .Get "media" }}
+
+{{ if eq $media_type "image" }}
+    {{ $scratch := newScratch }}
+    {{ $scratch.Set "resource" ($page.Resources.GetMatch $media.resource) }}
+    {{ with $media.lazyload }}
+        {{ $scratch.Set "lazyload" ($page.Resources.GetMatch $media.lazyload) }}
+    {{ end }}
+    {{ with $media.alt }}
+        {{ $scratch.Set "alt" $media.alt }}
+    {{ end }}
+    {{ with $media.caption }}
+        {{ $scratch.Set "caption" $media.caption }}
+    {{ end }}
+    {{ partial "portfolio-carousel-image.html" $scratch }}
+{{ else if eq $media_type "video" }}
+    {{ $scratch := newScratch }}
+    {{ $scratch.Set "poster" ($page.Resources.GetMatch $media.poster) }}
+    {{ with $media.lazyload }}
+        {{ $scratch.Set "lazyload" ($page.Resources.GetMatch $media.lazyload) }}
+    {{ end }}
+    {{ with $media.resource_mp4 }}
+        {{ $scratch.Set "resource_mp4" ($page.Resources.GetMatch $media.resource_mp4) }}
+    {{ end }}
+    {{ with $media.resource_webm }}
+        {{ $scratch.Set "resource_webm" ($page.Resources.GetMatch $media.resource_webm) }}
+    {{ end }}
+    {{ with $media.resource_ogv }}
+        {{ $scratch.Set "resource_ogv" ($page.Resources.GetMatch $media.resource_ogv) }}
+    {{ end }}
+    {{ with $media.fallback }}
+        {{ $scratch.Set "fallback" $media.fallback }}
+    {{ end }}
+    {{ with $media.caption }}
+        {{ $scratch.Set "caption" $media.caption }}
+    {{ end }}
+    {{ partial "portfolio-carousel-video.html" $scratch }}
+{{ else }}
+    {{ errorf "Unknown media type %s" $media_type }}
+{{ end }}

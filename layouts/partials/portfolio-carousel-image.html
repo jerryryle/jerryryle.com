@@ -1,0 +1,16 @@
+{{ $scratch := . }}
+{{ if $scratch.Get "lazyload" }}
+    <img class='d-block img-fluid rounded lazyload'
+         src='{{($scratch.Get "lazyload").RelPermalink}}'
+         data-src='{{($scratch.Get "resource").RelPermalink}}'
+{{ else }}
+    <img class='d-block img-fluid rounded'
+         src='{{($scratch.Get "resource").RelPermalink}}'
+{{ end }}
+{{ with $scratch.Get "alt" }}
+         alt='{{ . }}'
+{{ end }}
+         width='960' height='400'/>
+{{ with $scratch.Get "caption" }}
+    <div class='carousel-caption d-none d-md-block'>{{ . }}</div>
+{{ end }}

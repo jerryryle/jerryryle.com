@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class='jumbotron'>
+    <h1 class='text-white text-center'>I build products, teams, and companies.</h1>
+    <h2 class='text-white text-center'>
+    	<a id='jumbotron_about' class='anchor-scroll' href='#about' style='color: white'>&#9662;</a>
+    </h2>
+</div>
+<div class='container-fluid'>
+    <div class='row'>
+        <div class='col-sm-1 col-md-2'></div>
+
+        <div class='col'>
+
+            <a class='anchor' id='about'></a>
+            <div class='container-fluid container-section'>
+                <h4>About Me</h4>
+                {{ range where $.Site.RegularPages "Section" "about" }}
+                    {{- partial "about-entry.html" . -}}
+                {{ end }}
+            </div>
+            <a class='anchor' id='portfolio'></a>
+            <div class='container-fluid container-section'>
+                <h4>Portfolio</h4>
+                <div class='tag_filter'>
+                    This section is long. Scroll down to see what I've been up to in reverse chronological order, or
+                    first use the following tag cloud to filter the entries based upon your interests.
+                    <div class='tag_filter_tags'>
+                    </div>
+                    <p><span id='num_items'>0 entries match</span> your filter. <a href='#' id='clear_filter'>[clear
+                        filter]</a></p>
+                </div>
+            </div>
+            {{ range where $.Site.RegularPages "Section" "portfolio" }}
+                {{- partial "portfolio-entry.html" . -}}
+            {{ end }}
+            <a class='anchor' id='contact'></a>
+            {{ range where $.Site.Pages "Section" "contact" }}
+                {{- partial "contact-entry.html" . -}}
+            {{ end }}
+	        {{- partial "footer.html" . -}}
+        </div>
+        <div class='col-sm-1 col-md-2'></div>
+    </div>
+</div>
+{{ end }}
+
+{{ define "main_scripts" }}
+    {{- partial "site-scripts.html" . -}}
+    <script src='js/tag_filter.js'></script>
+    <script src='js/main.js'></script>
+{{ end }}
