@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+HUGO_BUILD_FOLDER=${HUGO_BUILD_FOLDER:-"out"}
+
+function leave()
+{
+	echo "$1"
+	exit 1
+}
+
+read -p "Type 'yes' if you are certain you want to deploy jerryryle.com: " yn
+if [ "$yn" != "yes" ]; then
+	leave "Aborting deployment..."
+fi
+
+./build || leave "Not proceeding with failed build."
+./tidy || leave "Not proceeding with failed tidy."
+aws s3 sync --delete --no-follow-symlinks --exclude "*.DS_Store" ${HUGO_BUILD_FOLDER} s3://jerryryle.com || leave "AWS sync failed"
+aws cloudfront create-invalidation --distribution-id E1DWOMWZ44RVNH --paths "/*" || leave "AWS cache invalidation failed"
+echo "Deploy successful."

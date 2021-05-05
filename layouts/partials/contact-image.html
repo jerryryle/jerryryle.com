@@ -1,0 +1,13 @@
+{{ $page := . }}
+{{ if isset $page.Params.contact_photo "lazyload" }}
+    <img class='img rounded mb-2 lazyload'
+         src='{{($page.Resources.GetMatch $page.Params.contact_photo.lazyload).RelPermalink}}'
+         data-src='{{($page.Resources.GetMatch $page.Params.contact_photo.resource).RelPermalink}}'
+{{ else }}
+    <img class='img rounded mb-2'
+         src='{{($page.Resources.GetMatch $page.Params.contact_photo.resource).RelPermalink}}'
+{{ end }}
+{{ if isset $page.Params.contact_photo "alt" }}
+         alt='{{ $page.Params.contact_photo.alt }}'
+{{ end }}
+         width='100' height='100'/>

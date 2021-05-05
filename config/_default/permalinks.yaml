@@ -1,0 +1,3 @@
+# Configure permalink options
+
+post: "/:year/:month/:title/"

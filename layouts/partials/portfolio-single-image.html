@@ -1,0 +1,13 @@
+{{ $scratch := . }}
+{{ if $scratch.Get "lazyload" }}
+    <img class='img-fluid rounded mb-2 lazyload'
+         src='{{($scratch.Get "lazyload").RelPermalink}}'
+         data-src='{{($scratch.Get "resource").RelPermalink}}'
+{{ else }}
+    <img class='img-fluid rounded mb-2'
+         src='{{($scratch.Get "resource").RelPermalink}}'
+{{ end }}
+{{ with $scratch.Get "alt" }}
+         alt='{{ . }}'
+{{ end }}
+         width='960' height='400'/>
