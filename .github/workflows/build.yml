@@ -34,7 +34,7 @@ jobs:
           hugo-version: 'latest'
 
       - name: Setup Tidy
-        run: sudo apt tidy
+        run: sudo apt-get install tidy
 
       - name: Hugo Build
         run: ./build
