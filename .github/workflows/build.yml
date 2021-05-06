@@ -20,6 +20,10 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # Environment variables for all steps
+    env:
+      HUGO_BUILD_FOLDER: out
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -37,7 +41,13 @@ jobs:
         run: sudo apt-get install tidy
 
       - name: Hugo Build
-        run: ./build
+        run: ./gen
 
       - name: Tidy HTML
         run: ./tidy
+
+      - name: Archive Generated Site
+        uses: actions/upload-artifact@v2
+        with:
+          name: generated-site
+          path: ${{ env.HUGO_BUILD_FOLDER }}
