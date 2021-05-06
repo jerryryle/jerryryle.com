@@ -8,9 +8,10 @@ function leave()
 	exit 1
 }
 
-if [ ! -d "$HUGO_BUILD_FOLDER" ]; then
-	leave "Build first. Build folder does not exist: $HUGO_BUILD_FOLDER"
+echo "Using build folder: ${HUGO_BUILD_FOLDER?}"
+if [ ! -d "${HUGO_BUILD_FOLDER}" ]; then
+	leave "Run Hugo first. Build folder does not exist: ${HUGO_BUILD_FOLDER}"
 fi
 
 echo "Running Tidy"
-find ${HUGO_BUILD_FOLDER} -name '*.html' -type f -print -exec tidy -config tidy.conf -mq '{}' \; || leave "Tidy failed"
+find "${HUGO_BUILD_FOLDER}" -name '*.html' -type f -print -exec tidy -config tidy.conf -mq '{}' \; || leave "Tidy failed"

@@ -31,8 +31,10 @@ paginate: 10
 # The path element used during pagination (https://example.com/page/2).
 paginatePath: "page"
 
-# The directory to where Hugo will write the final static site (the HTML files etc.).
-publishDir: "out"
+# The directory to where Hugo will write the final static site 
+# (the HTML files etc.). Do not set here. Set using the '--destination' flag to
+# the 'hugo' command
+# publishDir: 
 
 # To exclude specific files from the content and data directories when rendering
 # your site, set ignoreFiles to one or more regular expressions.
