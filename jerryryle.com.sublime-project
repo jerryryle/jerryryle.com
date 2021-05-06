@@ -1,0 +1,16 @@
+{
+	"build_systems":
+	[
+		{
+			"name": "Hugo Build",
+			"shell_cmd": "./gen && ./tidy",
+			"working_dir": "$project_path"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}
