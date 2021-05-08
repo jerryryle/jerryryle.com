@@ -1,9 +1,9 @@
-name: Build Site
+name: Build and Deploy Site
 
 # Controls when the action will run.
 on:
-  # Triggers the workflow on pull request for the main branch
-  pull_request:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -19,6 +19,8 @@ jobs:
     # Environment variables for all steps
     env:
       HUGO_BUILD_FOLDER: out
+      S3_BUCKET_URI: s3://jerryryle.com
+      CLOUDFRONT_DISTRIBUTION_ID: E1DWOMWZ44RVNH
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -47,3 +49,16 @@ jobs:
         with:
           name: generated-site
           path: ${{ env.HUGO_BUILD_FOLDER }}
+
+      - name: Configure AWS credentials from publish account
+            uses: aws-actions/configure-aws-credentials@v1
+            with:
+              aws-access-key-id: ${{ secrets.PUBLISH_AWS_ACCESS_KEY_ID }}
+              aws-secret-access-key: ${{ secrets.PUBLISH_AWS_SECRET_ACCESS_KEY }}
+              aws-region: us-west-2
+
+      - name: Sync to S3
+        run: aws s3 sync --delete --no-follow-symlinks --exclude "*.DS_Store" "${{ env.HUGO_BUILD_FOLDER }}" ${{ env.S3_BUCKET_URI }}
+
+      - name: Invalidate Cloudfront
+        run: aws cloudfront create-invalidation --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
