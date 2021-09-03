@@ -16,4 +16,4 @@ entry_media:
     lazyload: "alpine_tiny"
     alt: "Alpine Oral Tech logo"
 ---
-In 2017, I joined [Mike Hanuschik](https://www.linkedin.com/in/michaelhanuschik/) in creating the consumer healthcare startup, Alpine Oral Tech, Inc. (d.b.a. Alpine Health). Alpine is developing a device that has the potential to help billions live healthier, longer lives. Watch for developments at [https://alpine.health](https://alpine.health)
+In 2017, I joined [Mike Hanuschik](https://www.linkedin.com/in/michaelhanuschik/) in creating the consumer healthcare startup, Alpine Oral Tech, Inc. (d.b.a. Alpine Health), which later renamed to Fresh Health. Fresh is developing a device that has the potential to help billions live healthier, longer lives. Watch for developments at [https://freshhealth.com](https://freshhealth.com)
