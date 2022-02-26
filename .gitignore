@@ -3,3 +3,6 @@
 
 # ignore the generated resources folder
 /resources/
+
+# ignore Hugo lock files
+.hugo_build.lock
