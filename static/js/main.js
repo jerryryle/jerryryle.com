@@ -173,10 +173,6 @@ function setup_smooth_anchor_scrolling() {
                 scrollTop: $($anchor.attr('href')).offset().top
             }, 500, 'easeInOutSine');
         });
-        gtag('config', 'UA-94019451-1', {
-            'page_title' : href,
-            'page_location': location.pathname + href
-        });
         event.preventDefault();
     });
 }
