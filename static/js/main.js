@@ -1,26 +1,38 @@
 /**
- * Copyright 2017 by Jerry Ryle
+ * Copyright 2017-2022 by Jerry Ryle
  */
 
-// Try to prevent the window from scrolling to any provided anchors. We need to wait for the document to be ready first.
+/*
+    Prepare to run setup tasks once the document is ready.
+ */
+if (document.readyState === 'loading') {
+    // Still loading. Set up a listener for when the document is ready.
+    document.addEventListener('DOMContentLoaded', function() {
+        setup();
+    });
+} else {
+    // Document is ready. Perform setup.
+    setup();
+}
+
+
+/* Try to prevent the window from scrolling to any provided anchors. We need to wait until we're finished setting up
+   things like the tag filter that change the page layout. Otherwise, the layout changes and the result is that the
+   page may not be scrolled to the desired anchor destination.
+ */
 if (window.location.hash) {
     setTimeout(function () {
         window.scrollTo(0, 0);
-    }, 1);
+    }, 0);
 }
 
-// When the document is ready, set up the tag filter, which will then try to scroll to any provided anchors after the
-// tag filter is ready and expanded.
-$(document).ready(function () {
+/* Run setup tasks once document is ready */
+function setup() {
+    setup_hamburger_auto_close();
+    // , set up the tag filter, which will then try to scroll to any provided anchors after the
+    // tag filter is ready and expanded.
     setup_tag_filter();
-});
 
-function fix_hash_scroll() {
-    if (window.location.hash) {
-        $('html, body').stop().animate({
-            scrollTop: $(window.location.hash).offset().top
-        }, 500, 'easeInOutSine');
-    }
 }
 
 function split_and_normalize_tag_text(tag_text) {
@@ -37,73 +49,104 @@ function scale_value(n_d0, min_d0, max_d0, min_d1, max_d1)
 }
 
 function setup_tag_filter() {
-    var tag_filter = new TagFilter();
+    // TagFilter class is created locally and captured via click handler closures for future use.
+    const tag_filter = new TagFilter();
 
     // Iterate over the portfolio entries, locate the tags for each item, add them to the tag_filter, create
     // interactive tags for each portfolio entry, and replace the text tags with interactive tags.
-    $('.container-portfolio').each(function () {
-        var item = $(this);
-        item.find('.tags').each(function () {
-            var tag_element = $(this);
-            var tags = split_and_normalize_tag_text(tag_element.text());
+    const portfolio_entries = Array.from(document.getElementsByClassName('container-portfolio'));
+    portfolio_entries.forEach((portfolio_entry) => {
+        const tag_elements = Array.from(portfolio_entry.querySelectorAll('.tags'));
+        tag_elements.forEach((tag_element) => {
+            const tags = split_and_normalize_tag_text(tag_element.textContent);
 
-            tag_filter.addItemIDWithTags(item.attr('id'), tags);
+            tag_filter.addItemIDWithTags(portfolio_entry.getAttribute('id'), tags);
 
-            tag_element.empty();
+            tag_element.innerHTML = null;
             tags.forEach(function (tag) {
-                tag_element.append(
-                    $('<a>', {
-                        'class': 'tag',
-                        'text': tag,
-                        'href': '#',
-                        'click': function (event) {
-                            handle_tag_click(event, tag_filter);
-                        }
-                    }));
+                const new_tag = document.createElement('a');
+                new_tag.className = 'tag';
+                new_tag.text = tag;
+                new_tag.href = '#';
+                new_tag.addEventListener('click', function (event) {
+                    handle_tag_click(event, tag_filter);
+                });
+
+                tag_element.append(new_tag);
             });
         });
     });
-    update_filter(tag_filter);
 
-    var min_tag_size = 75;
-    var max_tag_size = 175;
-    var min_items = tag_filter.leastItems();
-    var max_items = tag_filter.mostItems();
+    tag_filter.updateFilter();
 
-    var tag_filter_tags_element = $('.tag_filter_tags');
-    tag_filter_tags_element.empty();
+    const min_tag_size = 75;
+    const max_tag_size = 175;
+    const min_items = tag_filter.leastItems();
+    const max_items = tag_filter.mostItems();
+
+    const tag_filter_tags_element = document.querySelector('.tag_filter_tags');
+    tag_filter_tags_element.innerHTML = null;
     tag_filter.allTags().forEach(function (tag) {
-        var tag_size = scale_value(tag_filter.itemsForTag(tag).length, min_items, max_items, min_tag_size, max_tag_size);
-        tag_filter_tags_element.append(
-            $('<a>', {
-                'class': 'tag',
-                'text': tag,
-                'href': '#',
-                'style': 'font-size:'+tag_size+'%;',
-                'click': function (event) {
-                    handle_tag_click(event, tag_filter);
-                }
-            }));
-    });
+        const tag_size = scale_value(tag_filter.itemsForTag(tag).length, min_items, max_items, min_tag_size, max_tag_size);
 
-    $('#clear_filter').click(
-        function (event) {
-            tag_filter.clearSelection();
-            update_filter(tag_filter);
-            event.preventDefault();
+        const new_tag_filter_element = document.createElement('a');
+        new_tag_filter_element.className = 'tag';
+        new_tag_filter_element.text = tag;
+        new_tag_filter_element.href = '#';
+        new_tag_filter_element.style.fontSize = tag_size+'%';
+        new_tag_filter_element.addEventListener('click', function (event) {
+            handle_tag_click(event, tag_filter);
         });
 
-    update_filter(tag_filter);
-    $('.tag_filter').slideDown(function () {
-        fix_hash_scroll();
+        tag_filter_tags_element.append(new_tag_filter_element);
     });
+
+    document.querySelector('#clear_filter').addEventListener('click', function (event) {
+        tag_filter.clearSelection();
+        apply_tag_filter(tag_filter);
+        event.preventDefault();
+    });
+
+    apply_tag_filter(tag_filter);
+
+    const tag_filter_element = document.querySelector('.tag_filter');
+    tag_filter_element.style.display = 'block';
+    if (window.location.hash) {
+        const hash_element = document.querySelector(window.location.hash);
+        if (hash_element) {
+            window.scrollTo({
+                top: getOffset(hash_element).top,
+                behavior: 'smooth'
+            });
+        }
+    }
+    // $('.tag_filter').slideDown(function () {
+    //     if (window.location.hash) {
+    //         const hash_element = document.querySelector(window.location.hash);
+    //         if (hash_element) {
+    //             window.scrollTo({
+    //                 top: getOffset(hash_element).top,
+    //                 behavior: 'smooth'
+    //             });
+    //         }
+    //     }
+    // });
+}
+
+function getOffset (el) {
+    const box = el.getBoundingClientRect();
+
+    return {
+        top: box.top + window.scrollY - document.documentElement.clientTop,
+        left: box.left + window.scrollX - document.documentElement.clientLeft
+    };
 }
 
 function handle_tag_click(event, tag_filter) {
-    if (!$(event.target).hasClass('tag_unavailable')) {
-        var tag = event.target.text;
-        var tag_enabled = tag_filter.toggleTagSelection(tag);
-        update_filter(tag_filter);
+    if (!event.target.classList.contains('tag_unavailable')) {
+        const tag = event.target.text;
+        const tag_enabled = tag_filter.toggleTagSelection(tag);
+        apply_tag_filter(tag_filter);
 
         if (tag_enabled) {
             gtag('event', 'tag_'+tag+'_enabled', {
@@ -120,64 +163,45 @@ function handle_tag_click(event, tag_filter) {
     event.preventDefault();
 }
 
-function update_filter(tag_filter) {
-    tag_filter.updateFilter();
-
-    // Update tag status on all interactive tags
-    $('.tag').each(function () {
-        var tag = $(this).text();
-        if (tag_filter.tagIsSelected(tag)) {
-            $(this).removeClass('tag_unavailable').addClass('tag_selected');
-        } else if (tag_filter.tagIsUnavailable(tag)) {
-            $(this).removeClass('tag_selected').addClass('tag_unavailable');
+function apply_tag_filter(tag_filter) {
+    const tags = Array.from(document.getElementsByClassName('tag'));
+    tags.forEach((tag) => {
+        const tag_text = tag.textContent;
+        if (tag_filter.tagIsSelected(tag_text)) {
+            tag.classList.remove('tag_unavailable');
+            tag.classList.add('tag_selected');
+        } else if (tag_filter.tagIsUnavailable(tag_text)) {
+            tag.classList.remove('tag_selected');
+            tag.classList.add('tag_unavailable');
         } else {
-            $(this).removeClass('tag_unavailable tag_selected');
+            tag.classList.remove('tag_unavailable', 'tag_selected');
         }
     });
 
     // Update filtered items
-    tag_filter.excludedItems().forEach(function (item) {
-        $('#' + item).slideUp();
+    tag_filter.excludedItems().forEach(function (item_id) {
+        const item = document.querySelector('#' + item_id);
+        item.style.display = 'none';
+        // $('#' + item_id).slideUp();
     });
-    tag_filter.includedItems().forEach(function (item) {
-        $('#' + item).slideDown();
+    tag_filter.includedItems().forEach(function (item_id) {
+        const item = document.querySelector('#' + item_id);
+        item.style.display = 'block';
+        // $('#' + item_id).slideDown();
     });
 
     // Update result count
+    const num_items = document.querySelector('#num_items');
     if (tag_filter.includedItems().length === 1) {
-        $('#num_items').text('1 entry matches');
+        num_items.textContent = '1 entry matches';
     } else {
-        $('#num_items').text(tag_filter.includedItems().length + ' entries match');
+        num_items.textContent = tag_filter.includedItems().length + ' entries match';
     }
-
 }
 
 function setup_hamburger_auto_close() {
     // Close the hamburger menu when someone clicks a menu item.
-    $('.navbar-collapse').on("click", "a:not([dropdown-toggle])", null, function () {
-        $('.navbar-collapse').collapse('hide');
-    });
+    // $('.navbar-collapse').on("click", "a:not([dropdown-toggle])", null, function () {
+    //     $('.navbar-collapse').collapse('hide');
+    // });
 }
-
-function setup_smooth_anchor_scrolling() {
-    // Use the jQuery Easing plugin to smoothly scroll the page on anchor link clicks
-    $('a.anchor-scroll').bind('click', function (event) {
-        var $anchor = $(this);
-        // First, attempt to unhide the target portfolio entry in case it's currently filtered out. Get the
-        // href of the anchor as a jquery object and find its parent, which will be the portfolio entry's div.
-        var href = $anchor.attr('href');
-        var $target = $(href).parent();
-        // Display the target (faster than usual to make the original click feel responsive) and then scroll to it.
-        $target.slideDown(100, function () {
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 500, 'easeInOutSine');
-        });
-        event.preventDefault();
-    });
-}
-
-$(function () {
-    setup_hamburger_auto_close();
-    setup_smooth_anchor_scrolling();
-});

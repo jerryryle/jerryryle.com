@@ -15,7 +15,7 @@ function TagFilter() {
 }
 
 TagFilter.prototype.addItemIDWithTags = function (item_id, tags) {
-    var obj_this = this;
+    const obj_this = this;
     tags.forEach(function (tag) {
         if (!obj_this.items_by_tag.hasOwnProperty(tag)) {
             obj_this.items_by_tag[tag] = [];
@@ -38,23 +38,26 @@ TagFilter.prototype.toggleTagSelection = function (tag) {
 TagFilter.prototype.addTagToSelection = function (tag) {
     if (!this.tagIsSelected(tag)) {
         this.selected_tags.push(tag);
+        this.updateFilter();
     }
 };
 
 TagFilter.prototype.removeTagFromSelection = function (tag) {
-    var tag_selected_index = $.inArray(tag, this.selected_tags);
+    const tag_selected_index = this.selected_tags.indexOf(tag);
 
     if (tag_selected_index >= 0) {
         this.selected_tags.splice(tag_selected_index, 1);
+        this.updateFilter();
     }
 };
 
 TagFilter.prototype.clearSelection = function () {
     this.selected_tags = [];
+    this.updateFilter();
 };
 
 TagFilter.prototype.updateFilter = function () {
-    var obj_this = this;
+    const obj_this = this;
 
     this.most_items_for_tag = _.reduce(this.items_by_tag, function (most, tag) {
         return (tag.length > most) ? tag.length : most;
@@ -83,11 +86,11 @@ TagFilter.prototype.updateFilter = function () {
 };
 
 TagFilter.prototype.tagIsSelected = function (tag) {
-    return ($.inArray(tag, this.selected_tags) >= 0);
+    return this.selected_tags.includes(tag);
 };
 
 TagFilter.prototype.tagIsUnavailable = function (tag) {
-    return ($.inArray(tag, this.unavailable_tags) >= 0);
+    return this.unavailable_tags.includes(tag);
 };
 
 TagFilter.prototype.includedItems = function () {
@@ -112,7 +115,6 @@ TagFilter.prototype.itemsForTag = function (tag) {
     }
     return this.items_by_tag[tag];
 };
-
 
 TagFilter.prototype.allTags = function () {
     return _.keys(this.items_by_tag).sort(function (a, b) {
