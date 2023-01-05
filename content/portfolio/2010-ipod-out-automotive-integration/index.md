@@ -19,4 +19,4 @@ entry_media:
 ---
 Upon learning that we helped develop the technology, Toyota InfoTechnology Center USA asked us to help them integrate iPod Out into a prototype vehicle so that they could understand and experiment with it.
 
-I structured and led the effort to help Toyota integrate {{<scrollanchor href="#iphone-communication-library">}}Mindtribe's MFi Library{{</scrollanchor>}} into a vehicle to demonstrate iPod Out functionality. This involved helping them port the library to their head unit and working with them to bring up the system.
+I structured and led the effort to help Toyota integrate [Mindtribe's MFi Library](#iphone-communication-library) into a vehicle to demonstrate iPod Out functionality. This involved helping them port the library to their head unit and working with them to bring up the system.

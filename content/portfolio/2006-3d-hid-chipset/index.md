@@ -17,6 +17,6 @@ entry_media:
     lazyload: "3D_HID_Chipset_tiny"
     alt: "Schematic and timing diagram screenshots from a 3D HID chipset design"
 ---
-Having achieved success in the gaming market with their {{<scrollanchor href="#3d-mouse">}}3D Mouse{{</scrollanchor>}}, Sandio wished to wrap up their IP from this product into an easily licensable design.
+Having achieved success in the gaming market with their [3D Mouse](#3d-mouse), Sandio wished to wrap up their IP from this product into an easily licensable design.
 
 I worked with Sandio to select a cost-effective reference chipset based upon the Freescale (now NXP) MC9S08GT8A, the Cypress CY7C64215, and the Avago ADNS-6010 imaging sensor. I created an SDK and documentation to make it easy for 3rd parties to manufacture Sandio's reference design or integrate the technology into their own designs.
