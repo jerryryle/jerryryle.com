@@ -19,4 +19,4 @@ entry_media:
 ---
 Biogy, a startup specializing in biometric technology, developed groundbreaking new algorithms that reduced the complexity&mdash;and thus the system cost&mdash;of scanning and matching fingerprints. They asked Mindtribe to help create a proof of concept device that incorporated their technology to secure the contents of a flash drive using fingerprints.
 
-I created a proof of concept USB flash drive using an Atmel AT91FR4042 microcontroller and a Cypress SX2 high speed USB device interface. This built upon our previous work for Biogy's {{<scrollanchor href="#biometric-lock-module">}}Biometric Lock Module{{</scrollanchor>}}. I wrote firmware to make the hardware appear as a USB mass storage device whose contents are readable only when the correct fingerprint is scanned.
+I created a proof of concept USB flash drive using an Atmel AT91FR4042 microcontroller and a Cypress SX2 high speed USB device interface. This built upon our previous work for Biogy's [Biometric Lock Module](#biometric-lock-module). I wrote firmware to make the hardware appear as a USB mass storage device whose contents are readable only when the correct fingerprint is scanned.

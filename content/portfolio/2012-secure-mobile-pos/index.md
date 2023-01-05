@@ -17,7 +17,7 @@ entry_media:
     lazyload: "Square_Stand_Copyright_Mindtribe_tiny"
     alt: "Square Stand"
 ---
-Square kicked Mindtribe off on their Point of Sale system design as we were wrapping up their {{<scrollanchor href="#secure-mobile-card-reader">}}Secure Mobile Card Reader{{</scrollanchor>}}. The system, known as the Square Stand, is intended to appeal to brick-and-mortar stores that need a more professional solution than the Mobile Card Reader offered. The Stand leverages an iPad for its display and connectivity and allows users to connect barcode scanners, cash drawers, and receipt printers through its USB hub.
+Square kicked Mindtribe off on their Point of Sale system design as we were wrapping up their [Secure Mobile Card Reader](#secure-mobile-card-reader). The system, known as the Square Stand, is intended to appeal to brick-and-mortar stores that need a more professional solution than the Mobile Card Reader offered. The Stand leverages an iPad for its display and connectivity and allows users to connect barcode scanners, cash drawers, and receipt printers through its USB hub.
 
 I structured and ran this program from concept through manufacturing. By this time, Square had a sizable mechanical engineering team and a growing electrical team. Mindtribe led the firmware development, contributed to the electrical design, and supported the mechanical design. I provided cross-functional engineering management to keep the efforts in sync&mdash;often collocating at Square's office and working with Square's new VP of hardware to understand and manage the requirements and development effort.
 

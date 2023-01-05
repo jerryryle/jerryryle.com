@@ -42,5 +42,5 @@ encryption (AES, elliptic curve, and Diffie-Hellman), random number generation, 
 CODECs and DSP, hardware security, injection molding, and ultrasonic welding. The system was built
 with an NXP Kinetis K61 ARM Cortex-M4F microcontroller and a Cirrus Logic DSP.
 
-The {{<scrollanchor href="#factory-provisioning-for-encrypted-communications-device">}}Factory Provisioning Station for Encrypted Communications Device{{</scrollanchor>}} project below details more of our
-factory work for this program.
+The [Factory Provisioning Station for Encrypted Communications Device](#factory-provisioning-for-encrypted-communications-device)
+project below details more of our factory work for this program.

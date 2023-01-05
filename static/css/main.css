@@ -1,11 +1,8 @@
 /* This changes the page's default scrolling behavior to scroll smoothly. When an anchor link is clicked on the page,
     this will cause the page to smoothly scroll to the destination without the use of Javascript. */
-html {
-    scroll-behavior: smooth;
-}
 
 body {
-    padding-top: 60px;
+    padding-top: 56px; /* Pad the top of the content so it appears below the nav bar */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     position: relative;
 }
@@ -24,12 +21,14 @@ h2 {
     text-shadow: 5px 5px 3px #000000;
 }
 
-.jumbotron {
+.banner {
     border-radius: 0;
     background-image: url("../media/background.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    /*padding: 4rem 2rem;*/
+    /*margin-bottom: 2rem;*/
 }
 
 /* This class fixes anchor positions to account for the navbar at the top of the screen. */
@@ -38,8 +37,17 @@ a.anchor {
     position: relative;
     /* This offsets past the nav bar plus some extra padding so the content isn't hidden by and doesn't
        abut the nav bar after a jump. */
-    top: -80px;
+    padding-top: 60px;
+    margin-top: -60px;
     visibility: hidden;
+}
+
+/* This class fixes anchor positions to account for the navbar at the top of the screen. */
+div.anchor {
+    /* This offsets past the nav bar plus some extra padding so the content isn't hidden by and doesn't
+       abut the nav bar after a jump. */
+    padding-top: 60px;
+    margin-top: -60px;
 }
 
 a.permalink {
@@ -48,6 +56,10 @@ a.permalink {
     height: 16px;
     margin: 0.5em 0 0.5em 0.5em;
     background-image: url("../media/link.svg");
+}
+
+a.no-decorate {
+    text-decoration: none;
 }
 
 .container-section {
@@ -74,16 +86,6 @@ a.permalink {
 
 .carousel-caption {
     text-shadow: 1px 1px 1px #000000;
-}
-
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
-    display: block;
-}
-
-.carousel-indicators li, .carousel-indicators .active {
-    border: 1px solid rgba(0, 0, 0, .2)
 }
 
 .tag_filter {

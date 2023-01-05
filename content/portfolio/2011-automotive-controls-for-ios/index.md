@@ -17,7 +17,7 @@ entry_media:
     lazyload: "placeholder_tiny"
     alt: "Placeholder illustration of a person in a museum looking at a picture that says, 'image coming soon'"
 ---
-Having {{<scrollanchor href="#ipod-out-automotive-integration">}}successfully demonstrated iPod Out{{</scrollanchor>}}, the Toyota InfoTechnology Center USA asked Mindtribe to help them add new input devices to their system that
+Having [successfully demonstrated iPod Out](#ipod-out-automotive-integration), the Toyota InfoTechnology Center USA asked Mindtribe to help them add new input devices to their system that
 would allow drivers more control over the iPhone.
 
 I structured and led the effort to write firmware for a Cypress CY8C24894 PSoC that connected to Toyota's head unit and sent button information via USB.

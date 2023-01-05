@@ -15,17 +15,6 @@ if (document.readyState === 'loading') {
     setup();
 }
 
-
-/* Try to prevent the window from scrolling to any provided anchors. We need to wait until we're finished setting up
-   things like the tag filter that change the page layout. Otherwise, the layout changes and the result is that the
-   page may not be scrolled to the desired anchor destination.
- */
-if (window.location.hash) {
-    setTimeout(function () {
-        window.scrollTo(0, 0);
-    }, 0);
-}
-
 /* Run setup tasks once document is ready */
 function setup() {
     setup_hamburger_auto_close();
@@ -65,7 +54,7 @@ function setup_tag_filter() {
             tag_element.innerHTML = null;
             tags.forEach(function (tag) {
                 const new_tag = document.createElement('a');
-                new_tag.className = 'tag';
+                new_tag.className = 'tag no-decorate';
                 new_tag.text = tag;
                 new_tag.href = '#';
                 new_tag.addEventListener('click', function (event) {
@@ -90,7 +79,7 @@ function setup_tag_filter() {
         const tag_size = scale_value(tag_filter.itemsForTag(tag).length, min_items, max_items, min_tag_size, max_tag_size);
 
         const new_tag_filter_element = document.createElement('a');
-        new_tag_filter_element.className = 'tag';
+        new_tag_filter_element.className = 'tag no-decorate';
         new_tag_filter_element.text = tag;
         new_tag_filter_element.href = '#';
         new_tag_filter_element.style.fontSize = tag_size+'%';
@@ -111,6 +100,9 @@ function setup_tag_filter() {
 
     const tag_filter_element = document.querySelector('.tag_filter');
     tag_filter_element.style.display = 'block';
+
+    /* Now that we've set up the tag filter and displayed it, scroll to any provided anchor. Any initial scroll will be
+     off because of the added tag filter section. */
     if (window.location.hash) {
         const hash_element = document.querySelector(window.location.hash);
         if (hash_element) {
