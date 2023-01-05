@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 by Jerry Ryle
+ * Copyright 2017-2022 by Jerry Ryle
  */
 
 function TagFilter() {
