@@ -2,26 +2,35 @@
  * Copyright 2017-2022 by Jerry Ryle
  */
 
-/*
-    Prepare to run setup tasks once the document is ready.
- */
+/* Prepare to run setup tasks once the document is ready. */
 if (document.readyState === 'loading') {
-    // Still loading. Set up a listener for when the document is ready.
+    // If the document is still loading at this time, set up a listener for when it has completed.
     document.addEventListener('DOMContentLoaded', function() {
         setup();
     });
 } else {
-    // Document is ready. Perform setup.
+    // If the document is ready, perform setup now.
     setup();
 }
 
 /* Run setup tasks once document is ready */
 function setup() {
-    setup_hamburger_auto_close();
-    // , set up the tag filter, which will then try to scroll to any provided anchors after the
-    // tag filter is ready and expanded.
+    /* Set up the tag filter, which will then try to scroll to any provided anchors after the
+     * tag filter is ready and expanded. */
     setup_tag_filter();
 
+    /* If a user visits a page with a hash in the URL, the browser will have attempted to scroll to that anchor.
+     * Setting up and displaying additional content such as the tag filter will have changed the page layout. Now that
+     * we've completed that setup, try scrolling to any provided anchor again to fix the scroll location. */
+    if (window.location.hash) {
+        const hash_element = document.querySelector(window.location.hash);
+        if (hash_element) {
+            window.scrollTo({
+                top: getElementScrollOffset(hash_element).top,
+                behavior: 'smooth'
+            });
+        }
+    }
 }
 
 function split_and_normalize_tag_text(tag_text) {
@@ -30,11 +39,6 @@ function split_and_normalize_tag_text(tag_text) {
     }).sort(function (a, b) {
         return a.toLowerCase().localeCompare(b.toLowerCase());
     })
-}
-
-function scale_value(n_d0, min_d0, max_d0, min_d1, max_d1)
-{
-    return (((n_d0 - min_d0) * (max_d1 - min_d1)) / (max_d0 - min_d0)) + min_d1;
 }
 
 function setup_tag_filter() {
@@ -100,38 +104,6 @@ function setup_tag_filter() {
 
     const tag_filter_element = document.querySelector('.tag_filter');
     tag_filter_element.style.display = 'block';
-
-    /* Now that we've set up the tag filter and displayed it, scroll to any provided anchor. Any initial scroll will be
-     off because of the added tag filter section. */
-    if (window.location.hash) {
-        const hash_element = document.querySelector(window.location.hash);
-        if (hash_element) {
-            window.scrollTo({
-                top: getOffset(hash_element).top,
-                behavior: 'smooth'
-            });
-        }
-    }
-    // $('.tag_filter').slideDown(function () {
-    //     if (window.location.hash) {
-    //         const hash_element = document.querySelector(window.location.hash);
-    //         if (hash_element) {
-    //             window.scrollTo({
-    //                 top: getOffset(hash_element).top,
-    //                 behavior: 'smooth'
-    //             });
-    //         }
-    //     }
-    // });
-}
-
-function getOffset (el) {
-    const box = el.getBoundingClientRect();
-
-    return {
-        top: box.top + window.scrollY - document.documentElement.clientTop,
-        left: box.left + window.scrollX - document.documentElement.clientLeft
-    };
 }
 
 function handle_tag_click(event, tag_filter) {
@@ -170,16 +142,22 @@ function apply_tag_filter(tag_filter) {
         }
     });
 
-    // Update filtered items
+    // Update item visibility with current filter state
     tag_filter.excludedItems().forEach(function (item_id) {
         const item = document.querySelector('#' + item_id);
-        item.style.display = 'none';
-        // $('#' + item_id).slideUp();
+        // Hide the item if it's not already hidden.
+        if (!item.classList.contains('collapse')) {
+            const bsCollapse = bootstrap.Collapse.getOrCreateInstance(item);
+            bsCollapse.hide();
+        }
     });
     tag_filter.includedItems().forEach(function (item_id) {
         const item = document.querySelector('#' + item_id);
-        item.style.display = 'block';
-        // $('#' + item_id).slideDown();
+        // Show the item if it's not already shown.
+        if (item.classList.contains('collapse')) {
+            const bsCollapse = bootstrap.Collapse.getOrCreateInstance(item);
+            bsCollapse.show();
+        }
     });
 
     // Update result count
@@ -191,9 +169,15 @@ function apply_tag_filter(tag_filter) {
     }
 }
 
-function setup_hamburger_auto_close() {
-    // Close the hamburger menu when someone clicks a menu item.
-    // $('.navbar-collapse').on("click", "a:not([dropdown-toggle])", null, function () {
-    //     $('.navbar-collapse').collapse('hide');
-    // });
+function getElementScrollOffset(el) {
+    const box = el.getBoundingClientRect();
+    return {
+        top: box.top + window.scrollY - document.documentElement.clientTop,
+        left: box.left + window.scrollX - document.documentElement.clientLeft
+    };
+}
+
+function scale_value(n_d0, min_d0, max_d0, min_d1, max_d1)
+{
+    return (((n_d0 - min_d0) * (max_d1 - min_d1)) / (max_d0 - min_d0)) + min_d1;
 }
