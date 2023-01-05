@@ -17,7 +17,6 @@
                     {{ end }}
                 </div>
             </div>
-
             <div class='anchor' id='portfolio'>
                 <div class='container-fluid container-section'>
                     <h4>Portfolio</h4>
@@ -34,7 +33,6 @@
                     {{- partial "portfolio-entry.html" . -}}
                 {{ end }}
             </div>
-
             <div class='anchor' id='contact'>
                 <div class='container-fluid container-section'>
                 {{ range where $.Site.Pages "Section" "contact" }}
