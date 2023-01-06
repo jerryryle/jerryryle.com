@@ -3,6 +3,7 @@
  */
 
 "use strict";
+import TagFilter from '/js/tag_filter.js';
 
 /* Prepare to run setup tasks once the document is ready. */
 if (document.readyState === 'loading') {
