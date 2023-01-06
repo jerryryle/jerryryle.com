@@ -153,19 +153,15 @@ function apply_tag_filter(tag_filter) {
     // Update item visibility with current filter state
     tag_filter.excludedItems().forEach(function (item_id) {
         const item = document.querySelector('#' + item_id);
-        // Hide the item if it's not already hidden.
-        if (!item.classList.contains('collapse')) {
-            const bsCollapse = bootstrap.Collapse.getOrCreateInstance(item);
-            bsCollapse.hide();
-        }
+        // Hide the item
+        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(item);
+        bsCollapse.hide();
     });
     tag_filter.includedItems().forEach(function (item_id) {
         const item = document.querySelector('#' + item_id);
-        // Show the item if it's not already shown.
-        if (item.classList.contains('collapse')) {
-            const bsCollapse = bootstrap.Collapse.getOrCreateInstance(item);
-            bsCollapse.show();
-        }
+        // Show the item
+        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(item);
+        bsCollapse.show();
     });
 
     // Update result count
