@@ -22,13 +22,38 @@ h2 {
 }
 
 .banner {
+    height: 700px;
     border-radius: 0;
+    padding: 0;
     background-image: url("../media/background.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    /*padding: 4rem 2rem;*/
-    /*margin-bottom: 2rem;*/
+}
+
+.banner .background {
+    z-index: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .foreground {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100px;
+    width: 100%;
+}
+
+.banner .background .image {
+    height: 100%;
+    width: 100%;
+    opacity: 100%;
+
+    /* These won't apply if the background image is an SVG, but will if it's an img */
+    object-fit: cover;
+    object-position: center top;
 }
 
 /* This class fixes anchor positions to account for the navbar at the top of the screen. */

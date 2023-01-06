@@ -4,6 +4,7 @@
 
 "use strict";
 import TagFilter from '/js/tag_filter.js';
+import AnimatedSkyline from "/js/animated_skyline.js";
 
 /* Prepare to run setup tasks once the document is ready. */
 if (document.readyState === 'loading') {
@@ -16,11 +17,15 @@ if (document.readyState === 'loading') {
     setup();
 }
 
-/* Run setup tasks once document is ready */
+/**
+ * Run setup tasks once document is ready
+ */
 function setup() {
     /* Set up the tag filter, which will then try to scroll to any provided anchors after the
      * tag filter is ready and expanded. */
     setup_tag_filter();
+
+    setup_animated_banner();
 
     /* If a user visits a page with a hash in the URL, the browser will have attempted to scroll to that anchor.
      * Setting up and displaying additional content such as the tag filter will have changed the page layout. Now that
@@ -170,6 +175,21 @@ function apply_tag_filter(tag_filter) {
     } else {
         num_items.textContent = tag_filter.includedItems().length + ' entries match';
     }
+}
+
+function setup_animated_banner() {
+    const banner_svg = document.createElement('object');
+    // const banner_svg = document.createElementNS('http://www.w3.org/2000/svg','background_image');
+    banner_svg.classList.add('image');
+    banner_svg.addEventListener('load', function() {
+        new AnimatedSkyline(banner_svg);
+    });
+
+    banner_svg.setAttribute('type', 'image/svg+xml');
+    banner_svg.setAttribute('data', '/media/background.svg');
+
+    const image_container = document.querySelector('#banner_image_container');
+    image_container.appendChild(banner_svg);
 }
 
 function getElementScrollOffset(el) {
