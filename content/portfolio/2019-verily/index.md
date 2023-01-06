@@ -1,5 +1,5 @@
 ---
-title: "Verily Life Sciences (2019-now)"
+title: "Verily Life Sciences (2019-2022)"
 date: 2019-08-19T12:00:00-08:00
 draft: false
 short_name: "verily"
@@ -15,6 +15,6 @@ entry_media:
     lazyload: "verily_tiny"
     alt: "Verily Life Sciences wordmark"
 ---
-Verily lives at the intersection of technology, data science and healthcare. Our mission is to make the world's health data useful so that people enjoy healthier lives.
+Verily is working to bring the promise of precision health to everyone, every day. Precision health leverages data from a wide variety of clinical and non-clinical sources to arrive at the best intervention for a person or community.
 
-I lead Verily's Medical Devices Software team that creates the software that runs our highly-integrated, medical devices and connects them to the cloud.
+I led Verily's Medical Devices Software team that creates the software that runs highly-integrated, medical devices and connects them to the cloud. Our devices interface directly with humans to generate the data required for precision health solutions.
