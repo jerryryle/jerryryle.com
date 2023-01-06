@@ -2,6 +2,8 @@
  * Copyright 2017-2022 by Jerry Ryle
  */
 
+"use strict";
+
 /* Prepare to run setup tasks once the document is ready. */
 if (document.readyState === 'loading') {
     // If the document is still loading at this time, set up a listener for when it has completed.

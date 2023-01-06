@@ -2,6 +2,8 @@
  * Copyright 2017-2022 by Jerry Ryle
  */
 
+"use strict";
+
 function TagFilter() {
     this.items_by_tag = {};
     this.all_items = [];
