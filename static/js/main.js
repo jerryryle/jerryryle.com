@@ -109,8 +109,9 @@ function setup_tag_filter() {
         event.preventDefault();
     });
 
-    apply_tag_filter(tag_filter);
+    update_tag_filter_result_count(tag_filter);
 
+    // Show the tag filter
     const tag_filter_element = document.querySelector('.tag_filter');
     tag_filter_element.style.display = 'block';
 }
@@ -166,6 +167,10 @@ function apply_tag_filter(tag_filter) {
     });
 
     // Update result count
+    update_tag_filter_result_count(tag_filter);
+}
+
+function update_tag_filter_result_count(tag_filter) {
     const num_items = document.querySelector('#num_items');
     if (tag_filter.includedItems().length === 1) {
         num_items.textContent = '1 entry matches';

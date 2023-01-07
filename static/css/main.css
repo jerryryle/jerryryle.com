@@ -68,7 +68,7 @@ a.anchor {
 }
 
 /* This class fixes anchor positions to account for the navbar at the top of the screen. */
-div.anchor {
+section.anchor {
     /* This offsets past the nav bar plus some extra padding so the content isn't hidden by and doesn't
        abut the nav bar after a jump. */
     padding-top: 60px;
