@@ -1,3 +1,8 @@
+/**
+ * Copyright 2017-2022 by Jerry Ryle
+ * License: https://github.com/jerryryle/jerryryle.com/blob/main/LICENSE.md
+ */
+
 "use strict";
 
 export default class AnimatedSkyline {
