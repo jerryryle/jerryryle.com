@@ -9,41 +9,43 @@
     <div class="background" id="banner_image_container">
     </div>
 </div>
-<div class='container-fluid' data-bs-spy='scroll' data-bs-target='#navbar-main'>
+<div class='container-fluid'>
     <div class='row'>
         <div class='col-sm-1 col-md-2'></div>
         <div class='col'>
-            <section class='anchor' id='about'>
-                <div class='container-fluid container-section'>
-                    <h4>About Me</h4>
-                    {{ range where $.Site.RegularPages "Section" "about" }}
-                        {{- partial "about-entry.html" . -}}
-                    {{ end }}
-                </div>
-            </section>
-            <section class='anchor' id='portfolio'>
-                <div class='container-fluid container-section'>
-                    <h4>Portfolio</h4>
-                    <div class='tag_filter'>
-                        This section is long. Scroll down to see what I've been up to in reverse chronological order, or
-                        first use the following tag cloud to filter the entries based upon your interests.
-                        <div class='tag_filter_tags'>
-                        </div>
-                        <p><span id='num_items'>0 entries match</span> your filter. <a href='#' id='clear_filter'>[clear
-                            filter]</a></p>
+            <div class="scrollspy-container" data-bs-spy='scroll' data-bs-target='#navbar-main' data-bs-offset="0" tabindex="0">
+                <section class='anchor' id='about'>
+                    <div class='container-fluid container-section'>
+                        <h4>About Me</h4>
+                        {{ range where $.Site.RegularPages "Section" "about" }}
+                            {{- partial "about-entry.html" . -}}
+                        {{ end }}
                     </div>
-                </div>
-                {{ range where $.Site.RegularPages "Section" "portfolio" }}
-                    {{- partial "portfolio-entry.html" . -}}
-                {{ end }}
-            </section>
-            <section class='anchor' id='contact'>
-                <div class='container-fluid container-section'>
-                {{ range where $.Site.Pages "Section" "contact" }}
-                    {{- partial "contact-entry.html" . -}}
-                {{ end }}
-                </div>
-            </section>
+                </section>
+                <section class='anchor' id='portfolio'>
+                    <div class='container-fluid container-section'>
+                        <h4>Portfolio</h4>
+                        <div class='tag_filter'>
+                            This section is long. Scroll down to see what I've been up to in reverse chronological order, or
+                            first use the following tag cloud to filter the entries based upon your interests.
+                            <div class='tag_filter_tags'>
+                            </div>
+                            <p><span id='num_items'>0 entries match</span> your filter. <a href='#' id='clear_filter'>[clear
+                                filter]</a></p>
+                        </div>
+                    </div>
+                    {{ range where $.Site.RegularPages "Section" "portfolio" }}
+                        {{- partial "portfolio-entry.html" . -}}
+                    {{ end }}
+                </section>
+                <section class='anchor' id='contact'>
+                    <div class='container-fluid container-section'>
+                    {{ range where $.Site.Pages "Section" "contact" }}
+                        {{- partial "contact-entry.html" . -}}
+                    {{ end }}
+                    </div>
+                </section>
+            </div>
             {{- partial "footer.html" . -}}
         </div>
         <div class='col-sm-1 col-md-2'></div>
