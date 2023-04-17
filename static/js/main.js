@@ -156,14 +156,14 @@ function apply_tag_filter(tag_filter) {
     tag_filter.excludedItems().forEach(function (item_id) {
         const item = document.querySelector('#' + item_id);
         // Hide the item
-        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(item);
-        bsCollapse.hide();
+        item.classList.remove('collapse.show');
+        item.classList.add('collapse');
     });
     tag_filter.includedItems().forEach(function (item_id) {
         const item = document.querySelector('#' + item_id);
         // Show the item
-        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(item);
-        bsCollapse.show();
+        item.classList.remove('collapse');
+        item.classList.add('collapse.show');
     });
 
     // Update result count
