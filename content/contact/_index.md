@@ -18,7 +18,7 @@ contact_photo:
 You can reach me in the following ways:
 
 * [LinkedIn](https://www.linkedin.com/in/jerryryle) &mdash; If we've had a meaningful interaction, connect with me (no 3rd party recruiters, please).
-* [Twitter](https://www.twitter.com/jerryryle) &mdash; If you want to say hi and let everyone know that you've said hi, tweet at me.
+* [Mastodon](https://mastodon.social/@jerryryle) &mdash; If you want to say hi and let everyone know that you've said hi, shoot me a message.
 * [Github](https://github.com/jerryryle/jerryryle.com) &mdash; See a typo on this page? Open an issue or send me a pull request.
 
 You can download my boring, non-graphical, completely static resume here: [Jerry Ryle's Resume](resume/Jerry%20Ryle%20-%20Resume.pdf)
