@@ -3,7 +3,17 @@ title: "Mobile EKG (2016)"
 date: 2016-10-01T12:00:00-08:00
 draft: false
 short_name: "mobile-ekg"
-tags: electrical, injection molding, low power design, manufacturing, mechanical, medical, engineering management, program management, test, ultrasonic welding
+tags:
+- electrical
+- injection molding
+- low power design
+- manufacturing
+- mechanical
+- medical
+- engineering management
+- program management
+- test
+- ultrasonic welding
 
 resources:
 - src: "mobile_ekg.svg"

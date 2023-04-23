@@ -3,7 +3,14 @@ title: "Handheld Gestural Input Device Concept (2001)"
 date: 2001-09-01T12:00:00-08:00
 draft: false
 short_name: "handheld-gestural-input-device"
-tags: Adobe Flash, applications, C++, firmware, graphics, sensors, Windows CE
+tags: 
+- Adobe Flash
+- applications
+- C++
+- firmware
+- graphics
+- sensors
+- Windows CE
 
 resources:
 - src: "gestural_input_device.svg"

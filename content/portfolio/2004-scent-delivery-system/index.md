@@ -3,7 +3,11 @@ title: "Scent Delivery System (2004)"
 date: 2004-04-01T12:00:00-08:00
 draft: false
 short_name: "scent-delivery-system"
-tags: applications, electrical, reverse engineering, Windows
+tags: 
+- applications
+- electrical
+- reverse engineering
+- Windows
 
 resources:
 - src: "scent_dispenser.svg"

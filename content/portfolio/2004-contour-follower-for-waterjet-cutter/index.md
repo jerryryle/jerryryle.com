@@ -3,7 +3,11 @@ title: "Contour Follower for Water Jet Cutter (2004)"
 date: 2004-11-01T12:00:00-08:00
 draft: false
 short_name: "contour-follower-for-waterjet-cutter"
-tags: C, communications protocols, firmware, sensors
+tags: 
+- C
+- communications protocols
+- firmware
+- sensors
 
 resources:
 - src: "Contour_Follower_Prototype.jpg"

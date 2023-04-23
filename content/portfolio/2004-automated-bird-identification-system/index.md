@@ -3,7 +3,10 @@ title: "Automated Bird Identification System (2004)"
 date: 2004-06-01T12:00:00-08:00
 draft: false
 short_name: "automated-bird-identification-system"
-tags: algorithms, audio, firmware
+tags: 
+- algorithms
+- audio
+- firmware
 
 resources:
 - src: "bird_recognition.svg"

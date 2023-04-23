@@ -3,7 +3,13 @@ title: "iPod Out Automotive Integration (2010)"
 date: 2010-07-01T12:00:00-08:00
 draft: false
 short_name: "ipod-out-automotive-integration"
-tags: automotive, C, communications protocols, firmware, iOS, USB
+tags: 
+- automotive
+- C
+- communications protocols
+- firmware
+- iOS
+- USB
 
 resources:
 - src: "iPod_Out.jpg"

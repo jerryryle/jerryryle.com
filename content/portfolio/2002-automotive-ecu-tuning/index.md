@@ -3,7 +3,11 @@ title: "Automotive ECU Tuning (2002-2006)"
 date: 2002-12-01T12:00:00-08:00
 draft: false
 short_name: "automotive-ecu-tuning"
-tags: assembly, automotive, firmware, reverse engineering
+tags: 
+- assembly
+- automotive
+- firmware
+- reverse engineering
 
 resources:
 - src: "ECU_Tuning_Disassembly.png"

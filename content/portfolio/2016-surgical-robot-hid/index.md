@@ -3,7 +3,15 @@ title: "Human Interface Device for Surgical Robot (2016)"
 date: 2016-12-01T12:00:00-08:00
 draft: false
 short_name: "surgical-robot-hid"
-tags: C, communications protocols, engineering management, firmware, medical, networks, program management
+tags:
+- C
+- communications protocols
+- engineering management
+- firmware
+- medical
+- networks
+- program management
+
 resources:
 - src: "surgical_robot.svg"
   name: surgical_robot

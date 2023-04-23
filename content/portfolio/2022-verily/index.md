@@ -3,7 +3,11 @@ title: "Verily Life Sciences (2019-2022)"
 date: 2022-09-09T12:00:00-08:00
 draft: false
 short_name: "verily"
-tags: medical, engineering management, leadership
+tags:
+- medical
+- engineering management
+- leadership
+
 resources:
 - src: "verily.svg"
   name: verily

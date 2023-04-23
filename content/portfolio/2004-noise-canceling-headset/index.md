@@ -3,7 +3,11 @@ title: "Noise Canceling Headset (2004)"
 date: 2004-08-01T12:00:00-08:00
 draft: false
 short_name: "noise-canceling-headset"
-tags: C, communications protocols, firmware, reverse engineering
+tags: 
+- C
+- communications protocols
+- firmware
+- reverse engineering
 
 resources:
 - src: "Jawbone_Headsets_Copyright_Mindtribe.jpg"

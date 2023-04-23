@@ -3,7 +3,14 @@ title: "Biometric USB Flash Drive Concept (2005)"
 date: 2005-07-01T12:00:00-08:00
 draft: false
 short_name: "biometric-flash-drive"
-tags: algorithms, C, cryptography, firmware, security, sensors, USB
+tags: 
+- algorithms
+- C
+- cryptography
+- firmware
+- security
+- sensors
+- USB
 
 resources:
 - src: "biometric_flash_drive.svg"

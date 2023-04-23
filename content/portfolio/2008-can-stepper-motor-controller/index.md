@@ -3,7 +3,15 @@ title: "CAN Stepper Motor Controller (2008)"
 date: 2008-10-01T12:00:00-08:00
 draft: false
 short_name: "can-stepper-motor-controller"
-tags: C, CAN, communications protocols, electrical, engineering management, firmware, motors, program management
+tags: 
+- C
+- CAN
+- communications protocols
+- electrical
+- engineering management
+- firmware
+- motors
+- program management
 
 resources:
 - src: "can_stepper_motor_controller.svg"

@@ -3,7 +3,11 @@ title: "3D Human Interface Device Concept (2007)"
 date: 2007-10-01T12:00:00-08:00
 draft: false
 short_name: "3d-hid-concept"
-tags: C, firmware, sensors, USB
+tags: 
+- C
+- firmware
+- sensors
+- USB
 
 resources:
 - src: "placeholder.svg"

@@ -3,7 +3,15 @@ title: "Warfare Training System (2005)"
 date: 2005-08-01T12:00:00-08:00
 draft: false
 short_name: "warefare-training-system"
-tags: algorithms, C, C++, communications protocols, firmware, GPS, sensors, wireless
+tags: 
+- algorithms
+- C
+- C++
+- communications protocols
+- firmware
+- GPS
+- sensors
+- wireless
 
 resources:
 - src: "warfare_training_system.svg"

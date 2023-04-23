@@ -3,7 +3,18 @@ title: "Mindtribe (2001-2017)"
 date: 2017-06-01T12:00:00-08:00
 draft: false
 short_name: "mindtribe"
-tags: business development, company building, engineering management, hiring, leadership, program management, process development, sales, strategy, training
+tags: 
+- business development
+- company building
+- engineering management
+- hiring
+- leadership
+- program management
+- process development
+- sales
+- strategy
+- training
+
 resources:
 - src: "Mindtribe_2005_group_shot.jpg"
   name: mindtribe_2005

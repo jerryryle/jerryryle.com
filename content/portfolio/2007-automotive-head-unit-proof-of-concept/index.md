@@ -3,7 +3,12 @@ title: "Automotive Head Unit Proof of Concept (2007)"
 date: 2007-09-01T12:00:00-08:00
 draft: false
 short_name: "automotive-head-unit-proof-of-concept"
-tags: automotive, C, communications protocols, firmware, sensors
+tags: 
+- automotive
+- C
+- communications protocols
+- firmware
+- sensors
 
 resources:
 - src: "automotive_head_unit_concept.svg"

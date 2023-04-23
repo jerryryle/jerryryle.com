@@ -3,7 +3,11 @@ title: "Microcorruption Capture The Flag (2014)"
 date: 2014-07-01T12:00:00-08:00
 draft: false
 short_name: "microcorruption-ctf"
-tags: assembly, firmware, reverse engineering, security
+tags:
+- assembly
+- firmware
+- reverse engineering
+- security
 
 resources:
 - src: "Microcorruption.png"

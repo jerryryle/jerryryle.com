@@ -3,7 +3,12 @@ title: "Configuration and Diagnostics Application for Implantable Medical Device
 date: 2007-12-01T12:00:00-08:00
 draft: false
 short_name: "implantable-medical-device"
-tags: applications, C#, engineering management, medical, program management
+tags:
+- applications
+- C#
+- engineering management
+- medical
+- program management
 
 resources:
 - src: "Novashunt_Copyright_Mindtribe.jpg"

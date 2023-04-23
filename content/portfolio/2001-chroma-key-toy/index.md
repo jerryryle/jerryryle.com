@@ -3,7 +3,12 @@ title: "Chroma-key Toy Proof of Concept (2001)"
 date: 2001-12-01T12:00:00-08:00
 draft: false
 short_name: "chroma-key-toy"
-tags: algorithms, applications, C, C++, video
+tags: 
+- algorithms
+- applications
+- C
+- C++
+- video
 
 resources:
 - src: "chroma_key.svg"

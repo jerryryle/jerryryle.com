@@ -3,7 +3,17 @@ title: "Desk Scheduling Device (2011)"
 date: 2011-03-01T12:00:00-08:00
 draft: false
 short_name: "desk-scheduling-device"
-tags: C, communications protocols, engineering management, firmware, low power design, graphics, program management, USB, wireless, Zigbee
+tags:
+- C
+- communications protocols
+- engineering management
+- firmware
+- low power design
+- graphics
+- program management
+- USB
+- wireless
+- Zigbee
 
 resources:
 - src: "shared_desk_contention.svg"

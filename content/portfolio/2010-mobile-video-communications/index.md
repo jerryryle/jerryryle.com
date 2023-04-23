@@ -3,7 +3,18 @@ title: "Mobile Video Communications (2010)"
 date: 2010-12-01T12:00:00-08:00
 draft: false
 short_name: "mobile-video-communications"
-tags: C, C++, communications protocols, engineering management, firmware, graphics, program management, USB, video, WiFi, wireless
+tags: 
+- C
+- C++
+- communications protocols
+- engineering management
+- firmware
+- graphics
+- program management
+- USB
+- video
+- WiFi
+- wireless
 
 resources:
 - src: "mobile_video_communications.svg"

@@ -3,7 +3,9 @@ title: "Solar Battery Charger (2010)"
 date: 2010-10-01T12:00:00-08:00
 draft: false
 short_name: "solar-battery-charger"
-tags: C, firmware
+tags:
+- C
+- firmware
 
 resources:
 - src: "solar_battery_charger.svg"

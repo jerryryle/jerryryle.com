@@ -3,7 +3,18 @@ title: "Secure, Mobile Point of Sale System (2012)"
 date: 2012-02-01T12:00:00-08:00
 draft: false
 short_name: "secure-mobile-pos"
-tags: C, communications protocols, cryptography, engineering management, firmware, hiring, iOS, low power design, program management, security, USB
+tags: 
+- C
+- communications protocols
+- cryptography
+- engineering management
+- firmware
+- hiring
+- iOS
+- low power design
+- program management
+- security
+- USB
 
 resources:
 - src: "Square_Stand_Copyright_Mindtribe.jpg"

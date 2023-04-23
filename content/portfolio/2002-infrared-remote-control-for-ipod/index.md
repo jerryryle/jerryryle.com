@@ -3,7 +3,14 @@ title: "Infrared Remote Control for iPod (2002)"
 date: 2002-11-01T12:00:00-08:00
 draft: false
 short_name: "infrared-remote-control-for-ipod"
-tags: assembly, C, firmware, manufacturing, sensors, test, wireless
+tags: 
+- assembly
+- C
+- firmware
+- manufacturing
+- sensors
+- test
+- wireless
 
 resources:
 - src: "Ten_Navipod.jpg"

@@ -3,7 +3,12 @@ title: "Ambient Mobile Charging (2015)"
 date: 2015-08-01T12:00:00-08:00
 draft: false
 short_name: "ambient-mobile-charging"
-tags: Android, applications, engineering management, program management, USB
+tags: 
+- Android
+- applications
+- engineering management
+- program management
+- USB
 
 resources:
 - src: "ambient_charging.svg"

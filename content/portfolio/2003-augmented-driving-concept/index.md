@@ -3,7 +3,12 @@ title: "Augmented Driving Experience Concept (2003)"
 date: 2003-11-01T12:00:00-08:00
 draft: false
 short_name: "augmented-driving-concept"
-tags: applications, automotive, C++, video, Windows
+tags: 
+- applications
+- automotive
+- C++
+- video
+- Windows
 
 resources:
 - src: "augmented_driving_concept.svg"

@@ -3,7 +3,11 @@ title: "Robotic Hand Control (2006)"
 date: 2006-12-01T12:00:00-08:00
 draft: false
 short_name: "robot-hand-control"
-tags: applications, C++, communications protocols, motors
+tags: 
+- applications
+- C++
+- communications protocols
+- motors
 
 resources:
 - src: "robot_hand.svg"

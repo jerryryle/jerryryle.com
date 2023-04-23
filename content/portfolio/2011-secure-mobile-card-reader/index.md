@@ -3,7 +3,14 @@ title: "Secure, Mobile Credit Card Reader (2011)"
 date: 2011-05-01T12:00:00-08:00
 draft: false
 short_name: "secure-mobile-card-reader"
-tags: C, communications protocols, cryptography, firmware, low power design, program management, security
+tags:
+- C
+- communications protocols
+- cryptography
+- firmware
+- low power design
+- program management
+- security
 
 resources:
 - src: "Square_Reader_Copyright_Mindtribe.jpg"

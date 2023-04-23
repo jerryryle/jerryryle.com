@@ -3,7 +3,12 @@ title: "Mobile Drawing Application and Hardware Tools (2012)"
 date: 2012-04-01T12:00:00-08:00
 draft: false
 short_name: "mobile-drawing-application-and-hardware"
-tags: applications, engineering management, iOS, program management, graphics
+tags: 
+- applications
+- engineering management
+- iOS
+- program management
+- graphics
 
 resources:
 - src: "Adobe_Project_Parallel_Copyright_Adobe.jpg"

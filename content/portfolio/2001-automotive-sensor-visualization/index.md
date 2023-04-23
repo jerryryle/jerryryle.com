@@ -3,7 +3,12 @@ title: "Automotive Sensor Data Visualization (2001)"
 date: 2001-11-01T12:00:00-08:00
 draft: false
 short_name: "automotive-sensor-visualization"
-tags: automotive, C, communications protocols, firmware, sensors
+tags: 
+- automotive
+- C
+- communications protocols
+- firmware
+- sensors
 
 resources:
 - src: "automotive_sensor_visualization.svg"

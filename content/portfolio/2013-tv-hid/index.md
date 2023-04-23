@@ -3,7 +3,15 @@ title: "Human Interface Device for Next-Gen TV Concept (2013)"
 date: 2013-10-01T12:00:00-08:00
 draft: false
 short_name: "tv-hid"
-tags: Android, applications, C, engineering management, firmware, program management, sensors, USB
+tags:
+- Android 
+- applications
+- C
+- engineering management
+- firmware
+- program management
+- sensors
+- USB
 
 resources:
 - src: "tv_hid.svg"

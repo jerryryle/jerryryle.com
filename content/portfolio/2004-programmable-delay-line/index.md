@@ -3,7 +3,12 @@ title: "Programmable Delay Line (2004)"
 date: 2004-10-01T12:00:00-08:00
 draft: false
 short_name: "programmable-delay-line"
-tags: C, communications protocols, firmware, motors, networks
+tags: 
+- C
+- communications protocols
+- firmware
+- motors
+- networks
 
 resources:
 - src: "Colby_Delay_Line_1.jpg"

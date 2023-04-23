@@ -3,7 +3,16 @@ title: "Illuminated Dashboard Moustache (2014)"
 date: 2014-08-01T12:00:00-08:00
 draft: false
 short_name: "illuminated-dashboard-moustache"
-tags: automotive, C, electrical, engineering management, firmware, injection molding, manufacturing, mechanical, program management
+tags: 
+- automotive
+- C
+- electrical
+- engineering management
+- firmware
+- injection molding
+- manufacturing
+- mechanical
+- program management
 
 resources:
 - src: "Lyft_Glowstache_Copyright_Mindtribe.jpg"

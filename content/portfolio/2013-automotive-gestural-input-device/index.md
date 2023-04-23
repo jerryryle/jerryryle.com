@@ -3,7 +3,13 @@ title: "Automotive Gestural Input Device (2013)"
 date: 2013-11-01T12:00:00-08:00
 draft: false
 short_name: "automotive-gestural-input-device"
-tags: applications, engineering management, program management, Python, sensors, USB
+tags: 
+- applications
+- engineering management
+- program management
+- Python
+- sensors
+- USB
 
 resources:
 - src: "placeholder.svg"

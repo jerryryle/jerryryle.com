@@ -3,7 +3,11 @@ title: "Chipset and Reference Design for 3D Human Interface Device (2006)"
 date: 2006-10-01T12:00:00-08:00
 draft: false
 short_name: "3d-hid-chipset"
-tags: C, firmware, sensors, USB
+tags: 
+- C
+- firmware
+- sensors
+- USB
 
 resources:
 - src: "3D_HID_Chipset.png"

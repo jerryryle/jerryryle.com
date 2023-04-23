@@ -3,7 +3,13 @@ title: "Printer Paper Profiling Test Station (2005)"
 date: 2005-11-01T12:00:00-08:00
 draft: false
 short_name: "printer-paper-profiling-station"
-tags: algorithms, C, communications protocols, firmware, graphics, motors
+tags: 
+- algorithms
+- C
+- communications protocols
+- firmware
+- graphics
+- motors
 
 resources:
 - src: "paper_test_station.svg"

@@ -3,7 +3,26 @@ title: "Encrypted Communications Device (2015-2016)"
 date: 2016-02-01T12:00:00-08:00
 draft: false
 short_name: "encrypted-communications-device"
-tags: applications, audio, C, communications protocols, cryptography, electrical, firmware, hiring, injection molding, iOS, low power design, manufacturing, mechanical, OTA update, program management, security, test, ultrasonic welding, USB
+tags:
+- applications
+- audio
+- C
+- communications protocols
+- cryptography
+- electrical
+- firmware
+- hiring
+- injection molding
+- iOS
+- low power design
+- manufacturing
+- mechanical
+- OTA update
+- program management
+- security
+- test
+- ultrasonic welding
+- USB
 
 resources:
 - src: "encrypted_communications.svg"

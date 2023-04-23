@@ -3,7 +3,9 @@ title: "Architectural Workshop for Smart Toy (2009)"
 date: 2009-09-01T12:00:00-08:00
 draft: false
 short_name: "architectural-workshop-for-smart-toy"
-tags: C, firmware
+tags: 
+- C
+- firmware
 
 resources:
 - src: "smart_toy_workshop.svg"

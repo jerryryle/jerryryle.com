@@ -3,7 +3,18 @@ title: "Wearable (2008)"
 date: 2008-08-01T12:00:00-08:00
 draft: false
 short_name: "wearable"
-tags: Bluetooth, communications protocols, electrical, engineering management, firmware, Linux, program management, sensors, graphics, wireless, WiFi
+tags: 
+- Bluetooth
+- communications protocols
+- electrical
+- engineering management
+- firmware
+- Linux
+- program management
+- sensors
+- graphics
+- wireless
+- WiFi
 
 resources:
 - src: "wearable.svg"

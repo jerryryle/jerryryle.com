@@ -3,7 +3,14 @@ title: "Biometric Lock Module (2004)"
 date: 2004-09-01T12:00:00-08:00
 draft: false
 short_name: "biometric-lock-module"
-tags: algorithms, C, C++, cryptography, firmware, security, sensors
+tags: 
+- algorithms
+- C
+- C++
+- cryptography
+- firmware
+- security
+- sensors
 
 resources:
 - src: "biometric_lock_module.svg"

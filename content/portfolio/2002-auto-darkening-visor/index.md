@@ -3,7 +3,11 @@ title: "Auto-darkening Visor (2002)"
 date: 2002-08-01T12:00:00-08:00
 draft: false
 short_name: "auto-darkening-visor"
-tags: automotive, C, firmware, sensors
+tags: 
+- automotive
+- C
+- firmware
+- sensors
 
 resources:
 - src: "BMW_Autovisor_System_Prototype.jpg"

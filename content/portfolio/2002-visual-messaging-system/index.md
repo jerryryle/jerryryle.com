@@ -3,7 +3,15 @@ title: "Visual Messaging System (2002)"
 date: 2002-09-01T12:00:00-08:00
 draft: false
 short_name: "visual-messaging-system"
-tags: applications, automotive, C, C++, CAN, firmware, graphics, Windows CE
+tags: 
+- applications
+- automotive
+- C
+- C++
+- CAN
+- firmware
+- graphics
+- Windows CE
 
 resources:
 - src: "BMW_Visual_Messaging_System.jpg"

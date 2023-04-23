@@ -3,7 +3,11 @@ title: "Mobile Notification Device Concept (2009)"
 date: 2009-11-01T12:00:00-08:00
 draft: false
 short_name: "mobile-notification-device-concept"
-tags: algorithms, C, firmware, graphics
+tags: 
+- algorithms
+- C
+- firmware
+- graphics
 
 resources:
 - src: "mobile_notification_device.svg"

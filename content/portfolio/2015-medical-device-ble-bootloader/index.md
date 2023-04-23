@@ -3,7 +3,15 @@ title: "Medical Device BLE Bootloader (2015)"
 date: 2015-07-01T12:00:00-08:00
 draft: false
 short_name: "medical-device-ble-bootloader"
-tags: Bluetooth, C, engineering management, firmware, macOS, medical, OTA update, program management
+tags:
+- Bluetooth
+- C
+- engineering management
+- firmware
+- macOS
+- medical
+- OTA update
+- program management
 
 resources:
 - src: "ble_bootloader.svg"

@@ -3,7 +3,12 @@ title: "Room Scheduling System Redesign (2008)"
 date: 2008-12-01T12:00:00-08:00
 draft: false
 short_name: "room-scheduling-system-redesign"
-tags: applications, firmware, communications protocols, Java, networks
+tags: 
+- applications 
+- firmware
+- communications protocols
+- Java
+- networks
 
 resources:
 - src: "RoomWizard_Copyright_Steelcase.jpg"

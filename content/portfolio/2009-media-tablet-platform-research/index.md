@@ -3,7 +3,9 @@ title: "Media Tablet Software Platform Research (2009)"
 date: 2009-07-01T12:00:00-08:00
 draft: false
 short_name: "media-tablet-platform-research"
-tags: Android, applications
+tags: 
+- Android
+- applications
 
 resources:
 - src: "Media_Tablet_Platform_Research.png"

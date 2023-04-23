@@ -3,7 +3,14 @@ title: "Bluetooth Mobile Notification Device (2009)"
 date: 2009-10-01T12:00:00-08:00
 draft: false
 short_name: "bluetooth-mobile-notification-device"
-tags: audio, Bluetooth, C, communications protocols, firmware, graphics, wireless
+tags: 
+- audio
+- Bluetooth
+- C
+- communications protocols
+- firmware
+- graphics
+- wireless
 
 resources:
 - src: "Bluetooth_Notification_Device_Copyright_Mindtribe.jpg"

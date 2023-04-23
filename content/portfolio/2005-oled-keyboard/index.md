@@ -3,7 +3,13 @@ title: "OLED Keyboard (2005)"
 date: 2005-10-01T12:00:00-08:00
 draft: false
 short_name: "oled-keyboard"
-tags: applications, C, C++, firmware, graphics, USB
+tags: 
+- applications
+- C
+- C++
+- firmware
+- graphics
+- USB
 
 resources:
 - src: "United_Keys_Keyboard.jpg"

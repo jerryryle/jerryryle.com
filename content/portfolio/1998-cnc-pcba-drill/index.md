@@ -3,7 +3,12 @@ title: "CNC PCBA Drill Software (1998)"
 date: 1998-12-01T12:00:00-08:00
 draft: false
 short_name: "cnc-pcba-drill"
-tags: applications, control systems, motors, Pascal, reverse engineering
+tags:
+- applications
+- control systems
+- motors
+- Pascal
+- reverse engineering
 
 resources:
 - src: "ime_157.svg"

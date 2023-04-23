@@ -3,7 +3,12 @@ title: "Wireless Gestural Transfer Concept (2006)"
 date: 2006-11-01T12:00:00-08:00
 draft: false
 short_name: "wireless-gestural-transfer-concept"
-tags: C, communications protocols, firmware, sensors, wireless
+tags: 
+- C
+- communications protocols
+- firmware
+- sensors
+- wireless
 
 resources:
 - src: "gestural_data_transfer.svg"

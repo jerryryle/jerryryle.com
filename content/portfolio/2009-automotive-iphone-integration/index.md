@@ -3,7 +3,16 @@ title: "Automotive iPhone Integration (2009)"
 date: 2009-06-01T12:00:00-08:00
 draft: false
 short_name: "automotive-iphone-integration"
-tags: Android, applications, automotive, C, C++, communications protocols, iOS, Linux, networks
+tags: 
+- Android
+- applications
+- automotive
+- C
+- C++
+- communications protocols
+- iOS
+- Linux
+- networks
 
 resources:
 - src: "BMW_Mini_Connected_Copyright_Mindtribe.jpg"

@@ -3,7 +3,18 @@ title: "Automotive IP Camera (2001)"
 date: 2001-10-01T12:00:00-08:00
 draft: false
 short_name: "automotive-ip-camera"
-tags: applications, automotive, C, communications protocols, firmware, Java, Linux, networks, sensors, USB, video
+tags: 
+- applications
+- automotive
+- C
+- communications protocols
+- firmware
+- Java
+- Linux
+- networks
+- sensors
+- USB
+- video
 
 resources:
 - src: "BMW_IP_Camera.jpg"

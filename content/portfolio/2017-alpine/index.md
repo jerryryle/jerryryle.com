@@ -3,7 +3,11 @@ title: "Fresh Health (2017-2018)"
 date: 2017-06-01T12:00:00-08:00
 draft: false
 short_name: "alpine"
-tags: engineering management, leadership, startup
+tags: 
+- engineering management
+- leadership
+- startup
+
 resources:
 - src: "alpine.svg"
   name: alpine

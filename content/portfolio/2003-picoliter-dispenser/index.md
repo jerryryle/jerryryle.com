@@ -3,7 +3,12 @@ title: "Picoliter Dispenser for Medical Device Testing (2003)"
 date: 2003-12-01T12:00:00-08:00
 draft: false
 short_name: "picoliter-dispenser"
-tags: applications, C++, communications protocols, medical, Windows
+tags: 
+- applications
+- C++
+- communications protocols
+- medical
+- Windows
 
 resources:
 - src: "Picoliter_Dispenser.jpg"

@@ -3,7 +3,13 @@ title: "Thermal Testing/Profiling Apparatus for Microprocessors (2002)"
 date: 2002-10-01T12:00:00-08:00
 draft: false
 short_name: "thermal-testing-apparatus"
-tags: applications, C, C++, control systems, firmware, sensors
+tags: 
+- applications
+- C
+- C++
+- control systems
+- firmware
+- sensors
 
 resources:
 - src: "AMD_Thermal_Tester.jpg"

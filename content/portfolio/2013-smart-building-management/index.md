@@ -3,7 +3,11 @@ title: "Smart Building Management System (2013)"
 date: 2013-08-01T12:00:00-08:00
 draft: false
 short_name: "smart-building-management"
-tags: applications, firmware, hiring, test
+tags:
+- applications
+- firmware
+- hiring
+- test
 
 resources:
 - src: "Verdigris_Hardware_Copyright_Verdigris.jpg"

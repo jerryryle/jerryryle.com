@@ -3,7 +3,13 @@ title: "Sports Watch (2008)"
 date: 2008-07-01T12:00:00-08:00
 draft: false
 short_name: "sports-watch"
-tags: C, firmware, communications protocols, low power design, sensors, wireless
+tags: 
+- C
+- firmware
+- communications protocols
+- low power design
+- sensors
+- wireless
 
 resources:
 - src: "sports_watch.svg"

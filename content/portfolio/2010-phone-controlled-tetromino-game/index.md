@@ -3,7 +3,12 @@ title: "Phone-controlled Tetromino Game (2010)"
 date: 2010-01-01T12:00:00-08:00
 draft: false
 short_name: "phone-controlled-tetromino-game"
-tags: Adobe Flash, applications, C++, communications protocols, Windows
+tags: 
+- Adobe Flash
+- applications
+- C++
+- communications protocols
+- Windows
 
 resources:
 - src: "Window_Game.png"

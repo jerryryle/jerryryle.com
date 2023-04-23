@@ -3,7 +3,14 @@ title: "Cashless Arcade Game Payment System (2005)"
 date: 2005-12-01T12:00:00-08:00
 draft: false
 short_name: "cashless-arcade-payment-system"
-tags: algorithms, C, communications protocols, firmware, graphics, networks, sensors
+tags: 
+- algorithms
+- C
+- communications protocols
+- firmware
+- graphics
+- networks
+- sensors
 
 resources:
 - src: "Cashless_Arcade_Payment_System.jpg"

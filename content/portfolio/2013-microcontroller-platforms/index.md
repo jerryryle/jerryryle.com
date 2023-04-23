@@ -3,7 +3,15 @@ title: "Microcontroller Platforms (2013-2017)"
 date: 2014-05-01T12:00:00-08:00
 draft: false
 short_name: "microcontroller-platforms"
-tags: C, electrical, engineering management, firmware, Linux, program management, sensors, test
+tags:
+- C
+- electrical
+- engineering management
+- firmware
+- Linux
+- program management
+- sensors
+- test
 
 resources:
 - src: "Microcontroller_Platform.jpg"

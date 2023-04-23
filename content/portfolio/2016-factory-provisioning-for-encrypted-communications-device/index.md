@@ -3,7 +3,14 @@ title: "Factory Provisioning Station for Encrypted Communications Device (2016)"
 date: 2016-01-01T12:00:00-08:00
 draft: false
 short_name: "factory-provisioning-for-encrypted-communications-device"
-tags: cryptography, manufacturing, program management, Python, security, test
+tags:
+- cryptography
+- manufacturing
+- program management
+- Python
+- security
+- test
+
 resources:
 - src: "test_stations.svg"
   name: test_stations

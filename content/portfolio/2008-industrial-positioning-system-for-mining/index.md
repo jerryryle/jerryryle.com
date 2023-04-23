@@ -3,7 +3,13 @@ title: "Industrial Positioning System for Mining Applications (2008)"
 date: 2008-11-01T12:00:00-08:00
 draft: false
 short_name: "industrial-positioning-system-for-mining"
-tags: C, communications protocols, firmware, GPS, USB, video
+tags: 
+- C
+- communications protocols
+- firmware
+- GPS
+- USB
+- video
 
 resources:
 - src: "placeholder.svg"

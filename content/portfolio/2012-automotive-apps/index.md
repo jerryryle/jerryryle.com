@@ -3,7 +3,10 @@ title: "Automotive Apps (2012)"
 date: 2012-12-01T12:00:00-08:00
 draft: false
 short_name: "automotive-apps"
-tags: automotive, applications, iOS
+tags: 
+- automotive
+- applications
+- iOS
 
 resources:
 - src: "placeholder.svg"

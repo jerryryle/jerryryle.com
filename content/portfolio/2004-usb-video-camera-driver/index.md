@@ -3,7 +3,12 @@ title: "USB Video Camera Driver (2004)"
 date: 2004-12-01T12:00:00-08:00
 draft: false
 short_name: "usb-video-camera-driver"
-tags: applications, C++, sensors, USB, video
+tags: 
+- applications
+- C++
+- sensors
+- USB
+- video
 
 resources:
 - src: "usb_camera_driver.svg"

@@ -3,7 +3,13 @@ title: "iPod/iPhone Communication Library (2010)"
 date: 2010-05-01T12:00:00-08:00
 draft: false
 short_name: "iphone-communication-library"
-tags: C, C++, communications protocols, firmware, iOS, USB
+tags:
+- C
+- C++
+- communications protocols
+- firmware
+- iOS
+- USB
 
 resources:
 - src: "placeholder.svg"

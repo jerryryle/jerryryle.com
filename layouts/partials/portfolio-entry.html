@@ -5,6 +5,8 @@
 	{{ partial "portfolio-media.html" . }}
     {{ .Content }}
     {{ with .Params.tags }}
-        <div class='tags'>{{ . }}</div>
+        <div class='tags'>
+            {{- delimit . ", " -}}
+        </div>
     {{ end }}
 </div>

@@ -3,7 +3,17 @@ title: "Sleep Apnea Solution (2009)"
 date: 2009-12-01T12:00:00-08:00
 draft: false
 short_name: "sleep-apnea-solution"
-tags: applications, C, C#, communications protocols, engineering management, firmware, medical, program management, sensors, USB
+tags: 
+- applications
+- C
+- C#
+- communications protocols
+- engineering management
+- firmware
+- medical
+- program management
+- sensors
+- USB
 
 resources:
 - src: "Apnicure_Winx_Copyright_Mindtribe.jpg"

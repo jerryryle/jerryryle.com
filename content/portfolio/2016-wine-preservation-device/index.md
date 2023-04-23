@@ -3,7 +3,13 @@ title: "Wine Preservation Device (2016)"
 date: 2016-11-01T12:00:00-08:00
 draft: false
 short_name: "wine-preservation-device"
-tags: C, engineering management, firmware, low power design, program management, sensors
+tags: 
+- C
+- engineering management
+- firmware
+- low power design
+- program management
+- sensors
 resources:
 - src: "wine_preservation.svg"
   name: wine_preservation

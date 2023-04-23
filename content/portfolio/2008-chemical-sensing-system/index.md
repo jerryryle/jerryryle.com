@@ -3,7 +3,15 @@ title: "Chemical Sensing System (2008)"
 date: 2008-09-01T12:00:00-08:00
 draft: false
 short_name: "chemical-sensing-system"
-tags: communications protocols, electrical, engineering management, firmware, Linux, program management, sensors, wireless
+tags: 
+- communications protocols
+- electrical
+- engineering management
+- firmware
+- Linux
+- program management
+- sensors
+- wireless
 
 resources:
 - src: "chemical_sensing_system.svg"

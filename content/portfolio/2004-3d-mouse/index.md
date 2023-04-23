@@ -3,7 +3,11 @@ title: "3D Mouse (2004)"
 date: 2004-07-01T12:00:00-08:00
 draft: false
 short_name: "3d-mouse"
-tags: C, firmware, sensors, USB
+tags: 
+- C
+- firmware
+- sensors
+- USB
 
 resources:
 - src: "Sandio_3D_Mouse.jpg"

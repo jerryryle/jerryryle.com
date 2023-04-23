@@ -3,7 +3,14 @@ title: "Automotive Controls for iOS (2011)"
 date: 2011-02-01T12:00:00-08:00
 draft: false
 short_name: "automotive-controls-for-ios"
-tags: automotive, C, communications protocols, engineering management, firmware, program management, USB
+tags:
+- automotive
+- C
+- communications protocols
+- engineering management
+- firmware
+- program management
+- USB
 
 resources:
 - src: "placeholder.svg"

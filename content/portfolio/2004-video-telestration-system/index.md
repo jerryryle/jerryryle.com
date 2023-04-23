@@ -3,7 +3,10 @@ title: "Video Control and Telestration System (2004)"
 date: 2004-05-01T12:00:00-08:00
 draft: false
 short_name: "video-telestration-system"
-tags: applications, product management, program management
+tags: 
+- applications
+- product management
+- program management
 
 resources:
 - src: "Video_Telestration_System.png"

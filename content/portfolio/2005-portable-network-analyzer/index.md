@@ -3,7 +3,12 @@ title: "Portable Network Analyzer (2005)"
 date: 2005-09-01T12:00:00-08:00
 draft: false
 short_name: "portable-network-analyzer"
-tags: electrical, communications protocols, engineering management, networks, program management
+tags: 
+- electrical
+- communications protocols
+- engineering management
+- networks
+- program management
 
 resources:
 - src: "portable_network_analyzer.svg"

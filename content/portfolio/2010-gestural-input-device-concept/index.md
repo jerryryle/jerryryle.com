@@ -3,7 +3,13 @@ title: "Gestural Input Device Concept (2010)"
 date: 2010-04-01T12:00:00-08:00
 draft: false
 short_name: "gestural-input-device-concept"
-tags: algorithms, C, engineering management, firmware, program management, USB
+tags: 
+- algorithms
+- C
+- engineering management
+- firmware
+- program management
+- USB
 
 resources:
 - src: "placeholder.svg"

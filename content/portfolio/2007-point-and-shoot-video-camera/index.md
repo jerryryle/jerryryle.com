@@ -3,7 +3,16 @@ title: "Point and Shoot Video Camera (2007)"
 date: 2007-11-01T12:00:00-08:00
 draft: false
 short_name: "point-and-shoot-video-camera"
-tags: algorithms, C, firmware, low power design, OTA update, sensors, USB, Verilog, video
+tags: 
+- algorithms
+- C
+- firmware
+- low power design
+- OTA update
+- sensors
+- USB
+- Verilog
+- video
 
 resources:
 - src: "Pure_Digital_Flip_Mino_Copyright_Mindtribe.jpg"
