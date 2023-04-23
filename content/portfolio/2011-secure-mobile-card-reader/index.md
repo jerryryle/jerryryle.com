@@ -4,35 +4,35 @@ date: 2011-05-01T12:00:00-08:00
 draft: false
 short_name: "secure-mobile-card-reader"
 tags:
-- C
-- communications protocols
-- cryptography
-- firmware
-- low power design
-- program management
-- security
+  - C
+  - communications protocols
+  - cryptography
+  - firmware
+  - low power design
+  - program management
+  - security
 
 resources:
-- src: "Square_Reader_Copyright_Mindtribe.jpg"
-  name: Square_Reader_Copyright_Mindtribe
-- src: "Square_Reader_Copyright_Mindtribe_tiny.jpg"
-  name: Square_Reader_Copyright_Mindtribe_tiny
+  - src: "Square_Reader_Copyright_Mindtribe.jpg"
+    name: Square_Reader_Copyright_Mindtribe
+  - src: "Square_Reader_Copyright_Mindtribe_tiny.jpg"
+    name: Square_Reader_Copyright_Mindtribe_tiny
 
-- src: "Square_Reader_Inside_Copyright_Mindtribe.jpg"
-  name: Square_Reader_Inside_Copyright_Mindtribe
-- src: "Square_Reader_Inside_Copyright_Mindtribe_tiny.jpg"
-  name: Square_Reader_Inside_Copyright_Mindtribe_tiny
+  - src: "Square_Reader_Inside_Copyright_Mindtribe.jpg"
+    name: Square_Reader_Inside_Copyright_Mindtribe
+  - src: "Square_Reader_Inside_Copyright_Mindtribe_tiny.jpg"
+    name: Square_Reader_Inside_Copyright_Mindtribe_tiny
 
 entry_media:
-- image:
-    resource: "Square_Reader_Copyright_Mindtribe"
-    lazyload: "Square_Reader_Copyright_Mindtribe_tiny"
-    alt: "Square Reader front and side"
+  - image:
+      resource: "Square_Reader_Copyright_Mindtribe"
+      lazyload: "Square_Reader_Copyright_Mindtribe_tiny"
+      alt: "Square Reader front and side"
 
-- image:
-    resource: "Square_Reader_Inside_Copyright_Mindtribe"
-    lazyload: "Square_Reader_Inside_Copyright_Mindtribe_tiny"
-    alt: "Square Reader opened, showing internals"
+  - image:
+      resource: "Square_Reader_Inside_Copyright_Mindtribe"
+      lazyload: "Square_Reader_Inside_Copyright_Mindtribe_tiny"
+      alt: "Square Reader opened, showing internals"
 ---
 Square engaged Mindtribe to help them create a secure and more reliable version of their mobile
 credit card reader. We helped them take this from concept through production. The design needed to

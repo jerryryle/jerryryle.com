@@ -4,31 +4,31 @@ date: 2013-08-01T12:00:00-08:00
 draft: false
 short_name: "smart-building-management"
 tags:
-- applications
-- firmware
-- hiring
-- test
+  - applications
+  - firmware
+  - hiring
+  - test
 
 resources:
-- src: "Verdigris_Hardware_Copyright_Verdigris.jpg"
-  name: Verdigris_Hardware_Copyright_Verdigris
-- src: "Verdigris_Hardware_Copyright_Verdigris_tiny.jpg"
-  name: Verdigris_Hardware_Copyright_Verdigris_tiny
+  - src: "Verdigris_Hardware_Copyright_Verdigris.jpg"
+    name: Verdigris_Hardware_Copyright_Verdigris
+  - src: "Verdigris_Hardware_Copyright_Verdigris_tiny.jpg"
+    name: Verdigris_Hardware_Copyright_Verdigris_tiny
 
-- src: "Verdigris_App_Copyright_Verdigris.jpg"
-  name: Verdigris_App_Copyright_Verdigris
-- src: "Verdigris_App_Copyright_Verdigris_tiny.jpg"
-  name: Verdigris_App_Copyright_Verdigris_tiny
+  - src: "Verdigris_App_Copyright_Verdigris.jpg"
+    name: Verdigris_App_Copyright_Verdigris
+  - src: "Verdigris_App_Copyright_Verdigris_tiny.jpg"
+    name: Verdigris_App_Copyright_Verdigris_tiny
 
 entry_media:
-- image:
-    resource: "Verdigris_Hardware_Copyright_Verdigris"
-    lazyload: "Verdigris_Hardware_Copyright_Verdigris_tiny"
-    alt: "Render of the Verdigris hardware"
-- image:
-    resource: "Verdigris_App_Copyright_Verdigris"
-    lazyload: "Verdigris_App_Copyright_Verdigris_tiny"
-    alt: "Verdigris app running on smart phone"
+  - image:
+      resource: "Verdigris_Hardware_Copyright_Verdigris"
+      lazyload: "Verdigris_Hardware_Copyright_Verdigris_tiny"
+      alt: "Render of the Verdigris hardware"
+  - image:
+      resource: "Verdigris_App_Copyright_Verdigris"
+      lazyload: "Verdigris_App_Copyright_Verdigris_tiny"
+      alt: "Verdigris app running on smart phone"
 ---
 [Verdigris](https://verdigris.co) partnered with Mindtribe to develop a system that uses artificial intelligence to improve commercial facilities management. Mindtribe built Verdigris' hardware platform while they focused on the backend and application.
 

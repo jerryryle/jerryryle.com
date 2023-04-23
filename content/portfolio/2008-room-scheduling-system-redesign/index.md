@@ -3,24 +3,24 @@ title: "Room Scheduling System Redesign (2008)"
 date: 2008-12-01T12:00:00-08:00
 draft: false
 short_name: "room-scheduling-system-redesign"
-tags: 
-- applications 
-- firmware
-- communications protocols
-- Java
-- networks
+tags:
+  - applications
+  - firmware
+  - communications protocols
+  - Java
+  - networks
 
 resources:
-- src: "RoomWizard_Copyright_Steelcase.jpg"
-  name: RoomWizard_Copyright_Steelcase
-- src: "RoomWizard_Copyright_Steelcase_tiny.jpg"
-  name: RoomWizard_Copyright_Steelcase_tiny
+  - src: "RoomWizard_Copyright_Steelcase.jpg"
+    name: RoomWizard_Copyright_Steelcase
+  - src: "RoomWizard_Copyright_Steelcase_tiny.jpg"
+    name: RoomWizard_Copyright_Steelcase_tiny
 
 entry_media:
-- image:
-    resource: "RoomWizard_Copyright_Steelcase"
-    lazyload: "RoomWizard_Copyright_Steelcase_tiny"
-    alt: "Photo of a Steelcase RoomWizard unit"
+  - image:
+      resource: "RoomWizard_Copyright_Steelcase"
+      lazyload: "RoomWizard_Copyright_Steelcase_tiny"
+      alt: "Photo of a Steelcase RoomWizard unit"
 ---
 Steelcase embarked on an effort with IDEO to redesign their popular, but aging RoomWizard room scheduling device. This networked device was built around an older x86 architecture and included a hard drive that was prone to failure over time. Steelcase asked Mindtribe to re-architect the electrical and software system.
 

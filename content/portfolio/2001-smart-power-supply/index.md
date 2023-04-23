@@ -3,49 +3,49 @@ title: "Smart Power Supply (2001)"
 date: 2001-08-01T12:00:00-08:00
 draft: false
 short_name: "smart-power-supply"
-tags: 
-- applications
-- audio
-- C
-- communications protocols
-- electrical
-- firmware
-- manufacturing
-- networks
-- security
-- test
+tags:
+  - applications
+  - audio
+  - C
+  - communications protocols
+  - electrical
+  - firmware
+  - manufacturing
+  - networks
+  - security
+  - test
 
 resources:
-- src: "CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe.jpg"
-  name: CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe
-- src: "CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe_tiny.jpg"
-  name: CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe_tiny
+  - src: "CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe.jpg"
+    name: CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe
+  - src: "CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe_tiny.jpg"
+    name: CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe_tiny
 
-- src: "CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe.jpg"
-  name: CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe
-- src: "CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe_tiny.jpg"
-  name: CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe_tiny
+  - src: "CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe.jpg"
+    name: CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe
+  - src: "CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe_tiny.jpg"
+    name: CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe_tiny
 
-- src: "CyberSwitching_Tricom_Interior_Copyright_Mindtribe.jpg"
-  name: CyberSwitching_Tricom_Interior_Copyright_Mindtribe
-- src: "CyberSwitching_Tricom_Interior_Copyright_Mindtribe_tiny.jpg"
-  name: CyberSwitching_Tricom_Interior_Copyright_Mindtribe_tiny
+  - src: "CyberSwitching_Tricom_Interior_Copyright_Mindtribe.jpg"
+    name: CyberSwitching_Tricom_Interior_Copyright_Mindtribe
+  - src: "CyberSwitching_Tricom_Interior_Copyright_Mindtribe_tiny.jpg"
+    name: CyberSwitching_Tricom_Interior_Copyright_Mindtribe_tiny
 
 entry_media:
-- image:
-    resource: "CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe"
-    lazyload: "CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe_tiny"
-    alt: "Front and back of a Cyber Switching Tricom unit"
+  - image:
+      resource: "CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe"
+      lazyload: "CyberSwitching_Tricom_Front_And_Back_Copyright_Mindtribe_tiny"
+      alt: "Front and back of a Cyber Switching Tricom unit"
 
-- image:
-    resource: "CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe"
-    lazyload: "CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe_tiny"
-    alt: "A Cyber Switching Tricom unit with and without a lid"
+  - image:
+      resource: "CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe"
+      lazyload: "CyberSwitching_Tricom_Front_With_And_Without_Lid_Copyright_Mindtribe_tiny"
+      alt: "A Cyber Switching Tricom unit with and without a lid"
 
-- image:
-    resource: "CyberSwitching_Tricom_Interior_Copyright_Mindtribe"
-    lazyload: "CyberSwitching_Tricom_Interior_Copyright_Mindtribe_tiny"
-    alt: "The inside of a Cyber Switching Tricom unit"
+  - image:
+      resource: "CyberSwitching_Tricom_Interior_Copyright_Mindtribe"
+      lazyload: "CyberSwitching_Tricom_Interior_Copyright_Mindtribe_tiny"
+      alt: "The inside of a Cyber Switching Tricom unit"
 ---
 [Cyber Switching](https://www.cyberswitching.com/) engaged Mindtribe to develop their first product: a smart power strip that would allow users to remotely monitor and control appliances.
 

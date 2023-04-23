@@ -3,22 +3,22 @@ title: "Automated Bird Identification System (2004)"
 date: 2004-06-01T12:00:00-08:00
 draft: false
 short_name: "automated-bird-identification-system"
-tags: 
-- algorithms
-- audio
-- firmware
+tags:
+  - algorithms
+  - audio
+  - firmware
 
 resources:
-- src: "bird_recognition.svg"
-  name: bird_recognition
-- src: "bird_recognition_tiny.jpg"
-  name: bird_recognition_tiny
+  - src: "bird_recognition.svg"
+    name: bird_recognition
+  - src: "bird_recognition_tiny.jpg"
+    name: bird_recognition_tiny
 
 entry_media:
-- image:
-    resource: "bird_recognition"
-    lazyload: "bird_recognition_tiny"
-    alt: "Illustration of a person using a computer to identify a bird in a tree. The computer is reporting that the bird is an emu."
+  - image:
+      resource: "bird_recognition"
+      lazyload: "bird_recognition_tiny"
+      alt: "Illustration of a person using a computer to identify a bird in a tree. The computer is reporting that the bird is an emu."
 ---
 An enthusiastic and technologically-minded [birder](https://www.newyorker.com/books/page-turner/the-difference-between-bird-watching-and-birding) was interested in creating a handheld device that could identify a bird's species by its song. This was before the age of smartphones and apps, so they contacted Mindtribe to explore the feasibility of creating a dedicated hardware device for this purpose.
 

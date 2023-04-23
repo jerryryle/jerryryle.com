@@ -3,44 +3,44 @@ title: "Mobile Drawing Application and Hardware Tools (2012)"
 date: 2012-04-01T12:00:00-08:00
 draft: false
 short_name: "mobile-drawing-application-and-hardware"
-tags: 
-- applications
-- engineering management
-- iOS
-- program management
-- graphics
+tags:
+  - applications
+  - engineering management
+  - iOS
+  - program management
+  - graphics
 
 resources:
-- src: "Adobe_Project_Parallel_Copyright_Adobe.jpg"
-  name: Adobe_Project_Parallel_Copyright_Adobe
-- src: "Adobe_Project_Parallel_Copyright_Adobe_tiny.jpg"
-  name: Adobe_Project_Parallel_Copyright_Adobe_tiny
+  - src: "Adobe_Project_Parallel_Copyright_Adobe.jpg"
+    name: Adobe_Project_Parallel_Copyright_Adobe
+  - src: "Adobe_Project_Parallel_Copyright_Adobe_tiny.jpg"
+    name: Adobe_Project_Parallel_Copyright_Adobe_tiny
 
-- src: "Adobe_Project_Parallel_Copyright_Mindtribe.jpg"
-  name: Adobe_Project_Parallel_Copyright_Mindtribe
-- src: "Adobe_Project_Parallel_Copyright_Mindtribe_tiny.jpg"
-  name: Adobe_Project_Parallel_Copyright_Mindtribe_tiny
+  - src: "Adobe_Project_Parallel_Copyright_Mindtribe.jpg"
+    name: Adobe_Project_Parallel_Copyright_Mindtribe
+  - src: "Adobe_Project_Parallel_Copyright_Mindtribe_tiny.jpg"
+    name: Adobe_Project_Parallel_Copyright_Mindtribe_tiny
 
-- src: "Adobe_Prototypes_Copyright_Mindtribe.jpg"
-  name: Adobe_Prototypes_Copyright_Mindtribe
-- src: "Adobe_Prototypes_Copyright_Mindtribe_tiny.jpg"
-  name: Adobe_Prototypes_Copyright_Mindtribe_tiny
+  - src: "Adobe_Prototypes_Copyright_Mindtribe.jpg"
+    name: Adobe_Prototypes_Copyright_Mindtribe
+  - src: "Adobe_Prototypes_Copyright_Mindtribe_tiny.jpg"
+    name: Adobe_Prototypes_Copyright_Mindtribe_tiny
 
 entry_media:
-- image:
-    resource: "Adobe_Project_Parallel_Copyright_Adobe"
-    lazyload: "Adobe_Project_Parallel_Copyright_Adobe_tiny"
-    alt: "Project Parallel running on an iPad with Adobe Ink and Slide hardware"
+  - image:
+      resource: "Adobe_Project_Parallel_Copyright_Adobe"
+      lazyload: "Adobe_Project_Parallel_Copyright_Adobe_tiny"
+      alt: "Project Parallel running on an iPad with Adobe Ink and Slide hardware"
 
-- image:
-    resource: "Adobe_Project_Parallel_Copyright_Mindtribe"
-    lazyload: "Adobe_Project_Parallel_Copyright_Mindtribe_tiny"
-    alt: "User drawing in Project Parallel using Adobe Ink and Slide"
+  - image:
+      resource: "Adobe_Project_Parallel_Copyright_Mindtribe"
+      lazyload: "Adobe_Project_Parallel_Copyright_Mindtribe_tiny"
+      alt: "User drawing in Project Parallel using Adobe Ink and Slide"
 
-- image:
-    resource: "Adobe_Prototypes_Copyright_Mindtribe"
-    lazyload: "Adobe_Prototypes_Copyright_Mindtribe_tiny"
-    alt: "Project Parallel on iPad with Adobe Ink and Slide prototypes"
+  - image:
+      resource: "Adobe_Prototypes_Copyright_Mindtribe"
+      lazyload: "Adobe_Prototypes_Copyright_Mindtribe_tiny"
+      alt: "Project Parallel on iPad with Adobe Ink and Slide prototypes"
 ---
 Adobe engaged Mindtribe to help them explore the use of hardware to enhance the mobile drawing experience and bring back the familiar experience of drawing with pen and paper. We built a connected stylus capable of producing beautiful strokes on an iPad. To support this effort, Mindtribe wrote an iOS app to test and demonstrate the drawing capability of the stylus. During this program, Adobe asked us to also explore the concept of a hardware ruler for technical drawing. We prototyped this ruler and extended our test app with new functionality to support it. Around this time, we were collectively coming to the conclusion that these prototypes were more than intriguing concepts&mdash;they were potentially-shippable products.
 

@@ -3,22 +3,22 @@ title: "Automotive Apps (2012)"
 date: 2012-12-01T12:00:00-08:00
 draft: false
 short_name: "automotive-apps"
-tags: 
-- automotive
-- applications
-- iOS
+tags:
+  - automotive
+  - applications
+  - iOS
 
 resources:
-- src: "placeholder.svg"
-  name: placeholder
-- src: "placeholder_tiny.jpg"
-  name: placeholder_tiny
+  - src: "placeholder.svg"
+    name: placeholder
+  - src: "placeholder_tiny.jpg"
+    name: placeholder_tiny
 
 entry_media:
-- image:
-    resource: "placeholder"
-    lazyload: "placeholder_tiny"
-    alt: "Placeholder illustration of a person in a museum looking at a picture that says, 'image coming soon'"
+  - image:
+      resource: "placeholder"
+      lazyload: "placeholder_tiny"
+      alt: "Placeholder illustration of a person in a museum looking at a picture that says, 'image coming soon'"
 ---
 Ferrari, faced with increasingly-demanding expectations around infotainment functionality and user
 interface, wanted to explore how to modernize their infotainment experience by focusing on better

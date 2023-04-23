@@ -4,24 +4,24 @@ date: 2016-01-01T12:00:00-08:00
 draft: false
 short_name: "factory-provisioning-for-encrypted-communications-device"
 tags:
-- cryptography
-- manufacturing
-- program management
-- Python
-- security
-- test
+  - cryptography
+  - manufacturing
+  - program management
+  - Python
+  - security
+  - test
 
 resources:
-- src: "test_stations.svg"
-  name: test_stations
-- src: "test_stations_tiny.jpg"
-  name: test_stations_tiny
+  - src: "test_stations.svg"
+    name: test_stations
+  - src: "test_stations_tiny.jpg"
+    name: test_stations_tiny
 
 entry_media:
-- image:
-    resource: "test_stations"
-    lazyload: "test_stations"
-    alt: "Illustration of operators using factory test and provisioning stations"
+  - image:
+      resource: "test_stations"
+      lazyload: "test_stations"
+      alt: "Illustration of operators using factory test and provisioning stations"
 ---
 The [Encrypted Communications Device](#encrypted-communications-device) project included a complicated cryptosystem that required the generation of a unique identifier and cryptographic keys for each device's printed circuit board assembly (PCBA). This provisioning step needed to be performed securely on the manufacturing line in Manila. For early engineering test builds at the contract manufacturer, my engineering team was able to manually perform the provisioning step and load the device firmware; however, we needed to build a station that minimally-trained operators could use during production. Through the contract manufacturer, I commissioned an electromechanical fixture to hold the PCBAs and make the appropriate connections to the product's microcontroller. It was up to my team to write the provisioning software that would use this fixture to allow operators to program PCBAs.
 

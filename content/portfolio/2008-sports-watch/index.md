@@ -3,25 +3,25 @@ title: "Sports Watch (2008)"
 date: 2008-07-01T12:00:00-08:00
 draft: false
 short_name: "sports-watch"
-tags: 
-- C
-- firmware
-- communications protocols
-- low power design
-- sensors
-- wireless
+tags:
+  - C
+  - firmware
+  - communications protocols
+  - low power design
+  - sensors
+  - wireless
 
 resources:
-- src: "sports_watch.svg"
-  name: sports_watch
-- src: "sports_watch_tiny.jpg"
-  name: sports_watch_tiny
+  - src: "sports_watch.svg"
+    name: sports_watch
+  - src: "sports_watch_tiny.jpg"
+    name: sports_watch_tiny
 
 entry_media:
-- image:
-    resource: "sports_watch"
-    lazyload: "sports_watch_tiny"
-    alt: "Illustration of two people playing table tennis where one person is looking at cat photos on their phone while their watch plays for them"
+  - image:
+      resource: "sports_watch"
+      lazyload: "sports_watch_tiny"
+      alt: "Illustration of two people playing table tennis where one person is looking at cat photos on their phone while their watch plays for them"
 ---
 An electronics manufacturer was building a new version of sports watch that worked with the Apple
 iPod to control music and display sports activity information. The manufacturer was unhappy with the

@@ -4,33 +4,33 @@ date: 2007-12-01T12:00:00-08:00
 draft: false
 short_name: "implantable-medical-device"
 tags:
-- applications
-- C#
-- engineering management
-- medical
-- program management
+  - applications
+  - C#
+  - engineering management
+  - medical
+  - program management
 
 resources:
-- src: "Novashunt_Copyright_Mindtribe.jpg"
-  name: Novashunt_Copyright_Mindtribe
-- src: "Novashunt_Copyright_Mindtribe_tiny.jpg"
-  name: Novashunt_Copyright_Mindtribe_tiny
+  - src: "Novashunt_Copyright_Mindtribe.jpg"
+    name: Novashunt_Copyright_Mindtribe
+  - src: "Novashunt_Copyright_Mindtribe_tiny.jpg"
+    name: Novashunt_Copyright_Mindtribe_tiny
 
-- src: "Novashunt_Internals_Copyright_Mindtribe.jpg"
-  name: Novashunt_Internals_Copyright_Mindtribe
-- src: "Novashunt_Internals_Copyright_Mindtribe_tiny.jpg"
-  name: Novashunt_Internals_Copyright_Mindtribe_tiny
+  - src: "Novashunt_Internals_Copyright_Mindtribe.jpg"
+    name: Novashunt_Internals_Copyright_Mindtribe
+  - src: "Novashunt_Internals_Copyright_Mindtribe_tiny.jpg"
+    name: Novashunt_Internals_Copyright_Mindtribe_tiny
 
 entry_media:
-- image:
-    resource: "Novashunt_Copyright_Mindtribe"
-    lazyload: "Novashunt_Copyright_Mindtribe_tiny"
-    alt: "Novashunt implantable device"
+  - image:
+      resource: "Novashunt_Copyright_Mindtribe"
+      lazyload: "Novashunt_Copyright_Mindtribe_tiny"
+      alt: "Novashunt implantable device"
 
-- image:
-    resource: "Novashunt_Internals_Copyright_Mindtribe"
-    lazyload: "Novashunt_Internals_Copyright_Mindtribe_tiny"
-    alt: "Novashunt device internals"
+  - image:
+      resource: "Novashunt_Internals_Copyright_Mindtribe"
+      lazyload: "Novashunt_Internals_Copyright_Mindtribe_tiny"
+      alt: "Novashunt device internals"
 ---
 NovaShunt was building an implantable peritoneal pump and worked with Mindtribe on the pump design, including wireless charging and communications.
 

@@ -4,23 +4,23 @@ date: 1998-12-01T12:00:00-08:00
 draft: false
 short_name: "cnc-pcba-drill"
 tags:
-- applications
-- control systems
-- motors
-- Pascal
-- reverse engineering
+  - applications
+  - control systems
+  - motors
+  - Pascal
+  - reverse engineering
 
 resources:
-- src: "ime_157.svg"
-  name: ime_157
-- src: "ime_157_tiny.jpg"
-  name: ime_157_tiny
+  - src: "ime_157.svg"
+    name: ime_157
+  - src: "ime_157_tiny.jpg"
+    name: ime_157_tiny
 
 entry_media:
-- image:
-    resource: "ime_157"
-    lazyload: "ime_157_tiny"
-    alt: "Illustration of misbehaving NC drill"
+  - image:
+      resource: "ime_157"
+      lazyload: "ime_157_tiny"
+      alt: "Illustration of misbehaving NC drill"
 ---
 Cal Poly has an amazing class, IME 157, that teaches students about electronic product manufacturing processes by having them build an electronic product themselves. In this class, students use CAD to capture a schematic and lay out a PCB. They then drill and etch the PCB, solder on the components, and build a simple sheet metal enclosure. At the end of the course, each student has created a working product such as a car alarm, strobe light, etc.
 

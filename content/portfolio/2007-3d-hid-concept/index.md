@@ -3,23 +3,23 @@ title: "3D Human Interface Device Concept (2007)"
 date: 2007-10-01T12:00:00-08:00
 draft: false
 short_name: "3d-hid-concept"
-tags: 
-- C
-- firmware
-- sensors
-- USB
+tags:
+  - C
+  - firmware
+  - sensors
+  - USB
 
 resources:
-- src: "placeholder.svg"
-  name: placeholder
-- src: "placeholder_tiny.jpg"
-  name: placeholder_tiny
+  - src: "placeholder.svg"
+    name: placeholder
+  - src: "placeholder_tiny.jpg"
+    name: placeholder_tiny
 
 entry_media:
-- image:
-    resource: "placeholder"
-    lazyload: "placeholder_tiny"
-    alt: "Placeholder illustration of a person in a museum looking at a picture that says, 'image coming soon'"
+  - image:
+      resource: "placeholder"
+      lazyload: "placeholder_tiny"
+      alt: "Placeholder illustration of a person in a museum looking at a picture that says, 'image coming soon'"
 ---
 Having achieved success in the gaming market with their [3D Mouse](#3d-mouse), Sandio began exploring new 3D input device concept that used a fusion of multiple touchpads to provide precise and intuitive 3D control of virtual objects.
 

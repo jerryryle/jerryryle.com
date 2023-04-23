@@ -4,25 +4,25 @@ date: 2016-12-01T12:00:00-08:00
 draft: false
 short_name: "surgical-robot-hid"
 tags:
-- C
-- communications protocols
-- engineering management
-- firmware
-- medical
-- networks
-- program management
+  - C
+  - communications protocols
+  - engineering management
+  - firmware
+  - medical
+  - networks
+  - program management
 
 resources:
-- src: "surgical_robot.svg"
-  name: surgical_robot
-- src: "surgical_robot_tiny.jpg"
-  name: surgical_robot_tiny
+  - src: "surgical_robot.svg"
+    name: surgical_robot
+  - src: "surgical_robot_tiny.jpg"
+    name: surgical_robot_tiny
 
 entry_media:
-- image:
-    resource: "surgical_robot"
-    lazyload: "surgical_robot_tiny"
-    alt: "Illustration of a surgeon performing surgery with a robot"
+  - image:
+      resource: "surgical_robot"
+      lazyload: "surgical_robot_tiny"
+      alt: "Illustration of a surgeon performing surgery with a robot"
 ---
 A medical device startup is creating an innovative surgical robotics system. They engaged Mindtribe to create a medical-grade input device that surgeons will use to control the robots.
 

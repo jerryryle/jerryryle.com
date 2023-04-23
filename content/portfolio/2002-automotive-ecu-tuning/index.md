@@ -3,33 +3,33 @@ title: "Automotive ECU Tuning (2002-2006)"
 date: 2002-12-01T12:00:00-08:00
 draft: false
 short_name: "automotive-ecu-tuning"
-tags: 
-- assembly
-- automotive
-- firmware
-- reverse engineering
+tags:
+  - assembly
+  - automotive
+  - firmware
+  - reverse engineering
 
 resources:
-- src: "ECU_Tuning_Disassembly.png"
-  name: ECU_Tuning_Disassembly
-- src: "ECU_Tuning_Disassembly_tiny.jpg"
-  name: ECU_Tuning_Disassembly_tiny
+  - src: "ECU_Tuning_Disassembly.png"
+    name: ECU_Tuning_Disassembly
+  - src: "ECU_Tuning_Disassembly_tiny.jpg"
+    name: ECU_Tuning_Disassembly_tiny
 
-- src: "ECU_Tuning_ADC_Setup.png"
-  name: ECU_Tuning_ADC_Setup
-- src: "ECU_Tuning_ADC_Setup_tiny.jpg"
-  name: ECU_Tuning_ADC_Setup_tiny
+  - src: "ECU_Tuning_ADC_Setup.png"
+    name: ECU_Tuning_ADC_Setup
+  - src: "ECU_Tuning_ADC_Setup_tiny.jpg"
+    name: ECU_Tuning_ADC_Setup_tiny
 
 entry_media:
-- image:
-    resource: "ECU_Tuning_Disassembly"
-    lazyload: "ECU_Tuning_Disassembly_tiny"
-    alt: "Screenshot of IDA Pro ECU disassembly"
+  - image:
+      resource: "ECU_Tuning_Disassembly"
+      lazyload: "ECU_Tuning_Disassembly_tiny"
+      alt: "Screenshot of IDA Pro ECU disassembly"
 
-- image:
-    resource: "ECU_Tuning_ADC_Setup"
-    lazyload: "ECU_Tuning_ADC_Setup_tiny"
-    alt: "Handwritten notes on the ADC setup for an ECU"
+  - image:
+      resource: "ECU_Tuning_ADC_Setup"
+      lazyload: "ECU_Tuning_ADC_Setup_tiny"
+      alt: "Handwritten notes on the ADC setup for an ECU"
 ---
 Dinan is an automotive tuner that creates high quality, after-market performance modifications for
 BMWs. Their work is highly-regarded and covered by a comprehensive warranty in cooperation with BMW

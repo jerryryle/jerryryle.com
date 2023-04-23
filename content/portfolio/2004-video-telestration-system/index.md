@@ -3,22 +3,22 @@ title: "Video Control and Telestration System (2004)"
 date: 2004-05-01T12:00:00-08:00
 draft: false
 short_name: "video-telestration-system"
-tags: 
-- applications
-- product management
-- program management
+tags:
+  - applications
+  - product management
+  - program management
 
 resources:
-- src: "Video_Telestration_System.png"
-  name: Video_Telestration_System
-- src: "Video_Telestration_System_tiny.jpg"
-  name: Video_Telestration_System_tiny
+  - src: "Video_Telestration_System.png"
+    name: Video_Telestration_System
+  - src: "Video_Telestration_System_tiny.jpg"
+    name: Video_Telestration_System_tiny
 
 entry_media:
-- image:
-    resource: "Video_Telestration_System"
-    lazyload: "Video_Telestration_System_tiny"
-    alt: "Screenshots from a specification document for a Video Control and Telestration System"
+  - image:
+      resource: "Video_Telestration_System"
+      lazyload: "Video_Telestration_System_tiny"
+      alt: "Screenshots from a specification document for a Video Control and Telestration System"
 ---
 A video telestration startup had contracted a firm in India to develop a large software application
 that would run on a hardware appliance and allow users to control and annotate live video.

@@ -3,24 +3,24 @@ title: "Phone-controlled Tetromino Game (2010)"
 date: 2010-01-01T12:00:00-08:00
 draft: false
 short_name: "phone-controlled-tetromino-game"
-tags: 
-- Adobe Flash
-- applications
-- C++
-- communications protocols
-- Windows
+tags:
+  - Adobe Flash
+  - applications
+  - C++
+  - communications protocols
+  - Windows
 
 resources:
-- src: "Window_Game.png"
-  name: Window_Game
-- src: "Window_Game_tiny.jpg"
-  name: Window_Game_tiny
+  - src: "Window_Game.png"
+    name: Window_Game
+  - src: "Window_Game_tiny.jpg"
+    name: Window_Game_tiny
 
 entry_media:
-- image:
-    resource: "Window_Game"
-    lazyload: "Window_Game_tiny"
-    alt: "Article clipping from the Palo Alto Weekly with a photo of people playing Mindtribe's window game"
+  - image:
+      resource: "Window_Game"
+      lazyload: "Window_Game_tiny"
+      alt: "Article clipping from the Palo Alto Weekly with a photo of people playing Mindtribe's window game"
 ---
 When Mindtribe moved into a new office on University Avenue on Palo Alto, we found ourselves with a
 large, very visible window. We decided to create an interactive sign that would advertise our

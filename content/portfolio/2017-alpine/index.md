@@ -3,22 +3,22 @@ title: "Fresh Health (2017-2018)"
 date: 2017-06-01T12:00:00-08:00
 draft: false
 short_name: "alpine"
-tags: 
-- engineering management
-- leadership
-- startup
+tags:
+  - engineering management
+  - leadership
+  - startup
 
 resources:
-- src: "alpine.svg"
-  name: alpine
-- src: "alpine_tiny.jpg"
-  name: alpine_tiny
+  - src: "alpine.svg"
+    name: alpine
+  - src: "alpine_tiny.jpg"
+    name: alpine_tiny
 
 entry_media:
-- image:
-    resource: "alpine"
-    lazyload: "alpine_tiny"
-    alt: "Alpine Oral Tech logo"
+  - image:
+      resource: "alpine"
+      lazyload: "alpine_tiny"
+      alt: "Alpine Oral Tech logo"
 ---
 In 2017, I joined [Mike Hanuschik](https://www.linkedin.com/in/michaelhanuschik/) in creating the consumer healthcare startup, Alpine Oral Tech, Inc., which later became Fresh Health. Fresh Health is developing the [Proclaim Custom-Jet Oral Health System](https://proclaimhealth.com/pages/how-it-works) that has the potential to help billions live healthier, longer lives. I helped Mike bootstrap the company, hire our first engineers, and develop patents and prototypes to secure additional funding. While I was largely working in a leadership/management capacity, I got hands-on where needed. Specifically, I enjoyed the following eclectic projects:
 

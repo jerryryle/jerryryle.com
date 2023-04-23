@@ -3,28 +3,28 @@ title: "Automotive iPhone Integration (2009)"
 date: 2009-06-01T12:00:00-08:00
 draft: false
 short_name: "automotive-iphone-integration"
-tags: 
-- Android
-- applications
-- automotive
-- C
-- C++
-- communications protocols
-- iOS
-- Linux
-- networks
+tags:
+  - Android
+  - applications
+  - automotive
+  - C
+  - C++
+  - communications protocols
+  - iOS
+  - Linux
+  - networks
 
 resources:
-- src: "BMW_Mini_Connected_Copyright_Mindtribe.jpg"
-  name: BMW_Mini_Connected_Copyright_Mindtribe
-- src: "BMW_Mini_Connected_Copyright_Mindtribe_tiny.jpg"
-  name: BMW_Mini_Connected_Copyright_Mindtribe_tiny
+  - src: "BMW_Mini_Connected_Copyright_Mindtribe.jpg"
+    name: BMW_Mini_Connected_Copyright_Mindtribe
+  - src: "BMW_Mini_Connected_Copyright_Mindtribe_tiny.jpg"
+    name: BMW_Mini_Connected_Copyright_Mindtribe_tiny
 
 entry_media:
-- image:
-    resource: "BMW_Mini_Connected_Copyright_Mindtribe"
-    lazyload: "BMW_Mini_Connected_Copyright_Mindtribe_tiny"
-    alt: "BMW MINI Connected running on a MINI's head unit"
+  - image:
+      resource: "BMW_Mini_Connected_Copyright_Mindtribe"
+      lazyload: "BMW_Mini_Connected_Copyright_Mindtribe_tiny"
+      alt: "BMW MINI Connected running on a MINI's head unit"
 ---
 Anticipating a need for agility in automotive environments to keep up with the constant evolution of
 consumer smartphone features, the BMW Technology Office approached Mindtribe to help architect a new

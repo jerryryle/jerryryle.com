@@ -3,54 +3,54 @@ title: "Illuminated Dashboard Moustache (2014)"
 date: 2014-08-01T12:00:00-08:00
 draft: false
 short_name: "illuminated-dashboard-moustache"
-tags: 
-- automotive
-- C
-- electrical
-- engineering management
-- firmware
-- injection molding
-- manufacturing
-- mechanical
-- program management
+tags:
+  - automotive
+  - C
+  - electrical
+  - engineering management
+  - firmware
+  - injection molding
+  - manufacturing
+  - mechanical
+  - program management
 
 resources:
-- src: "Lyft_Glowstache_Copyright_Mindtribe.jpg"
-  name: Lyft_Glowstache_Copyright_Mindtribe
-- src: "Lyft_Glowstache_Copyright_Mindtribe_tiny.jpg"
-  name: Lyft_Glowstache_Copyright_Mindtribe_tiny
+  - src: "Lyft_Glowstache_Copyright_Mindtribe.jpg"
+    name: Lyft_Glowstache_Copyright_Mindtribe
+  - src: "Lyft_Glowstache_Copyright_Mindtribe_tiny.jpg"
+    name: Lyft_Glowstache_Copyright_Mindtribe_tiny
 
-- src: "Lyft_Glowstache_Color_Matching_Copyright_Mindtribe.jpg"
-  name: Lyft_Glowstache_Color_Matching_Copyright_Mindtribe
-- src: "Lyft_Glowstache_Color_Matching_Copyright_Mindtribe_tiny.jpg"
-  name: Lyft_Glowstache_Color_Matching_Copyright_Mindtribe_tiny
+  - src: "Lyft_Glowstache_Color_Matching_Copyright_Mindtribe.jpg"
+    name: Lyft_Glowstache_Color_Matching_Copyright_Mindtribe
+  - src: "Lyft_Glowstache_Color_Matching_Copyright_Mindtribe_tiny.jpg"
+    name: Lyft_Glowstache_Color_Matching_Copyright_Mindtribe_tiny
 
-- src: "Lyft_Glowstache_Injection_Molding.jpg"
-  name: Lyft_Glowstache_Injection_Molding
-- src: "Lyft_Glowstache_Injection_Molding_tiny.jpg"
-  name: Lyft_Glowstache_Injection_Molding_tiny
-- src: "Lyft_Glowstache_Injection_Molding.mp4"
-  name: Lyft_Glowstache_Injection_Molding_mp4
-- src: "Lyft_Glowstache_Injection_Molding.ogv"
-  name: Lyft_Glowstache_Injection_Molding_ogv
-- src: "Lyft_Glowstache_Injection_Molding.webm"
-  name: Lyft_Glowstache_Injection_Molding_webm
+  - src: "Lyft_Glowstache_Injection_Molding.jpg"
+    name: Lyft_Glowstache_Injection_Molding
+  - src: "Lyft_Glowstache_Injection_Molding_tiny.jpg"
+    name: Lyft_Glowstache_Injection_Molding_tiny
+  - src: "Lyft_Glowstache_Injection_Molding.mp4"
+    name: Lyft_Glowstache_Injection_Molding_mp4
+  - src: "Lyft_Glowstache_Injection_Molding.ogv"
+    name: Lyft_Glowstache_Injection_Molding_ogv
+  - src: "Lyft_Glowstache_Injection_Molding.webm"
+    name: Lyft_Glowstache_Injection_Molding_webm
 
 entry_media:
-- image:
-    resource: "Lyft_Glowstache_Copyright_Mindtribe"
-    lazyload: "Lyft_Glowstache_Copyright_Mindtribe_tiny"
-    alt: "Lyft Glowstache"
-- image:
-    resource: "Lyft_Glowstache_Color_Matching_Copyright_Mindtribe"
-    lazyload: "Lyft_Glowstache_Color_Matching_Copyright_Mindtribe_tiny"
-    alt: "Lyft Glowstache color samples"
-- video:
-    poster: "Lyft_Glowstache_Injection_Molding"
-    lazyload: "Lyft_Glowstache_Injection_Molding_tiny"
-    resource_mp4: Lyft_Glowstache_Injection_Molding_mp4
-    resource_webm: Lyft_Glowstache_Injection_Molding_webm
-    resource_ogv: Lyft_Glowstache_Injection_Molding_ogv
+  - image:
+      resource: "Lyft_Glowstache_Copyright_Mindtribe"
+      lazyload: "Lyft_Glowstache_Copyright_Mindtribe_tiny"
+      alt: "Lyft Glowstache"
+  - image:
+      resource: "Lyft_Glowstache_Color_Matching_Copyright_Mindtribe"
+      lazyload: "Lyft_Glowstache_Color_Matching_Copyright_Mindtribe_tiny"
+      alt: "Lyft Glowstache color samples"
+  - video:
+      poster: "Lyft_Glowstache_Injection_Molding"
+      lazyload: "Lyft_Glowstache_Injection_Molding_tiny"
+      resource_mp4: Lyft_Glowstache_Injection_Molding_mp4
+      resource_webm: Lyft_Glowstache_Injection_Molding_webm
+      resource_ogv: Lyft_Glowstache_Injection_Molding_ogv
 ---
 [Lyft](https://www.lyft.com), the popular ride sharing service that is headquartered in SF, engaged Mindtribe to work with [Ammunition](https://ammunitiongroup.com) to overhaul Lyft's iconic, fuzzy "carstache". Our mission was to create a smaller, sleeker, more refined emblem that maintained the superb brand recognition Lyft had earned with their standout 'stache.
 

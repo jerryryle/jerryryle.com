@@ -3,27 +3,27 @@ title: "Visual Messaging System (2002)"
 date: 2002-09-01T12:00:00-08:00
 draft: false
 short_name: "visual-messaging-system"
-tags: 
-- applications
-- automotive
-- C
-- C++
-- CAN
-- firmware
-- graphics
-- Windows CE
+tags:
+  - applications
+  - automotive
+  - C
+  - C++
+  - CAN
+  - firmware
+  - graphics
+  - Windows CE
 
 resources:
-- src: "BMW_Visual_Messaging_System.jpg"
-  name: BMW_Visual_Messaging_System
-- src: "BMW_Visual_Messaging_System_tiny.jpg"
-  name: BMW_Visual_Messaging_System_tiny
+  - src: "BMW_Visual_Messaging_System.jpg"
+    name: BMW_Visual_Messaging_System
+  - src: "BMW_Visual_Messaging_System_tiny.jpg"
+    name: BMW_Visual_Messaging_System_tiny
 
 entry_media:
-- image:
-    resource: "BMW_Visual_Messaging_System"
-    lazyload: "BMW_Visual_Messaging_System_tiny"
-    alt: "Example of a driver receiving information during a race via a visual messaging system"
+  - image:
+      resource: "BMW_Visual_Messaging_System"
+      lazyload: "BMW_Visual_Messaging_System_tiny"
+      alt: "Example of a driver receiving information during a race via a visual messaging system"
 ---
 The BMW Technology Office was working with a specialist to create optics for a heads up display in a racing helmet. They contacted Mindtribe to produce electronics for this helmet concept. The helmet would receive messages from a pit crew via a radio on the car's CAN bus. The helmet would then display graphics pertaining to the messages through the special optics. Drivers would be able to see both these graphics and the road simultaneously without refocusing their eyes.
 

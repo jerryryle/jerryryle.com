@@ -3,24 +3,24 @@ title: "Ambient Mobile Charging (2015)"
 date: 2015-08-01T12:00:00-08:00
 draft: false
 short_name: "ambient-mobile-charging"
-tags: 
-- Android
-- applications
-- engineering management
-- program management
-- USB
+tags:
+  - Android
+  - applications
+  - engineering management
+  - program management
+  - USB
 
 resources:
-- src: "ambient_charging.svg"
-  name: ambient_charging
-- src: "ambient_charging_tiny.jpg"
-  name: ambient_charging_tiny
+  - src: "ambient_charging.svg"
+    name: ambient_charging
+  - src: "ambient_charging_tiny.jpg"
+    name: ambient_charging_tiny
 
 entry_media:
-- image:
-    resource: "ambient_charging"
-    lazyload: "ambient_charging_tiny"
-    alt: "Illustration of people chatting at a bar while their phones charge on bar stools nearby"
+  - image:
+      resource: "ambient_charging"
+      lazyload: "ambient_charging_tiny"
+      alt: "Illustration of people chatting at a bar while their phones charge on bar stools nearby"
 ---
 A startup offering mobile charging as a service was having quality problems with their devices. The
 service operates via a deployment of smart batteries throughout urban areas. When users encounter

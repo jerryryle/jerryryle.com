@@ -3,26 +3,26 @@ title: "Cashless Arcade Game Payment System (2005)"
 date: 2005-12-01T12:00:00-08:00
 draft: false
 short_name: "cashless-arcade-payment-system"
-tags: 
-- algorithms
-- C
-- communications protocols
-- firmware
-- graphics
-- networks
-- sensors
+tags:
+  - algorithms
+  - C
+  - communications protocols
+  - firmware
+  - graphics
+  - networks
+  - sensors
 
 resources:
-- src: "Cashless_Arcade_Payment_System.jpg"
-  name: Cashless_Arcade_Payment_System
-- src: "Cashless_Arcade_Payment_System_tiny.jpg"
-  name: Cashless_Arcade_Payment_System_tiny
+  - src: "Cashless_Arcade_Payment_System.jpg"
+    name: Cashless_Arcade_Payment_System
+  - src: "Cashless_Arcade_Payment_System_tiny.jpg"
+    name: Cashless_Arcade_Payment_System_tiny
 
 entry_media:
-- image:
-    resource: "Cashless_Arcade_Payment_System"
-    lazyload: "Cashless_Arcade_Payment_System_tiny"
-    alt: "Photo of a cashless arcade payment system unit with an arcade in the background"
+  - image:
+      resource: "Cashless_Arcade_Payment_System"
+      lazyload: "Cashless_Arcade_Payment_System_tiny"
+      alt: "Photo of a cashless arcade payment system unit with an arcade in the background"
 ---
 Ideal Software Systems makes cashless payment systems for the entertainment industry. They approached Mindtribe looking to overhaul their existing hardware's industrial design, reduce system cost, and add features. The device electrically interfaces with arcade games to replace coin acceptors and ticket dispensers. There's no standard for these and the build quality varies wildly, so our client's device had to offer configuration options that would handle numerous voltages, poorly-grounded signals, transients, etc. The device also needed to survive attempted vandalism and having Skee-Balls chucked at it.
 

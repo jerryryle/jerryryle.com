@@ -3,30 +3,30 @@ title: "Secure, Mobile Point of Sale System (2012)"
 date: 2012-02-01T12:00:00-08:00
 draft: false
 short_name: "secure-mobile-pos"
-tags: 
-- C
-- communications protocols
-- cryptography
-- engineering management
-- firmware
-- hiring
-- iOS
-- low power design
-- program management
-- security
-- USB
+tags:
+  - C
+  - communications protocols
+  - cryptography
+  - engineering management
+  - firmware
+  - hiring
+  - iOS
+  - low power design
+  - program management
+  - security
+  - USB
 
 resources:
-- src: "Square_Stand_Copyright_Mindtribe.jpg"
-  name: Square_Stand_Copyright_Mindtribe
-- src: "Square_Stand_Copyright_Mindtribe_tiny.jpg"
-  name: Square_Stand_Copyright_Mindtribe_tiny
+  - src: "Square_Stand_Copyright_Mindtribe.jpg"
+    name: Square_Stand_Copyright_Mindtribe
+  - src: "Square_Stand_Copyright_Mindtribe_tiny.jpg"
+    name: Square_Stand_Copyright_Mindtribe_tiny
 
 entry_media:
-- image:
-    resource: "Square_Stand_Copyright_Mindtribe"
-    lazyload: "Square_Stand_Copyright_Mindtribe_tiny"
-    alt: "Square Stand"
+  - image:
+      resource: "Square_Stand_Copyright_Mindtribe"
+      lazyload: "Square_Stand_Copyright_Mindtribe_tiny"
+      alt: "Square Stand"
 ---
 Square kicked Mindtribe off on their Point of Sale system design as we were wrapping up their [Secure Mobile Card Reader](#secure-mobile-card-reader). The system, known as the Square Stand, is intended to appeal to brick-and-mortar stores that need a more professional solution than the Mobile Card Reader offered. The Stand leverages an iPad for its display and connectivity and allows users to connect barcode scanners, cash drawers, and receipt printers through its USB hub.
 

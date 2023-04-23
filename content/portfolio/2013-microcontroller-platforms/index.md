@@ -4,26 +4,26 @@ date: 2014-05-01T12:00:00-08:00
 draft: false
 short_name: "microcontroller-platforms"
 tags:
-- C
-- electrical
-- engineering management
-- firmware
-- Linux
-- program management
-- sensors
-- test
+  - C
+  - electrical
+  - engineering management
+  - firmware
+  - Linux
+  - program management
+  - sensors
+  - test
 
 resources:
-- src: "Microcontroller_Platform.jpg"
-  name: Microcontroller_Platform
-- src: "Microcontroller_Platform_tiny.jpg"
-  name: Microcontroller_Platform_tiny
+  - src: "Microcontroller_Platform.jpg"
+    name: Microcontroller_Platform
+  - src: "Microcontroller_Platform_tiny.jpg"
+    name: Microcontroller_Platform_tiny
 
 entry_media:
-- image:
-    resource: "Microcontroller_Platform"
-    lazyload: "Microcontroller_Platform_tiny"
-    alt: "Photo of a Stellaris Launchpad development board from Texas Instruments"
+  - image:
+      resource: "Microcontroller_Platform"
+      lazyload: "Microcontroller_Platform_tiny"
+      alt: "Photo of a Stellaris Launchpad development board from Texas Instruments"
 ---
 Mindtribe is always looking for ways to build products faster. One such method is to invest in
 intellectual property development that's ready for reuse on projects. To this end, we created

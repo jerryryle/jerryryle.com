@@ -3,36 +3,36 @@ title: "Infrared Remote Control for iPod (2002)"
 date: 2002-11-01T12:00:00-08:00
 draft: false
 short_name: "infrared-remote-control-for-ipod"
-tags: 
-- assembly
-- C
-- firmware
-- manufacturing
-- sensors
-- test
-- wireless
+tags:
+  - assembly
+  - C
+  - firmware
+  - manufacturing
+  - sensors
+  - test
+  - wireless
 
 resources:
-- src: "Ten_Navipod.jpg"
-  name: Ten_Navipod
-- src: "Ten_Navipod_tiny.jpg"
-  name: Ten_Navipod_tiny
+  - src: "Ten_Navipod.jpg"
+    name: Ten_Navipod
+  - src: "Ten_Navipod_tiny.jpg"
+    name: Ten_Navipod_tiny
 
-- src: "Ten_Navipod_Test_Tool.jpg"
-  name: Ten_Navipod_Test_Tool
-- src: "Ten_Navipod_Test_Tool_tiny.jpg"
-  name: Ten_Navipod_Test_Tool_tiny
+  - src: "Ten_Navipod_Test_Tool.jpg"
+    name: Ten_Navipod_Test_Tool
+  - src: "Ten_Navipod_Test_Tool_tiny.jpg"
+    name: Ten_Navipod_Test_Tool_tiny
 
 entry_media:
-- image:
-    resource: "Ten_Navipod"
-    lazyload: "Ten_Navipod_tiny"
-    alt: "Ten Technologies Navipod units"
+  - image:
+      resource: "Ten_Navipod"
+      lazyload: "Ten_Navipod_tiny"
+      alt: "Ten Technologies Navipod units"
 
-- image:
-    resource: "Ten_Navipod_Test_Tool"
-    lazyload: "Ten_Navipod_Test_Tool_tiny"
-    alt: "Factory test tool for Ten Technologies Navipod manufacturing"
+  - image:
+      resource: "Ten_Navipod_Test_Tool"
+      lazyload: "Ten_Navipod_Test_Tool_tiny"
+      alt: "Factory test tool for Ten Technologies Navipod manufacturing"
 ---
 Consumer electronics startup, Ten Technology, engaged Mindtribe to create an infrared remote control for the iPod. This allows users to control their music collection from across the room. Ten's remote control has the honor of being the first "smart" iPod accessory and it pioneered Apple's official Made for iPod program that launched the market for smart accessories.
 

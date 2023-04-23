@@ -3,35 +3,35 @@ title: "OLED Keyboard (2005)"
 date: 2005-10-01T12:00:00-08:00
 draft: false
 short_name: "oled-keyboard"
-tags: 
-- applications
-- C
-- C++
-- firmware
-- graphics
-- USB
+tags:
+  - applications
+  - C
+  - C++
+  - firmware
+  - graphics
+  - USB
 
 resources:
-- src: "United_Keys_Keyboard.jpg"
-  name: United_Keys_Keyboard
-- src: "United_Keys_Keyboard_tiny.jpg"
-  name: United_Keys_Keyboard_tiny
+  - src: "United_Keys_Keyboard.jpg"
+    name: United_Keys_Keyboard
+  - src: "United_Keys_Keyboard_tiny.jpg"
+    name: United_Keys_Keyboard_tiny
 
-- src: "United_Keys_Keypad.jpg"
-  name: United_Keys_Keypad
-- src: "United_Keys_Keypad_tiny.jpg"
-  name: United_Keys_Keypad_tiny
+  - src: "United_Keys_Keypad.jpg"
+    name: United_Keys_Keypad
+  - src: "United_Keys_Keypad_tiny.jpg"
+    name: United_Keys_Keypad_tiny
 
 entry_media:
-- image:
-    resource: "United_Keys_Keyboard"
-    lazyload: "United_Keys_Keyboard_tiny"
-    alt: "United Keys OLED Keyboard"
+  - image:
+      resource: "United_Keys_Keyboard"
+      lazyload: "United_Keys_Keyboard_tiny"
+      alt: "United Keys OLED Keyboard"
 
-- image:
-    resource: "United_Keys_Keypad"
-    lazyload: "United_Keys_Keypad_tiny"
-    alt: "United Keys OLED Keypad"
+  - image:
+      resource: "United_Keys_Keypad"
+      lazyload: "United_Keys_Keypad_tiny"
+      alt: "United Keys OLED Keypad"
 ---
 Input device startup, United Keys, asked Mindtribe to create a prototype of a keyboard that features keys with context-aware OLED screens embedded in them. This very early precursor to the Touch Bar on Apple's current Macbook Pro allowed the keyboard to provide application-specific functions. Mindtribe created a functional prototype for United Keys' investor demonstrations.
 

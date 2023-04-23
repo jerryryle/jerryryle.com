@@ -4,37 +4,37 @@ date: 2016-02-01T12:00:00-08:00
 draft: false
 short_name: "encrypted-communications-device"
 tags:
-- applications
-- audio
-- C
-- communications protocols
-- cryptography
-- electrical
-- firmware
-- hiring
-- injection molding
-- iOS
-- low power design
-- manufacturing
-- mechanical
-- OTA update
-- program management
-- security
-- test
-- ultrasonic welding
-- USB
+  - applications
+  - audio
+  - C
+  - communications protocols
+  - cryptography
+  - electrical
+  - firmware
+  - hiring
+  - injection molding
+  - iOS
+  - low power design
+  - manufacturing
+  - mechanical
+  - OTA update
+  - program management
+  - security
+  - test
+  - ultrasonic welding
+  - USB
 
 resources:
-- src: "encrypted_communications.svg"
-  name: encrypted_communications
-- src: "encrypted_communications_tiny.jpg"
-  name: encrypted_communications_tiny
+  - src: "encrypted_communications.svg"
+    name: encrypted_communications
+  - src: "encrypted_communications_tiny.jpg"
+    name: encrypted_communications_tiny
 
 entry_media:
-- image:
-    resource: "encrypted_communications"
-    lazyload: "encrypted_communications_tiny"
-    alt: "Illustration of an encrypted conversation between people in New York and London"
+  - image:
+      resource: "encrypted_communications"
+      lazyload: "encrypted_communications_tiny"
+      alt: "Illustration of an encrypted conversation between people in New York and London"
 ---
 A startup with deep security expertise was building an iPhone accessory that secured voice calls with
 strong encryption. Because of our extensive experience with iPhone accessory development, they

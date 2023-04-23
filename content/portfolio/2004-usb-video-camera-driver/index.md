@@ -3,24 +3,24 @@ title: "USB Video Camera Driver (2004)"
 date: 2004-12-01T12:00:00-08:00
 draft: false
 short_name: "usb-video-camera-driver"
-tags: 
-- applications
-- C++
-- sensors
-- USB
-- video
+tags:
+  - applications
+  - C++
+  - sensors
+  - USB
+  - video
 
 resources:
-- src: "usb_camera_driver.svg"
-  name: usb_camera_driver
-- src: "usb_camera_driver_tiny.jpg"
-  name: usb_camera_driver_tiny
+  - src: "usb_camera_driver.svg"
+    name: usb_camera_driver
+  - src: "usb_camera_driver_tiny.jpg"
+    name: usb_camera_driver_tiny
 
 entry_media:
-- image:
-    resource: "usb_camera_driver"
-    lazyload: "usb_camera_driver"
-    alt: "Illustration of a computer telling a person that their camera driver cannot be found and asking them if they would like to try writing one"
+  - image:
+      resource: "usb_camera_driver"
+      lazyload: "usb_camera_driver"
+      alt: "Illustration of a computer telling a person that their camera driver cannot be found and asking them if they would like to try writing one"
 ---
 An optics company built a new type of camera for aerospace and medical applications. They contacted Mindtribe to help them create a Windows device driver for the camera.
 

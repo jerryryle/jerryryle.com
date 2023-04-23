@@ -3,30 +3,30 @@ title: "Automotive IP Camera (2001)"
 date: 2001-10-01T12:00:00-08:00
 draft: false
 short_name: "automotive-ip-camera"
-tags: 
-- applications
-- automotive
-- C
-- communications protocols
-- firmware
-- Java
-- Linux
-- networks
-- sensors
-- USB
-- video
+tags:
+  - applications
+  - automotive
+  - C
+  - communications protocols
+  - firmware
+  - Java
+  - Linux
+  - networks
+  - sensors
+  - USB
+  - video
 
 resources:
-- src: "BMW_IP_Camera.jpg"
-  name: BMW_IP_Camera
-- src: "BMW_IP_Camera_tiny.jpg"
-  name: BMW_IP_Camera_tiny
+  - src: "BMW_IP_Camera.jpg"
+    name: BMW_IP_Camera
+  - src: "BMW_IP_Camera_tiny.jpg"
+    name: BMW_IP_Camera_tiny
 
 entry_media:
-- image:
-    resource: "BMW_IP_Camera"
-    lazyload: "BMW_IP_Camera_tiny"
-    alt: "Agilent imaging sensor with multimeter probes"
+  - image:
+      resource: "BMW_IP_Camera"
+      lazyload: "BMW_IP_Camera_tiny"
+      alt: "Agilent imaging sensor with multimeter probes"
 ---
 The BMW Technology Office was exploring the integration of an IP-based LAN inside a car. Cars use
 several CAN and other proprietary buses, which make it difficult to add new devices to a car's
