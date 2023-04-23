@@ -7,6 +7,7 @@ tags:
   - medical
   - engineering management
   - leadership
+  - strategy
 
 resources:
   - src: "verily.svg"
