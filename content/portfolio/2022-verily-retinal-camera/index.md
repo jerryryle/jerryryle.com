@@ -35,7 +35,7 @@ entry_media:
       lazyload: "verily_retinal_camera_side_tiny"
       alt: "Verily Retinal Camera Side View"
 ---
-The Verily Retinal Service combines an advanced camera with workflow software, making it easier for clinicians to conduct quality diabetic retinopathy screens. The lightweight and portable camera includes advanced lighting, stabilization, and Machine Learning technology that requires no dilation of the eye in most cases. These features allow a minimally-trained operator to take high-quality photos of a patient's retina, which will make this type of diagnostic imaging more accessible.
+The [Verily Retinal Service](https://verily.com/solutions/retinal-camera-service/) combines an advanced camera with workflow software, making it easier for clinicians to conduct quality diabetic retinopathy screens. The lightweight and portable camera includes advanced lighting, stabilization, and Machine Learning technology that requires no dilation of the eye in most cases. These features allow a minimally-trained operator to take high-quality photos of a patient's retina, which will make this type of diagnostic imaging more accessible.
 
 My teams developed the camera software (C++/Python), the camera operator UI (React/JS), and the cloud back-end (Go) that managed the fleet, ingested image data and metrics, stored the data, sent it to the diagnostic services, and interacted with the workflow software built by another team at Verily.
 
