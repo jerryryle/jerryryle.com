@@ -39,7 +39,7 @@ The [Verily Retinal Service](https://verily.com/solutions/retinal-camera-service
 
 My teams developed the camera software (C++/Python), the camera operator UI (React/JS), and the cloud back-end (Go) that managed the fleet, ingested image data and metrics, stored the data, sent it to the diagnostic services, and interacted with the workflow software built by another team at Verily.
 
-I inherited this program with a small and shrinking team, an unstable proof-of-concept hardware/software platform, no back-end, and a mandate to launch the product asap. With this ignoble start: 
+After a reorg, I inherited this program with a small and shrinking team, an unstable proof-of-concept hardware/software platform, no back-end, and a mandate to launch the product asap. With this ignoble start: 
 
 * I rebuilt the team, starting by hiring a tech lead and an engineering manager. The tech lead evaluated the prototype Camera platform and proposed a path forward that reused as much as possible from the original design, while improving stability and readying it for production. The engineering manager focused on hiring the rest of the team and onboarding them to the program.
 * I sketched a cloud architecture and socialized it with the team that was working on the workflow software so that we could begin making decisions and agree on division of responsibility. My team didn't have a cloud tech lead for the program yet, so I stepped in to play this role to keep the program moving forward until we could land a hire.
