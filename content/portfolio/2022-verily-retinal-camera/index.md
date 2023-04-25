@@ -1,7 +1,7 @@
 ---
 title: "Verily Retinal Camera (2022)"
-date: 2022-09-07T12:00:00-08:00
-draft: true
+date: 2022-09-08T12:00:00-08:00
+draft: false
 short_name: "verily-retinal-camera"
 tags:
   - medical
