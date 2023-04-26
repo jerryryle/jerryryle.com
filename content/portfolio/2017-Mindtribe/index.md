@@ -1,6 +1,6 @@
 ---
 title: "Mindtribe (2001-2017)"
-date: 2017-06-01T12:00:00-08:00
+date: 2017-01-01T12:00:00-08:00
 draft: false
 short_name: "mindtribe"
 tags:
