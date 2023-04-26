@@ -17,7 +17,7 @@
                 <section class='anchor' id='about'>
                     <div class='container-fluid container-section'>
                         <h4>About Me</h4>
-                        {{ range where $.Site.RegularPages "Section" "about" }}
+                        {{ range where $.Site.RegularPages.ByDate "Section" "about" }}
                             {{- partial "about-entry.html" . -}}
                         {{ end }}
                     </div>
@@ -34,13 +34,13 @@
                                 filter]</a></p>
                         </div>
                     </div>
-                    {{ range where $.Site.RegularPages "Section" "portfolio" }}
+                    {{ range where $.Site.RegularPages.ByDate.Reverse "Section" "portfolio" }}
                         {{- partial "portfolio-entry.html" . -}}
                     {{ end }}
                 </section>
                 <section class='anchor' id='contact'>
                     <div class='container-fluid container-section'>
-                    {{ range where $.Site.Pages "Section" "contact" }}
+                    {{ range where $.Site.Pages.ByDate "Section" "contact" }}
                         {{- partial "contact-entry.html" . -}}
                     {{ end }}
                     </div>
