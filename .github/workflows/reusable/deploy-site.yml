@@ -1,0 +1,34 @@
+name: Deploy Site
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        description: "The Github environment to use"
+        required: true
+        type: string
+      site-folder:
+        description: "The folder where the site to be deployed lives (e.g., 'out')"
+        required: false
+        type: string
+        default: 'out'
+
+jobs:
+  deploy-site:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    env:
+      HUGO_BUILD_FOLDER: ${{ inputs.site-folder }}
+      S3_BUCKET_URI: ${{ vars.S3_BUCKET_URI }}
+      CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
+    steps:
+      - name: Configure AWS credentials from publish account
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ vars.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_ACCESS_KEY_SECRET }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Deploy to AWS
+        run: |
+          make deploy

@@ -1,0 +1,14 @@
+on:
+  # Triggers the workflow on pull request for the main branch
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Site
+        uses: .github/workflows/reusable/build-site.yml
+        with:
+          hugo-version: 'latest'
+          site-folder: 'out'
