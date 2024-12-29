@@ -25,13 +25,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
-          fetch-depth: 0   # Fetch all history for .GitInfo and .Lastmod
+          fetch-depth: 0   # This gets all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
 
@@ -45,13 +45,13 @@ jobs:
         run: ./tidy
 
       - name: Archive Generated Site
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: generated-site
           path: ${{ env.HUGO_BUILD_FOLDER }}
 
       - name: Configure AWS credentials from publish account
-        uses: aws-actions/configure-aws-credentials@v1-node16
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.PUBLISH_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.PUBLISH_AWS_SECRET_ACCESS_KEY }}
