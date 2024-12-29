@@ -1,72 +1,57 @@
 # Hostname (and path) to the root, e.g. https://bep.is/
-baseURL: "https://www.jerryryle.com/"
+baseURL = "https://www.jerryryle.com/"
 
-# The site’s language code. It is used in the default RSS template and can be 
+# The site’s language code. It is used in the default RSS template and can be
 # useful for multi-lingual sites.
-languageCode: "en-us"
+languageCode = "en-us"
 
 # Site title
-title: "Jerry Ryle"
-
-# Theme to use (located by default in /themes/THEMENAME/).
-theme: ~
+title = "Jerry Ryle"
 
 # Content without language indicator will default to this language.
-defaultContentLanguage: "en"
+defaultContentLanguage = "en"
 
 # Enable generation of robots.txt file.
-enableRobotsTXT: true
-
-# Google Analytics tracking ID.
-googleAnalytics: "G-R12WP21VB3"
+enableRobotsTXT = true
 
 # Enable .GitInfo object for each page (if the Hugo site is versioned by Git).
 # This will then update the Lastmod parameter for each page using the last git
 # commit date for that content file.
-enableGitInfo: true
+enableGitInfo = true
 
-# Default number of elements per page in pagination.
-paginate: 10
-
-# The path element used during pagination (https://example.com/page/2).
-paginatePath: "page"
-
-# The directory to where Hugo will write the final static site 
+# The directory to where Hugo will write the final static site
 # (the HTML files etc.). Do not set here. Set using the '--destination' flag to
 # the 'hugo' command
-# publishDir: 
+# publishDir = ""
 
 # To exclude specific files from the content and data directories when rendering
 # your site, set ignoreFiles to one or more regular expressions.
-ignoreFiles:
-- \.ai$
-- \.psd$
-- \.indd$
+ignoreFiles = ["\\.ai$", "\\.psd$", "\\.indd$"]
 
 # Enable this to make all relative URLs relative to content root. Note that
 # this does not affect absolute URLs.
-relativeURLs: true
+relativeURLs = true
 
-# This will create a menu with all the sections as menu items and all the 
+# This will create a menu with all the sections as menu items and all the
 # sections' pages as “shadow-members”. The shadow implies that the pages isn’t
-# represented by a menu-item themselves, but this enables you to create a 
+# represented by a menu-item themselves, but this enables you to create a
 # top-level menu.
-sectionPagesMenu: "main"
+sectionPagesMenu = "main"
 
 # The length of text in words to show in a .Summary.
-summaryLength: 70
+summaryLength = 70
 
 # Enable/disable logging.
-log: false
+log = false
 
 # Log File path (if set, logging enabled automatically).
-logFile: ""
+logFile = ""
 
 # Enable/disable verbose output.
-verbose: false
+verbose = false
 
 # Enable verbose logging.
-verboseLog: false
+verboseLog = false
 
 # Increase the timeout to allow for asset generation
-timeout: 60000
+timeout = 60000

@@ -6,4 +6,4 @@ function leave()
 	exit 1
 }
 
-hugo server --buildDrafts --buildFuture --verbose || leave "Hugo server failed"
+hugo server --buildDrafts --buildFuture --logLevel debug || leave "Hugo server failed"
