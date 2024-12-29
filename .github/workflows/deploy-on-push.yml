@@ -8,14 +8,14 @@ on:
 jobs:
   build:
     name: Build Site
-    uses: ./.github/workflows/reusable/build-site.yml
+    uses: ./.github/workflows/reusable-build-site.yml
     with:
       hugo-version: 'latest'
       site-folder: 'out'
 
   deploy:
     name: Deploy Site
-    uses: ./.github/workflows/reusable/deploy-site.yml
+    uses: ./.github/workflows/reusable-deploy-site.yml
     with:
       environment: "production"
       site-folder: 'out'
