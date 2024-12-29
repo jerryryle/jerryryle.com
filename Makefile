@@ -1,6 +1,5 @@
 # Define variables
 HUGO_BUILD_FOLDER ?= out
-AWS_DISTRIBUTION_ID ?= E1DWOMWZ44RVNH
 
 .DEFAULT_GOAL := develop
 
@@ -8,7 +7,7 @@ AWS_DISTRIBUTION_ID ?= E1DWOMWZ44RVNH
 .PHONY: develop
 develop:
 	@echo "Starting Hugo server..."
-	@hugo server --buildDrafts --buildFuture --logLevel debug || { echo "Hugo server failed"; exit 1; }
+	@hugo server --destination "$(HUGO_BUILD_FOLDER)" --buildDrafts --buildFuture --logLevel debug || { echo "Hugo server failed"; exit 1; }
 
 # Ensure HUGO_BUILD_FOLDER exists
 $(HUGO_BUILD_FOLDER):
