@@ -38,7 +38,7 @@ all: clean build tidy
 
 # Deploy site to AWS
 .PHONY: deploy
-deploy: all
+deploy: $(HUGO_BUILD_FOLDER)
 	@if [ -z "$(S3_BUCKET_URI)" ]; then \
 		echo "Error: S3_BUCKET_URI is not set. Please specify the S3 bucket URI using this environment variable."; \
 		exit 1; \
