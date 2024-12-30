@@ -4,8 +4,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-    name: Build site
+  check_pull_request:
+    name: Build site to check pull request
     uses: ./.github/workflows/reusable-build-site.yml
     with:
       hugo_version: 'latest'
