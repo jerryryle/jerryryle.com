@@ -7,17 +7,17 @@ on:
 
 jobs:
   build:
-    name: Build Site
+    name: Build site
     uses: ./.github/workflows/reusable-build-site.yml
     with:
-      hugo-version: 'latest'
-      site-folder: 'out'
+      hugo_version: 'latest'
+      site_artifact_name: 'generated-site'
 
   deploy:
-    name: Deploy Site
+    name: Deploy site
     needs: build
     uses: ./.github/workflows/reusable-deploy-site.yml
     with:
       environment: "production"
-      site-folder: 'out'
+      site_artifact_name: 'generated-site'
     secrets: inherit

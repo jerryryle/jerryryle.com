@@ -7,21 +7,32 @@ on:
         description: "The Github environment to use"
         required: true
         type: string
-      site-folder:
-        description: "The folder where the site to be deployed lives (e.g., 'out')"
-        required: false
+      site_artifact_name:
+        description: "The name of the generated site artifact to download and deploy"
         type: string
-        default: 'out'
+        required: false
+        default: 'generated-site'
 
 jobs:
   deploy-site:
     runs-on: ubuntu-latest
     environment: ${{ inputs.environment }}
     env:
-      HUGO_BUILD_FOLDER: ${{ inputs.site-folder }}
+      HUGO_BUILD_FOLDER: "out"
       S3_BUCKET_URI: ${{ vars.S3_BUCKET_URI }}
       CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Download built site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.site_artifact_name }}
+          path: ${{ env.HUGO_BUILD_FOLDER }}
+
       - name: Configure AWS credentials from publish account
         uses: aws-actions/configure-aws-credentials@v4
         with:

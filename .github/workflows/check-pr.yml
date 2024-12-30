@@ -5,8 +5,8 @@ on:
 
 jobs:
   build:
-    name: Build Site
+    name: Build site
     uses: ./.github/workflows/reusable-build-site.yml
     with:
-      hugo-version: 'latest'
-      site-folder: 'out'
+      hugo_version: 'latest'
+      site_artifact_name: 'generated-site'
