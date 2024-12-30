@@ -3,25 +3,26 @@ name: Build Site
 on:
   workflow_call:
     inputs:
-      hugo-version:
+      hugo_version:
         description: The version of Hugo to use (e.g., 'latest')
         type: string
         required: false
         default: 'latest'
-      site-folder:
-        description: The folder where the site will be built (e.g., 'out')
+      site_artifact_name:
+        description: "The name of the generated site artifact to upload"
         type: string
         required: false
-        default: 'out'
+        default: 'generated-site'
 
 jobs:
   build-site:
     runs-on: ubuntu-latest
     env:
-      HUGO_BUILD_FOLDER: ${{ inputs.site-folder }}
+      HUGO_BUILD_FOLDER: "out"
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0   # This gets all history for .GitInfo and .Lastmod
@@ -29,17 +30,17 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: ${{ inputs.hugo-version }}
+          hugo-version: ${{ inputs.hugo_version }}
 
-      - name: Setup Tidy
+      - name: Setup tidy
         run: sudo apt-get install tidy
 
-      - name: Hugo Build
+      - name: Build site
         run: |
           make all
 
-      - name: Archive Generated Site
+      - name: Upload built site artifact
         uses: actions/upload-artifact@v4
         with:
-          name: generated-site
+          name: ${{ inputs.site_artifact_name }}
           path: ${{ env.HUGO_BUILD_FOLDER }}
