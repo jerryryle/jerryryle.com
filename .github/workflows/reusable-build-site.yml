@@ -1,0 +1,45 @@
+name: Build Site
+
+on:
+  workflow_call:
+    inputs:
+      hugo-version:
+        description: The version of Hugo to use (e.g., 'latest')
+        type: string
+        required: false
+        default: 'latest'
+      site-folder:
+        description: The folder where the site will be built (e.g., 'out')
+        type: string
+        required: false
+        default: 'out'
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_BUILD_FOLDER: ${{ inputs.site-folder }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0   # This gets all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ inputs.hugo-version }}
+
+      - name: Setup Tidy
+        run: sudo apt-get install tidy
+
+      - name: Hugo Build
+        run: |
+          make all
+
+      - name: Archive Generated Site
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-site
+          path: ${{ env.HUGO_BUILD_FOLDER }}

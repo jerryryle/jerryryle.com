@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-function leave()
-{
-	echo "$1"
-	exit 1
-}
-
-hugo server --buildDrafts --buildFuture --logLevel debug || leave "Hugo server failed"
