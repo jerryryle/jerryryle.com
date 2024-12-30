@@ -15,6 +15,7 @@ jobs:
 
   deploy:
     name: Deploy Site
+    needs: build
     uses: ./.github/workflows/reusable-deploy-site.yml
     with:
       environment: "production"
