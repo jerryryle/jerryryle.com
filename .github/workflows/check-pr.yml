@@ -5,10 +5,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Site
-        uses: ./.github/workflows/reusable-build-site.yml
-        with:
-          hugo-version: 'latest'
-          site-folder: 'out'
+    name: Build Site
+    uses: ./.github/workflows/reusable-build-site.yml
+    with:
+      hugo-version: 'latest'
+      site-folder: 'out'
