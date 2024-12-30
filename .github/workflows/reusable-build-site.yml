@@ -33,7 +33,7 @@ jobs:
           hugo-version: ${{ inputs.hugo_version }}
 
       - name: Setup tidy
-        run: sudo apt-get install tidy
+        run: sudo apt install tidy
 
       - name: Build site
         run: |
