@@ -48,10 +48,10 @@ log = false
 logFile = ""
 
 # Enable/disable verbose output.
-verbose = false
+verbose = true
 
 # Enable verbose logging.
-verboseLog = false
+verboseLog = true
 
 # Increase the timeout to allow for asset generation
 timeout = 60000

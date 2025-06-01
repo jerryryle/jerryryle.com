@@ -14,7 +14,7 @@
     {{ with $media.caption }}
         {{ $scratch.Set "caption" $media.caption }}
     {{ end }}
-    {{ partial "portfolio-carousel-image.html" $scratch }}
+    {{ partials.Include "portfolio-carousel-image.html" $scratch }}
 {{ else if eq $media_type "video" }}
     {{ $scratch := newScratch }}
     {{ $scratch.Set "poster" ($page.Resources.GetMatch $media.poster) }}
@@ -36,7 +36,7 @@
     {{ with $media.caption }}
         {{ $scratch.Set "caption" $media.caption }}
     {{ end }}
-    {{ partial "portfolio-carousel-video.html" $scratch }}
+    {{ partials.Include "portfolio-carousel-video.html" $scratch }}
 {{ else }}
     {{ errorf "Unknown media type %s" $media_type }}
 {{ end }}

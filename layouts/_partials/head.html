@@ -27,5 +27,7 @@
     <meta name='theme-color' content='#ffffff'/>
 
     <link href='css/main.css' rel='stylesheet'/>
-    {{ partial "google-site-tag.html" . }}
+    {{ if hugo.IsProduction }}
+        {{ partials.Include "google-site-tag.html" . }}
+    {{ end }}
 </head>

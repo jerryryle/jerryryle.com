@@ -33,7 +33,7 @@
             {{ $scratch.Set "page" $page }}
             {{ $scratch.Set "media_type" $media_type }}
             {{ $scratch.Set "media" $media }}
-            {{ partial "portfolio-carousel-media-entry.html" $scratch }}
+            {{ partials.Include "portfolio-carousel-media-entry.html" $scratch }}
                 </div>
             {{ $carousel_count = add $carousel_count 1 }}
         {{ end }}
@@ -49,7 +49,7 @@
             {{ $scratch.Set "page" $page }}
             {{ $scratch.Set "media_type" $media_type }}
             {{ $scratch.Set "media" $media }}
-            {{ partial "portfolio-single-media-entry.html" $scratch }}
+            {{ partials.Include "portfolio-single-media-entry.html" $scratch }}
         {{ end }}
     {{ end }}
 

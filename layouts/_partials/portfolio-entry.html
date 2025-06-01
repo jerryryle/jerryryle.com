@@ -2,7 +2,7 @@
     <a class="anchor" id='{{- .Params.short_name -}}'></a>
     <a href='#{{- .Params.short_name -}}' class='permalink' title='Permalink for this entry'></a>
     <h4>{{ .Title }}</h4>
-	{{ partial "portfolio-media.html" . }}
+	{{ partials.Include "portfolio-media.html" . }}
     {{ .Content }}
     {{ with .Params.tags }}
         <div class='tags'>

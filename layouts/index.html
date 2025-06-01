@@ -18,7 +18,7 @@
                     <div class='container-fluid container-section'>
                         <h4>About Me</h4>
                         {{ range where $.Site.RegularPages.ByDate "Section" "about" }}
-                            {{- partial "about-entry.html" . -}}
+                            {{- partials.Include "about-entry.html" . -}}
                         {{ end }}
                     </div>
                 </section>
@@ -35,18 +35,18 @@
                         </div>
                     </div>
                     {{ range where $.Site.RegularPages.ByDate.Reverse "Section" "portfolio" }}
-                        {{- partial "portfolio-entry.html" . -}}
+                        {{- partials.Include "portfolio-entry.html" . -}}
                     {{ end }}
                 </section>
                 <section class='anchor' id='contact'>
                     <div class='container-fluid container-section'>
                     {{ range where $.Site.Pages.ByDate "Section" "contact" }}
-                        {{- partial "contact-entry.html" . -}}
+                        {{- partials.Include "contact-entry.html" . -}}
                     {{ end }}
                     </div>
                 </section>
             </div>
-            {{- partial "footer.html" . -}}
+            {{- partials.Include "footer.html" . -}}
         </div>
         <div class='col-sm-1 col-md-2'></div>
     </div>
@@ -54,6 +54,6 @@
 {{ end }}
 
 {{ define "main_scripts" }}
-    {{- partial "site-scripts.html" . -}}
+    {{- partials.Include "site-scripts.html" . -}}
     <script type="module" src='js/main.js'></script>
 {{ end }}
