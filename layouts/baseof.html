@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
-{{- partial "head.html" . -}}
+{{- partials.Include "head.html" . -}}
 <body>
 <nav class='navbar navbar-expand-sm fixed-top navbar-dark bg-dark'>
     <div class="container-fluid">
@@ -47,7 +47,7 @@
 </nav>
 {{- block "main" . }}{{ end -}}
 {{- block "main_scripts" . }}
-{{- partial "site-scripts.html" . -}}
+{{- partials.Include "site-scripts.html" . -}}
 {{ end -}}
 </body>
 </html>
