@@ -122,16 +122,20 @@ function handle_tag_click(event, tag_filter) {
         const tag_enabled = tag_filter.toggleTagSelection(tag);
         apply_tag_filter(tag_filter);
 
-        if (tag_enabled) {
-            gtag('event', 'tag_'+tag+'_enabled', {
-                'event_category' : 'filter',
-                'event_label' : 'tag_'+tag
-            });
+        if (typeof window.gtag === 'function') {
+            if (tag_enabled) {
+                window.gtag('event', 'tag_' + tag + '_enabled', {
+                    'event_category': 'filter',
+                    'event_label': 'tag_' + tag
+                });
+            } else {
+                window.gtag('event', 'tag_' + tag + '_disabled', {
+                    'event_category': 'filter',
+                    'event_label': 'tag_' + tag
+                });
+            }
         } else {
-            gtag('event', 'tag_'+tag+'_disabled', {
-                'event_category' : 'filter',
-                'event_label' : 'tag_'+tag
-            });
+            console.debug('Cannot send gtag event because Google Analytics is not loaded (expected in local dev)');
         }
     }
     event.preventDefault();
@@ -166,7 +170,6 @@ function apply_tag_filter(tag_filter) {
         item.classList.add('collapse.show');
     });
 
-    // Update result count
     update_tag_filter_result_count(tag_filter);
 }
 
