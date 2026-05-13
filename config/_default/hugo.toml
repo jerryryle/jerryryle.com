@@ -3,7 +3,7 @@ baseURL = "https://www.jerryryle.com/"
 
 # The site’s language code. It is used in the default RSS template and can be
 # useful for multi-lingual sites.
-languageCode = "en-us"
+locale = "en-us"
 
 # Site title
 title = "Jerry Ryle"
