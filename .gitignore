@@ -6,3 +6,7 @@
 
 # ignore Hugo lock files
 .hugo_build.lock
+
+# ignore Claude Code local settings and worktrees
+.claude/settings.local.json
+.claude/worktrees/
