@@ -41,17 +41,5 @@ sectionPagesMenu = "main"
 # The length of text in words to show in a .Summary.
 summaryLength = 70
 
-# Enable/disable logging.
-log = false
-
-# Log File path (if set, logging enabled automatically).
-logFile = ""
-
-# Enable/disable verbose output.
-verbose = true
-
-# Enable verbose logging.
-verboseLog = true
-
 # Increase the timeout to allow for asset generation
 timeout = 60000

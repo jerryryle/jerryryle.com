@@ -18,7 +18,7 @@ $(HUGO_BUILD_FOLDER):
 .PHONY: clean
 clean: $(HUGO_BUILD_FOLDER)
 	@echo "Cleaning build folder: $(HUGO_BUILD_FOLDER)"
-	@rm -rf "$(HUGO_BUILD_FOLDER)/*"
+	@rm -rf "$(HUGO_BUILD_FOLDER)"/*
 
 # Build the site
 .PHONY: build
