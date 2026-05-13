@@ -159,18 +159,19 @@ function apply_tag_filter(tag_filter) {
     // Update item visibility with current filter state
     tag_filter.excludedItems().forEach(function (item_id) {
         const item = document.querySelector('#' + item_id);
-        // Hide the item
-        item.classList.remove('collapse.show');
-        item.classList.add('collapse');
+        item.classList.add('d-none');
     });
     tag_filter.includedItems().forEach(function (item_id) {
         const item = document.querySelector('#' + item_id);
-        // Show the item
-        item.classList.remove('collapse');
-        item.classList.add('collapse.show');
+        item.classList.remove('d-none');
     });
 
     update_tag_filter_result_count(tag_filter);
+
+    const scrollspy = bootstrap.ScrollSpy.getInstance(document.body);
+    if (scrollspy) {
+        scrollspy.refresh();
+    }
 }
 
 function update_tag_filter_result_count(tag_filter) {
